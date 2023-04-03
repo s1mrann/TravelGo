@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+
+	<title>PLANGO/Login</title>
+	<style type="text/css">
+		
+		
+
+		body{
+			margin: 0%;
+			margin-top: 5%;
+			background: url("jakob-owens-CTflmHHVrBM-unsplash.jpg") center center fixed;
+			overflow: hidden;
+
+		}
+		
+		/*header*/
+		#headerdiv1{
+			position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,1);
+			  z-index: 1;
+			  border-bottom-left-radius: 20px;
+			  border-bottom-right-radius: 20px;
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		/* Underline From Center */
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+
+
+
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+
+		}
+
+/*header end*/
+		#container{
+			height: 15rem;
+			width: 90rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#main{
+			width: 75rem;
+			height: 10rem;
+			display: flex;
+			
+		}
+
+
+		#left{
+			background:url("majid-rangraz-9U-cMS5oGeI-unsplash.jpg") center center;
+			width: 20rem;
+			min-height: 30rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			flex-direction: column;
+			text-transform: capitalize;
+		}
+		.a{
+			padding: 0.3rem;
+
+		}
+		h1.a{
+			font-size: 1.8rem;
+			font-family: arial,helvetica,sans-serif;
+			font-weight: 10
+		}
+		p.a{
+			font-size: 0.8rem;
+			font-family: arial,helvetica,sans-serif;
+
+		}
+		button.a{
+			min-width: 14rem;
+			min-height: 2.5rem;
+			text-transform: uppercase;
+			font-size: 1rem;
+			color: white;
+			background-color: rgba(255, 153, 51,0.5);
+			outline:none;
+			border:2px solid grey;
+			margin-top: 0.7rem;
+			transition: all 0.3s;
+
+		}
+
+		button.a:hover{
+			background-color: rgba(255, 153, 51,1);
+			color: black;
+		}
+
+
+
+
+
+
+		#right{
+			background-color: rgba(255,255,255,0.7);
+			width: 45rem;
+			min-height: 30rem;
+			text-align: center;
+		}
+		/*#plango {
+			margin-right: 0;
+			min-width: 50rem;
+			height: 5rem;
+			text-transform: capitalize;
+		}*/
+		.form{
+			min-width: 50rem;
+			min-height: 30rem;
+			margin-top: 10%;
+		}
+		.form h1{
+			text-transform: capitalize;
+			font-size: 2.5rem;
+			font-family: arial,helvetica,sans-serif;
+			color: black;
+			font-weight: 50;
+			padding: 1rem
+		}
+		
+		.b{
+			min-width: 25rem;
+			min-height: 2.5rem;
+			margin: 0.4rem;
+			border: none;
+			border-bottom: 1px solid gray;
+			outline: none;
+			background:transparent;
+		}
+		#shit{
+			display: flex;
+			justify-content: center;
+			width: 50rem;
+			height: 2.5rem;
+		}
+
+		#forgotpw{
+			text-decoration: none;
+		}
+
+		#submit{
+			height:2.5rem; 
+			width:10rem;
+			background-color: black;
+			color: white;
+			font-size: 1rem;
+			outline: 1px solid black;
+			padding: 0.5rem;
+			border:2px solid white;
+			transition: 0.3s ease-in-out;
+			text-align: center;
+			}
+		#submit:hover{
+			border:2px solid black;
+			background-color: white;
+			color: black;
+
+		}
+		#createacct{
+			height:2.5rem; 
+			width:15rem;
+			background-color: black;
+			color: white;
+			font-size: 1rem;
+			outline: 1px solid black;
+			padding: 0.5rem;
+			border:2px solid white;
+			transition: 0.3s ease-in-out;
+			text-align: center;
+			}
+		#createacct:hover{
+			border:2px solid black;
+			background-color: white;
+			color: black;
+
+		}
+	</style>
+</head>
+
+<!-- fixed header -->
+<div id="headerdiv1">
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+
+			<li class="li1" title="Explore">
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+
+			<li class="li1">
+				<img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png"></li>
+
+			<li class="li1" title="Contact">
+				<a href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+		</ul>
+
+
+	</div>
+
+
+<body>
+	<div id="container">
+		<div id="main">
+			<div id="left">
+				<h1 class="a">
+					try it for free today!
+				</h1>
+				<p class="a">
+					No credit card required. Free for 30days.
+				</p>
+				<button type="button" class="a" id="makenewacc">create account</button>
+			</div>
+			<div id="right">
+				<!-- <div id="plango">
+				</div> -->
+				<div class="form" id="oldacc">
+					<h1>welcome back!</h1>
+					<form action="" method="post">
+						<input type="email" name="email" placeholder="Email Address" class="b" required><br>
+						<input type="password" name="password" placeholder="Password" minlength="8" class="b" required><br>
+						<div id="shit">
+							<a href="" id="forgotpw">Forgot Password?</a><br>
+						</div>
+						<input type="submit" name="LOGIN" placeholder="LOGIN" value="LOGIN" id="submit">
+					</form>
+				</div>
+				<div class="form" id="newacc">
+					<h1>Create an Account!</h1>
+					<form action="" method="post" id="form2">
+						<input type="email" name="email" placeholder="Email Address" class="b" required><br>
+						<input type="password" name="password" placeholder="Password" class="b" id="pw1" minlength="8" required ><br>
+						<input type="password" name="password" placeholder="Confirm Password" class="b" id="pw2" minlength="8" required><br><br>
+						<input type="submit" name="CREATE ACCOUNT" placeholder="CREATE ACCOUNT" value="CREATE ACCOUNT" id="createacct">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+<script>
+  $(document).ready(function(){
+  	$("#newacc").hide();
+  	$("#makenewacc").click(function(){
+  		
+  		var inside=$(this).html();
+  		if (inside=="create account"){
+  			$(this).html("Already have an account?");
+  			$("#oldacc").hide(300,function(){
+  				$("#newacc").show(300);
+  			});
+  		}
+  		else{
+  			$(this).html("create account");
+  			$("#newacc").hide(300,function(){
+  				$("#oldacc").show(300);
+  			});
+  		}
+  		
+  	});
+  	$('#form2').submit(function() {
+    	var id1 = $('#pw1').val(); 
+    	var id2 = $('#pw2').val(); 
+    	if (id1 == id2) {
+        	return true;
+    	}
+    	else
+    	{
+    		alert('PASSWORDS DO NOT MATCH');
+       		return false;
+    	}
+	});
+
+
+  });	
+</script>
+
+</body>
+</html>

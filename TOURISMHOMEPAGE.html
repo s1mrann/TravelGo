@@ -1,0 +1,3791 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+
+	<title>PLANGO</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0%;
+			/*margin-top: 40%;*/
+			background-color: #25262a;
+			overflow-x: hidden;
+
+		}
+
+		#div1{
+/*			overflow-x: hidden;*/
+			height: 440px;
+		}
+
+
+		/*header*/
+		#headerdiv1{
+			position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,0.9);
+			  z-index: 1;
+			  border-bottom-left-radius: 20px;
+			  border-bottom-right-radius: 20px;
+
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		/* Underline From Center */
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out alternate;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+
+
+
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+
+		}
+
+		.signin{
+			font-size: 35px;
+			margin-right: -15em;
+		}
+
+/*header end*/
+
+
+
+
+/*top div discover vagera image*/
+
+		#backblurimg1{
+			width: 100%;
+			height: auto;
+			margin-top: 5%;}
+
+		/*#topimg2{
+			width: 1370px;
+			height: auto;
+			margin-top: -30%;
+			margin-left: -50%;
+			position: absolute;
+
+		}*/
+
+					
+		.glitch-wrapper {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+		.glitch {
+			color: rgba(255,255,253,0.9);
+			font-size: 1200%;
+			margin-top: 10%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+			}
+			
+
+		#discovertext{
+		margin-top: -50%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: 30px;
+		z-index: -1;
+		text-shadow: 10px 10px 5px #25262a ;
+		animation: bouncelikehell 4s linear infinite
+		}
+
+		@keyframes bouncelikehell{
+			100%{transform: translateY(-3px);}
+
+			75%{transform: translateY(3px);}
+
+			50%{transform: translateY(-3px);}
+
+			25%{transform: translateY(3px);}
+
+			0%{transform: translateY(-3px);}
+		}
+
+
+			.container {
+			  position: relative;
+			  width: 24px;
+			  height: 24px;
+			  margin-left: auto;
+			  margin-right: auto;
+			  margin-top: 8.5%;
+			}
+
+			.chevron {
+			  position: absolute;
+			  width: 28px;
+			  height: 8px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+			.chevron:first-child {
+			  animation: move 3s ease-out 1s infinite;
+			}
+
+			.chevron:nth-child(2) {
+			  animation: move 3s ease-out 2s infinite;
+			}
+
+			.chevron:before,
+			.chevron:after {
+			  content: ' ';
+			  position: absolute;
+			  top: 0;
+			  height: 100%;
+			  width: 51%;
+			  background: #fff;
+			}
+
+			.chevron:before {
+			  left: 0;
+			  transform: skew(0deg, 30deg);
+			}
+
+			.chevron:after {
+			  right: 0;
+			  width: 50%;
+			  transform: skew(0deg, -30deg);
+			}
+
+			@keyframes move {
+			  25% {
+			    opacity: 1;
+
+			  }
+			  33% {
+			    opacity: 1;
+			    transform: translateY(30px);
+			  }
+			  67% {
+			    opacity: 1;
+			    transform: translateY(40px);
+			  }
+			  100% {
+			    opacity: 0;
+			    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+			  }
+			}
+
+			.text {
+			  display: block;
+			  margin-top: 175px;
+			  margin-left: -35px;
+			  font-family: 'Righteous', cursive;
+			  font-size: 15px;
+			  color: #f54956;
+			  text-transform: uppercase;
+			  white-space: nowrap;
+			  opacity: .25;
+			  animation: pulse 2s linear alternate infinite;
+			}
+
+			@keyframes pulse {
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			#scrolldown{
+				margin-top: -4%;
+			}
+
+			/*smoke*/
+
+			/*@-webkit-keyframes fadeOut {
+			  0% {
+			    opacity: 1;
+			  }
+			  100% {
+			    opacity: 0;
+			  }
+			}
+
+			@keyframes fadeOut {
+			  0% {
+			    opacity: 1;
+			  }
+			  100% {
+			    opacity: 0;
+			  }
+			}
+
+			.fadeOut {
+			  animation-name: fadeOut;
+			}
+
+			@-webkit-keyframes masked-animation {
+			  0% {
+			    background-position: left bottom;
+			  }
+			  100% {
+			    background-position: right bottom;
+			  }
+			}
+
+			#start {
+			  position: absolute;
+			  margin: auto;
+			  text-align: center;
+			  margin-top: 1000%;
+			  width: 100%;
+			}
+
+			.blink_me {
+			  animation: blinker 3s linear infinite;
+			}
+
+			@keyframes blinker {
+			  50% {
+			    opacity: 0.4;
+			  }
+			}*/
+
+
+
+			html,
+			body {
+			  margin: 0;
+			  padding: 0;
+			  background: #25262a;
+			  text-align: center;
+			  color: grey;
+			}
+
+			a {
+			  color: #fff;
+			  text-decoration: none
+			}
+
+			/*#wrap {
+			  margin: 100 auto;
+			  width: 120%;
+			  position: relative;
+			  overflow: hidden;
+			}*/
+
+			/*#viewport {
+			  position: relative;
+			  width: 100%;
+			  height: 600px;
+			  overflow: hidden;
+			}
+
+			#viewport .smoke {
+			  position: absolute;
+			  width: 1360px;
+			  height: 20px;
+			  background: url('http://res.cloudinary.com/da51wkm4r/image/upload/v1461143297/title/smoke.png') no-repeat;
+			  margin-left: 0px;
+			  overflow: hidden;
+			}*/
+
+			/*@-webkit-keyframes masked-animation {
+			  0% {
+			    background-position: left bottom;
+			  }
+			  100% {
+			    background-position: right bottom;
+			  }
+			}
+
+			#smoke{
+				transform: rotate(180deg);
+				margin-top: -40.4%;
+				z-index: 1;
+			}
+*/
+
+
+			#for_parallaxeffect{
+				position: fixed;
+				top: 0;
+				width: 100%;
+			  z-index: -1;
+			}
+
+
+
+
+
+/*top image discover div end*/
+
+
+			#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 200%;
+				text-align: left;
+				margin-left: 25%;
+			}
+
+			#hiddenplaceskaplaces{
+				color: #f54956;
+				font-size: 110%;
+			}
+
+			#O{
+				font-size: 65px;
+				transform: rotate(25deg);
+			}
+
+			#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 4%;
+				font-size: 140%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				position: absolute;
+				width: 37%;
+				height: auto;
+				margin-top: -100px;
+				right: -20px;
+				z-index: auto;
+			}
+
+
+
+
+/*maps*/
+
+			.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+
+			.container1 {
+			  width: 100%;
+			  text-align: center;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding: 1em;
+			  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 2em;
+			  filter: grayscale(80%);
+			}
+
+			.item .polaroid:before {
+			  content: "";
+			  position: absolute;
+			  z-index: -1;
+			  transition: all 0.3s;
+			}
+
+			.item:nth-of-type(4n+1) {
+			  transform: scale(0.8, 0.8) rotate(5deg);
+			  transition: all 0.3s;
+			}
+
+			.item:nth-of-type(4n+2) {
+			  transform: scale(0.8, 0.8) rotate(-5deg);
+			  transition: all 0.3s;
+			}
+
+
+			.item:nth-of-type(4n+3) {
+			  transform: scale(0.8, 0.8) rotate(-3deg);
+			  transition: all 0.3s;
+			}
+
+			.item:nth-of-type(4n+4) {
+			  transform: scale(0.8, 0.8) rotate(3deg);
+			  transition: all 0.3s;
+			}
+
+
+			.item:nth-of-type(4n+5) {
+			  transform: scale(0.8, 0.8) rotate(0deg);
+			  transition: all 0.3s;
+			}
+
+			.item:hover {
+			  transform: scale(1, 1) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+
+			/*maps end*/
+
+			#coolgolgol{
+				width: 400px;
+				height: 400px;
+				margin-left: 22%;
+				margin-top: -400px;
+				animation: rotateyourshit 14s infinite linear alternate;
+				filter: grayscale(95%);
+				opacity: 0.2;
+			}
+
+			@keyframes rotateyourshit {
+				  from {
+				    transform: rotate(0deg);
+				  }
+				  to {
+				    transform: rotate(359deg);
+				  }
+			}
+
+
+			#connect{
+				font-size: 30px;
+				font-family: 'Saira Condensed', sans-serif;
+				background-color: #25262a;
+				text-shadow: white 0.5px 0.5px 1px;
+				margin-top: -20px;
+							}
+
+			.socialicons{
+				padding: 5px;
+				transition: 0.1s ease-in-out;
+				text-shadow: none;
+			}
+			.socialicons:hover{
+				transform: scale(1.1);
+				color: white;
+			}
+
+			#explore{
+				font-family: 'Viga', sans-serif;
+				color: #ed485d;
+				font-size: 50px;
+				margin-top:100px;
+			}
+
+			
+
+			
+
+
+		::-webkit-scrollbar {
+				  width: 10px;
+				  border-radius: 15px;
+				  background-color: #25262a;
+					}
+		/* Track */
+		::-webkit-scrollbar-track {
+			  background: #25262a;
+					}
+					 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			 background: white; border-radius: 15px;
+			 opacity: 0.5;
+					}
+
+			/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			  background: grey; border-radius: 15px;
+					}
+
+
+		#warmup{
+			margin-top: 650px;
+		}
+
+
+
+
+
+/*media queries*/
+
+
+@media only screen and (min-width: 320px) {
+	#headerlist .li1{
+		font-size: 14px;
+		padding-right: 3.5%;
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: -5%;
+		}
+
+	.signin{
+			font-size: 18px;
+			margin-right: 0em;
+		}
+
+
+	#headerimg1{
+		display: all;
+		width: 40px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 250%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -40%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto; 
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 170%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 5px;
+			  height: 5px;
+			}
+
+	#scrolldown{
+				margin-top: 20px;
+				
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 24px;
+			  height: 4px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 13px;
+	}
+
+	#warmup{
+			margin-top: 290px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 100%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 100%;
+	}
+
+	#paraforshit{
+		width: 90%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 100%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 25px;
+				margin-bottom: -100px;
+			}
+	.explore{
+		margin-top: -70px; 
+	}
+
+	#O{
+				font-size: 40px;
+				
+			}
+
+			.mapimg {
+			  width: 85%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.7em 0em;
+			  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 1.4em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.3em;
+			  filter: grayscale(50%);
+			}
+
+			.item:hover {
+			  transform: scale(0.9) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+
+}
+
+
+@media only screen and (min-width: 460px) {
+
+	#headerlist .li1{
+		font-size: 18px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	/*.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}*/
+
+	.signin{
+			font-size: 20px;
+			margin-right: -1em;
+		}
+
+
+	#headerimg1{
+		width: 60px;
+		height: auto;
+	}
+
+	.glitch{
+			font-size: 350%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -50%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: 30px;
+		text-shadow: 6px 8px 5px #25262a;
+	}
+
+	#backblurimg1{
+			width: 150%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 25px;
+			  height: 25px;
+			}
+
+	#scrolldown{
+				margin-top: -330px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 24px;
+			  height: 4px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 13px;
+	}
+
+	#warmup{
+			margin-top: 340px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 150%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 110%;
+	}
+
+	#paraforshit{
+		width: 95%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 120%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 35px;
+				margin-bottom: -150px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 0px; 
+	}
+
+	.mapimg {
+			  width: 91%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0em;
+			  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 1.7em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.7em;
+			  filter: grayscale(50%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+@media only screen and (min-width: 600px) {
+
+	#headerlist .li1{
+		font-size: 19px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 21px;
+			margin-right: -1em;
+		}
+
+
+	#headerimg1{
+		width: 60px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 400%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -50%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 160%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 25px;
+			  height: 25px;
+			}
+
+	#scrolldown{
+				margin-top: -250px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 24px;
+			  height: 4px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 13px;
+	}
+
+	#warmup{
+			margin-top: 420px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+		width: 95%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 130%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -150px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 0px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 95%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.2em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 1.7em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.7em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+@media only screen and (min-width: 701px) {
+
+	#headerlist .li1{
+		font-size: 21px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 21px;
+			margin-right: -1em;
+		}
+
+
+	#headerimg1{
+		width: 70px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 450%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -55%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 160%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 25px;
+			  height: 25px;
+			}
+
+	#scrolldown{
+				margin-top: -170px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 24px;
+			  height: 4px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 13px;
+	}
+
+	#warmup{
+			margin-top: 510px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+		width: 95%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 130%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -150px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 0px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.7em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+
+
+@media only screen and (min-width: 830px) {
+
+	#headerlist .li1{
+		font-size: 23px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 23px;
+			margin-right: -1.9em;
+		}
+
+
+	#headerimg1{
+		width: 75px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 510%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -55%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 160%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 25px;
+			  height: 25px;
+			}
+
+	#scrolldown{
+				margin-top: -80px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 24px;
+			  height: 4px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 13px;
+	}
+
+	#warmup{
+			margin-top: 600px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+		width: 95%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 130%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -150px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 0px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+@media only screen and (min-width: 950px) {
+
+	#headerlist .li1{
+		font-size: 23px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 25px;
+			margin-right: -2.5em;
+		}
+
+
+	#headerimg1{
+		width: 75px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 600%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -50%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 140%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 25px;
+			  height: 25px;
+			}
+
+	#scrolldown{
+				margin-top: -75px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 24px;
+			  height: 4px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 13px;
+	}
+
+	#warmup{
+			margin-top: 610px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+		width: 95%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 150%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -150px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 0px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+@media only screen and (min-width: 1050px) {
+
+	#headerlist .li1{
+		font-size: 23px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 25px;
+			margin-right: -2.5em;
+		}
+
+
+	#headerimg1{
+		width: 80px;
+		height: auto;
+	}
+
+	.glitch {
+			color: rgba(255,255,253,0.9);
+			font-size: 700%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+			}
+
+	#discovertext{
+		margin-top: -48%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 130%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 30px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: -70px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 24px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 610px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+		width: 95%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 150%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -150px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 0px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+@media only screen and (min-width: 1150px) {
+
+	#headerlist .li1{
+		font-size: 25px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 27px;
+			margin-right: -3.5em;
+		}
+
+
+	#headerimg1{
+		width: 85px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 670%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -48%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 130%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: -70px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 610px;
+			width: 100%;
+		}
+
+	#masklady{
+				display: none;
+			}
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+		width: 95%;
+		height: auto;
+		margin-left: 0%;
+		margin: 20px;
+		font-size: 150%;
+		color: white;
+		opacity: 0.9;
+		text-align: center;
+		overflow-x: hidden;
+		
+	}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -190px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 10px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+@media only screen and (min-width: 1220px) {
+
+	#headerlist .li1{
+		font-size: 25px;
+		padding-right: 4.5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 27px;
+			margin-right: -5.5em;
+		}
+
+
+	#headerimg1{
+		width: 85px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 1000%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -43%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 110%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: -70px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 610px;
+			width: 100%;
+		}
+
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: left;
+				margin-left: 250px;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 3%;
+				font-size: 130%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				display: inline-block;
+				position: absolute;
+				width: 35%;
+				height: auto;
+				margin-top: -130px;
+				right: -20px;
+				z-index: auto;
+			}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -190px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 10px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+@media only screen and (min-width: 1310px) {
+
+	#headerlist .li1{
+		font-size: 26px;
+		padding-right: 5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 28px;
+			margin-right: -6.5em;
+		}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 1150%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -38%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 100%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: -45px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 640px;
+			width: 100%;
+		}
+
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: left;
+				margin-left: 250px;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 3%;
+				font-size: 140%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				display: inline-block;
+				position: absolute;
+				width: 35%;
+				height: auto;
+				margin-top: -120px;
+				right: -20px;
+				z-index: auto;
+			}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 45px;
+				margin-bottom: -190px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 10px; 
+	}
+
+	#O{
+				font-size: 53px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+	#headerlist .li1{
+		font-size: 26px;
+		padding-right: 5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 28px;
+			margin-right: -7.5em;
+		}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 1150%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -38%;
+		text-align: center;
+		letter-spacing: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 100%;
+			height: auto;
+			margin-top: 5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: -45px;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 710px;
+			width: 100%;
+		}
+
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: left;
+				margin-left: 250px;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 3%;
+				font-size: 140%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				display: inline-block;
+				position: absolute;
+				width: 33%;
+				height: auto;
+				margin-top: -120px;
+				right: -20px;
+				z-index: auto;
+			}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 54px;
+				margin-bottom: -250px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 200px; 
+	}
+
+	#O{
+				font-size: 63px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+		
+}
+
+@media only screen and (min-width: 1500px) {
+
+	#headerlist .li1{
+		font-size: 26px;
+		padding-right: 5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 28px;
+			margin-right: -8.5em;
+		}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 1150%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -38%;
+		text-align: center;
+		letter-spacing: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 100%;
+			height: auto;
+			margin-top: 4.5%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: 13%;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 750px;
+			width: 100%;
+		}
+
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: left;
+				margin-left: 250px;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 3%;
+				font-size: 140%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				display: inline-block;
+				position: absolute;
+				width: 32%;
+				height: auto;
+				margin-top: -120px;
+				right: -20px;
+				z-index: auto;
+			}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 54px;
+				margin-bottom: -250px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 200px; 
+	}
+
+	#O{
+				font-size: 63px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+
+		
+}
+
+
+@media only screen and (min-width: 1600px) {
+
+	#headerlist .li1{
+		font-size: 26px;
+		padding-right: 5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 28px;
+			margin-right: -10.5em;
+		}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 1150%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -38%;
+		text-align: center;
+		letter-spacing: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 100%;
+			height: auto;
+			margin-top: 4%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: 14%;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 800px;
+			width: 100%;
+		}
+
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: left;
+				margin-left: 250px;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 3%;
+				font-size: 140%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				display: inline-block;
+				position: absolute;
+				width: 30%;
+				height: auto;
+				margin-top: -120px;
+				right: -20px;
+				z-index: auto;
+			}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 54px;
+				margin-bottom: -250px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 200px; 
+	}
+
+	#O{
+				font-size: 63px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+
+		
+}
+
+
+@media only screen and (min-width: 1700px) {
+
+	#headerlist .li1{
+		font-size: 26px;
+		padding-right: 5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 28px;
+			margin-right: -10.5em;
+		}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 1300%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -38%;
+		text-align: center;
+		letter-spacing: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 100%;
+			height: auto;
+			margin-top: 3.8%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: 16.5%;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 825px;
+			width: 100%;
+		}
+
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: left;
+				margin-left: 450px;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 3%;
+				font-size: 140%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				display: inline-block;
+				position: absolute;
+				width: 25%;
+				height: auto;
+				margin-top: -120px;
+				right: 20px;
+				z-index: auto;
+			}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 54px;
+				margin-bottom: -250px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 200px; 
+	}
+
+	#O{
+				font-size: 63px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+
+		
+}
+
+
+@media only screen and (min-width: 1900px) {
+
+	#headerlist .li1{
+		font-size: 26px;
+		padding-right: 5%;
+
+	}
+
+	#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	.signin{
+			font-size: 30px;
+			margin-right: -10.5em;
+		}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+	.glitch {
+			font-size: 1300%;
+			margin-top: 0%;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			display: inline-block;
+		}
+
+	#discovertext{
+		margin-top: -38%;
+		text-align: center;
+		letter-spacing: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-shadow: 6px 8px 5px #25262a ;
+	}
+
+	#backblurimg1{
+			width: 100%;
+			height: auto;
+			margin-top: 3.8%;
+			overflow: hidden;
+		}
+
+	.container {
+			  position: relative;
+			  width: 10px;
+			  height: 30px;
+			}
+
+	#scrolldown{
+				margin-top: 18.5%;
+			}
+
+	.chevron {
+			  position: absolute;
+			  width: 30px;
+			  height: 6px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+	.text{
+		font-size: 14px;
+	}
+
+	#warmup{
+			margin-top: 1000px;
+			width: 100%;
+		}
+
+
+	#hiddenplaces{
+				font-family: 'Staatliches', cursive;
+				font-size: 160%;
+				text-align: left;
+				margin-left: 450px;
+			}
+
+	#hiddenplaceskaplaces{
+		color: #f54956;
+		font-size: 140%;
+	}
+
+	#paraforshit{
+				width: 65%;
+				height: auto;
+				margin-left: 3%;
+				font-size: 140%;
+				color: white;
+				opacity: 0.9;
+				text-align: center;
+				
+			}
+
+			#divforskyshit{
+				width: 100%;
+			}
+
+			#skyshit{
+				width: 100%,
+				height: auto;
+			}
+
+			#masklady{
+				display: inline-block;
+				position: absolute;
+				width: 25%;
+				height: auto;
+				margin-top: -120px;
+				right: 20px;
+				z-index: auto;
+			}
+
+	#divforskyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#skyshit{
+		width: 100%;
+		height: auto;
+	}
+
+	#coolgolgol{
+				display: none;
+			}
+
+	#explore{
+				font-size: 54px;
+				margin-bottom: -250px;
+				display: flex;
+				justify-content: center;
+			}
+
+	.explore{
+		margin-top: 200px; 
+	}
+
+	#O{
+				font-size: 63px;
+				
+			}
+
+	.mapimg {
+			  width: 100%;
+			  height: auto;
+			}
+
+			.polaroid {
+			  background-color: #f54956;
+			  padding:0.9em 0.9em;
+			  box-shadow: 0.5 0.25em 1em rgba(0, 0, 0, 0.5);
+			}
+
+			.caption {
+			  font-size: 2em;
+			  text-align: center;
+			  transition: all 0.3s;
+			}
+
+			.item {
+			  display: inline-block;
+			  margin-top: 0.6em;
+			  filter: grayscale(60%);
+			}
+
+			.item:hover {
+			  transform: scale(0.95) rotate(0deg);
+			  filter: none;
+			  transition: all 0.3s;
+			}
+
+			#maps{
+				margin-top: -22%;
+				background-color: #c5cacd;
+				border-top: 2px solid #c4c9cd ;
+			  font-size: 24px;
+			  line-height: 1.6;
+			  font-family: "Great Vibes", cursive;
+			  color: #cbd0d4;
+			  box-shadow: black 5px 5px 10px;
+			}
+			
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+	overflow-x: hidden;
+}
+
+
+
+
+	</style>
+
+</head>
+
+<!-- fixed header -->
+<div id="headerdiv1">
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+
+			<li class="li1" title="Explore">
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+
+			<li class="li1">
+				<img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png"></li>
+
+			<li class="li1" title="Contact">
+				<a href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+
+			<li class="li1">
+				<a href="SIGNIN.html" class="navlinks signin" title="login">
+					<i class="lar la-user-circle"></i>
+				</a>
+			</li>
+
+		</ul>
+
+
+	</div>
+
+
+<body>
+
+
+<div id="for_parallaxeffect">
+	
+<div id="div1">
+		
+	<img id="backblurimg1" src="./homepage/discover1.1.jpg">
+	<p id="discovertext">
+
+		<span class="glitch-wrapper">
+	  		<span class="glitch"  data-aos="fade-up" data-text="DISCOVER">DISCOVER</span>
+		</span>
+	</p>
+
+	<!-- <img id="topimg2" src="./homepage/discover1.12.png"> -->
+	
+
+</div>
+
+<div id="scrolldown">
+	<div class="container">
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
+	  <span class="text">Scroll Down</span>
+	</div>
+</div>
+
+<!-- <div id="smoke">
+<div id="wrap">
+    <div id="viewport">
+      <div class="tv">
+        <div class="screen mute" id="tv"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ -->
+
+</div>
+
+
+
+
+
+
+
+<div id="warmup">
+
+
+
+
+<div id="hiddenplaces">
+	<p><h1>HIDDEN <span id="hiddenplaceskaplaces" data-aos="fade-right"> PLACES</span></h1></p>
+</div>
+
+<div>
+	<img id="masklady"  data-aos="fade-left" src="./homepage/travelduringcorona.png">
+</div>
+
+<div id="motivatingshit">
+	<div id="paraforshit">
+	Traveling!! Haha, who the hell travels when there's a lot of negative shit going on all around the world. Do you think like that? Do you only make plans and they never get fulfilled? Then our team feels sad for you. Traveling should be the first thing on your to-do list. We all know it requires money to travel and that's the only bad part but it brings a smile to your family and a sense of satisfaction and that's the thing that matters. There is nothing quite like traveling, like seeing a new place for the first time or returning to a favorite one. People of all ages, from all around the world, go to foreign places for different beautiful reasons. Whether by plane, train, ship, or by automobile, traveling is always a pleasurable experience. Traveling gets a person out of their comfort zone, away from all their ordinary pleasures and comforts and way of doing things. On this website, you will find a lot of beautiful & peaceful locations all around the world to travel alone or with your family. 
+	<br>
+	<br>
+	<span style="font-family: 'Bangers', cursive;color: #99ccff;text-shadow: #ff0066 2px 2px;letter-spacing: 3px;">So pack your bags and we are going on a vacation.</span>
+	
+	</div>
+</div>
+
+
+<div>
+	<div id="coolgolgol">
+		<img src="./homepage/coolgolgol.png">
+	</div>
+</div>
+
+
+<p id="explore" class="explore" data-aos="fade-up">
+EXPL<span id="O">O</span>RE</p>
+
+
+<div id="divforskyshit">
+	<img id="skyshit" src="./homepage/skyshit.png">
+</div>
+
+
+
+<!-- <div style="text-align: center;">
+	<p style="font-family: 'Viga', sans-serif;color: #f54956;font-size: 30px;position: absolute;">Explore</p>
+</div> -->
+
+
+<div id="maps">
+	
+	<div class="container1">
+  <div class="item">
+  	<a href="ASIA.html">
+	    <figure class="polaroid" data-aos="fade-up">
+	      <img class="mapimg" src="./homepage/asiafinal.png" alt="Asia">
+	      <figcaption class="caption">Asia</figcaption>
+	    </figure>
+    </a>
+  </div>
+
+  <div class="item">
+  <a href="NORTHAMERICA.html">
+	    <figure class="polaroid" data-aos="fade-up">
+	      <img class="mapimg" src="./homepage/northamericafinal.png" alt="North America">
+	      <figcaption class="caption">North America</figcaption>
+	    </figure>
+  </a>
+  </div>
+
+  <div class="item">
+  	<a href="AUSTRALIA.html">
+	    <figure class="polaroid" data-aos="fade-up">
+	      <img class="mapimg" src="./homepage/australiafinal.png" alt="Australia">
+	      <figcaption class="caption">Australia</figcaption>
+	    </figure>
+	</a>
+  </div>
+
+  <div class="item">
+  	<a href="EUROPE.html">
+	    <figure class="polaroid" data-aos="fade-up">
+	      <img class="mapimg" src="./homepage/europefinal.png" alt="Europe">
+	      <figcaption class="caption">Europe</figcaption>
+	    </figure>
+    </a>
+  </div>
+
+  <div class="item">
+  	<a href="AFRICA.html">
+	    <figure class="polaroid" data-aos="fade-up">
+	      <img class="mapimg" src="./homepage/africafinal.png" alt="Africa">
+	      <figcaption class="caption">Africa</figcaption>
+	    </figure>
+    </a>
+  </div>
+
+  <div class="item">
+  	<a href="SOUTHAMERICA.html">
+	    <figure class="polaroid" data-aos="fade-up">
+	      <img class="mapimg" src="./homepage/southamericafinal.png" alt="South America">
+	      <figcaption class="caption">South America</figcaption>
+	    </figure>
+    </a>
+  </div>
+
+  <!-- <div class="item">
+    <figure class="polaroid">
+      <img src="antarticafinal.png" alt="">
+      <figcaption class="caption">Antartica</figcaption>
+    </figure>
+  </div> -->
+</div>
+</div>
+
+<!-- <div id="alone" style="
+	color: black;
+	margin-left: 36%;
+	text-align: center;
+	position: absolute;
+	margin-top: -23px;
+	font-size: 20px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 2px;
+	text-shadow: white 3px 1px;">
+		Please leave Antartica alone, Please
+</div> -->
+
+<!-- <span><img src="lightcar.png" style="width: 250px;height: auto; position: absolute;margin-top: -15px;margin-left: -255px;"></span>
+
+<div id="darkmountain" style="">
+	<img 
+	style="margin-top: -125px;"
+		 src="treehitree.png">
+ </div> -->
+
+ <br>
+
+
+
+
+
+</div>
+
+<div id="connect" >
+	Connect with us
+	<br>
+	<i href="https://www.instagram.com/prabhsimars/?hl=en" class="lab la-instagram socialicons" title="Instagram"></i>
+	<i class="lab la-pinterest socialicons" title="Pinterest"></i>
+	<i class="lab la-facebook  socialicons" title="Facebook"></i>
+	<i class="lab la-twitter socialicons" title="Twitter"></i>
+	<i class="lab la-quora socialicons" id="Quora"></i>
+</div>
+
+
+
+
+
+
+
+
+<!-- <script>
+	
+$(function() {
+  "use strict";
+  var a = 0;
+  $('#tv').hide();
+  for (; a < 25; a += 1) {
+    setTimeout(function b() {
+      var a = Math.random() * 1e3 + 5e3,
+        c = $("<div />", {
+          "class": "smoke",
+          css: {
+            left: Math.random() * 800,
+            backgroundSize: "contain",
+            width: Math.random() * 800,
+            height: Math.random() * 600
+          }
+        });
+      $(c).addClass("animated");
+      $(c).addClass("zoomIn");
+      $(c).addClass("rollOut");
+      $(c).appendTo("#viewport");
+      $.when($(c).animate({}, {
+          duration: a / 4,
+          easing: "linear",
+          queue: false,
+          complete: function() {
+            $(c).animate({}, {
+              duration: a / 3,
+              easing: "linear",
+              queue: false
+            })
+          }
+        }),
+        $(c).animate({
+          bottom: $("#viewport").height()
+        }, {
+          duration: a,
+          easing: "linear",
+          queue: false
+        })).then(
+        function() {
+          $(c).remove();
+          b()
+        })
+    }, Math.random() * 3e3)
+  }
+})
+
+</script> -->
+
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

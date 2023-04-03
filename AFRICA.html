@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+	<title>PLANGO/Africa</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0%;
+			background-color: #25262a;
+			overflow-x: hidden;
+
+		}
+		
+		/*header*/
+		#headerdiv1{
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,0.9);
+			  z-index: 1;
+			  border-bottom-left-radius: 20px;
+			  border-bottom-right-radius: 20px;
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		/* Underline From Center */
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+
+
+
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+
+		}
+
+/*header end*/
+
+		#africatexttitle{
+			display: flex;
+			font-size: 1050%;
+			color: white;
+			align-items: center;
+			justify-content: center;
+			text-shadow: black 10px 13px 10px;
+			font-family: 'Dela Gothic One', cursive;
+			margin-top: -490px;
+			animation: letterspace 3s linear alternate;
+		}
+
+		@keyframes letterspace{
+			100%{
+				letter-spacing: px;
+			}
+			75%{
+				letter-spacing: 5px;
+			}
+			50%{
+				letter-spacing: 15px;
+			}
+			25%{
+				letter-spacing: 5px;
+			}
+			0%{
+				letter-spacing: 0px;
+			}
+		}
+
+		#sevenworlds{
+			display: flex;
+			font-size: 200%;
+			font-weight: bold;
+			color: white;
+			align-items: center;
+			justify-content: center;
+			z-index: 1;
+			letter-spacing: 13px;
+			font-family: 'Righteous', cursive;
+			margin-top: -470px;
+			text-shadow: black 6px 7px 7px;
+		}
+
+		#removedbackelephants{
+			width: 1350px;
+			height: auto;
+			margin-top: -345px;
+			display: flex;
+		}
+
+
+		#wildlifegathering{
+			position: absolute;
+			color: white;
+			font-weight: bolder;
+			font-family: 'Didact Gothic', sans-serif;
+			padding: 10px;
+			text-shadow: black 2px 2px 3px;
+			margin-top: 10px;
+		}
+
+
+		/*scroll*/
+
+		.container {
+			  position: relative;
+			  width: 24px;
+			  height: 24px;
+			  margin-left: auto;
+			  margin-right: auto;
+			  margin-top: 420px;
+			}
+
+			.chevron {
+			  position: absolute;
+			  width: 28px;
+			  height: 8px;
+			  opacity: 0;
+			  transform: scale3d(0.5, 0.5, 0.5);
+			  animation: move 3s ease-out infinite;
+			}
+
+			.chevron:first-child {
+			  animation: move 3s ease-out 1s infinite;
+			}
+
+			.chevron:nth-child(2) {
+			  animation: move 3s ease-out 2s infinite;
+			}
+
+			.chevron:before,
+			.chevron:after {
+			  content: ' ';
+			  position: absolute;
+			  top: 0;
+			  height: 100%;
+			  width: 51%;		  
+			  background: #fff;
+			}
+
+			.chevron:before {
+			  left: 0;
+			  transform: skew(0deg, 30deg);
+			  background: black;
+			}
+
+			.chevron:after {
+			  right: 0;
+			  width: 50%;
+			  transform: skew(0deg, -30deg);
+			}
+
+			@keyframes move {
+			  25% {
+			    opacity: 1;
+
+			  }
+			  33% {
+			    opacity: 1;
+			    transform: translateY(30px);
+			  }
+			  67% {
+			    opacity: 1;
+			    transform: translateY(40px);
+			  }
+			  100% {
+			    opacity: 0;
+			    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+			  }
+			}
+
+			.text {
+			  display: block;
+			  margin-top: 175px;
+			  margin-left: -35px;
+			  font-family: 'Righteous', cursive;
+			  font-size: 15px;
+			  color: white;
+			  text-transform: uppercase;
+			  white-space: nowrap;
+			  opacity: .5;
+			  animation: pulse 2s linear alternate infinite;
+			}
+
+			@keyframes pulse {
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			#scrolldown{
+				margin-top: -50px;
+			}
+
+			/*scroll end*/
+
+
+
+			#for_parallaxeffect{
+				position: fixed;
+				top: 0;
+				margin-top: 40px;
+				width: 100%;
+			  	z-index: -1;
+			}
+
+
+			#nextpage{
+				position: absolute;
+				right: 0;
+				bottom: -45px;
+				margin: 20px;
+				font-size: 17px;
+				color: black;
+				font-weight: bold;
+				font-family: 'Righteous', cursive;
+			}
+
+			.boxx{
+				background-color: white;
+				padding: 8px;
+				border-radius: 50%;
+				margin-top: -15px;
+			}
+			.boxx:hover{
+				background-color: black;
+				color: white;
+			}
+
+
+/*map*/
+
+			.africamap{
+				width: 39.7%;
+				margin:auto;
+				margin-top: 25px;
+				float: left;
+			}
+
+			.africamap path{
+				fill: black;
+				stroke: #e28a71;
+				stroke-width:3px;
+				transition: fill 0.3s;
+			}
+
+			.africamap path:hover{
+				fill: #e28a71;
+			}
+
+			
+
+			#aboutafricancountriess{
+				color: #ffb84d;
+				font-size: 22px;
+				font-family: 'Didact Gothic', sans-serif;
+				border:3px solid #e28a71;
+				border-radius:20px;
+				margin-right: 40px;
+				margin-top: 50px;
+			}
+
+
+#topsightstable{
+				background-color: #25262a;
+				padding: 20px 30px;
+
+			}
+
+
+		#topsightstitle{
+				font-weight: bold;
+				font-size: 30px;
+				font-family: 'Roboto', sans-serif;
+				color: white;
+			}
+		.GBR {
+			  width: 100%;
+			  height: auto;
+			  border-radius: 10px;
+			}
+
+		.polaroidloc {
+			  background-color: white;
+			  padding:6\px;
+			  padding-bottom: 1.5em;
+			  margin: 10px 5px;
+			  border:2px solid white;
+			  border-radius: 20px;
+			}
+
+		.polaroidloc:hover{
+			transition: 0.4s ease-in-out;
+			box-shadow: 2px 2px 6px white;
+			transform: scale(1.01);
+		}
+
+		.ratings{
+			font-size: 16px;
+		}
+			
+		.caption {
+			font-size: 25px;
+			text-align: left;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+		}
+			
+		.saving{
+			position: fixed;
+			font-size: 25px;
+			background-color: white;
+			border-radius: 50%;
+			padding:3px;
+			transition: 0.1s ease-in-out;
+		}
+
+			.saving:hover{
+				background-color: black;
+				color: white;
+				transform: scale(1.1);
+			}
+
+			#seeingallsights{
+				outline: none;
+				padding: 12px 80px;
+				border:2px solid black;
+				font-family: 'Roboto', sans-serif;
+				font-size: 18px;
+				font-weight: bold;
+				background-color: #4287f5;
+				border-radius: 30px;
+				transition: 0.3s ease-in-out;
+				letter-spacing: 2px;
+			}
+
+			#seeingallsights:hover{
+				transform: scale(1.1);
+				border:2px solid white;
+				color: white;
+				background-color: #021e4a;
+			}
+
+
+			/*flexbox*/
+
+			#flexbox1{
+				display: flex;
+				overflow: wrap;
+				flex-wrap: wrap;
+				margin:auto;
+			}
+
+
+
+
+
+	
+		::-webkit-scrollbar {
+				  width: 10px;
+				  border-radius: 15px;
+				  background-color: #25262a;
+					}
+		/* Track */
+		::-webkit-scrollbar-track {
+			  background: #25262a;
+					}
+					 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			 background: white; border-radius: 15px;
+			 opacity: 0.5;
+					}
+
+			/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			  background: grey; border-radius: 15px;
+					}
+
+	</style>
+</head>
+
+<!-- fixed header -->
+<div id="headerdiv1">
+		
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				
+
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+
+			<li class="li1" title="Explore">
+				
+
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+			
+			<li class="li1">
+				<img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png">
+			</li>
+			<li class="li1" title="Contact">
+				
+
+				<a href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				
+
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+		
+		</ul>
+</div>
+
+<body>
+
+
+
+<div id="for_parallaxeffect">
+
+<div id="africa_image">
+
+	<img src="./africaimagesforAFRICA/topnavimgeeeee.png" style="width: 100%;">
+	<div id="africatexttitle">AFRI<span style="z-index: 1">CA</span></div>
+	<img id="removedbackelephants" src="./africaimagesforAFRICA/topnavimgeeeee-removebg.png" style="width: 100%;">
+	<div id="sevenworlds">SEVEN WORLDS ONE PLANET</div>
+
+	<div>
+	<div id="wildlifegathering">"Home to the gratest Wildlife Gathering on Earth"</div>
+	
+	<div id="nextpage">
+
+		<a href="SOUTHAMERICA.html"><i style="font-size: 20px;" class="las la-arrow-left boxx"></i></a>
+		&nbsp;
+		<span style="font-size: 35px;text-shadow:white 2px 1px 3px">AFRICA</span>
+		&emsp;
+		<span style="color: #d9d9d9;">AUSTRALIA</span>
+		&nbsp;
+		<a href="AUSTRALIA.html"><i style="font-size: 20px;" class="las la-arrow-right boxx"></i></a>
+	</div>
+
+
+<div id="scrolldown">
+	<div class="container">
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
+	  <div class="chevron"></div>
+	  <span class="text">Scroll Down</span>
+	</div>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+<!-- style="margin-top: 650px;" -->
+<div style="margin-top: 655px;background-color: #25262a;height: 660px;">
+
+
+
+
+
+<br>
+<br>
+
+	<div class="africamap" data-aos="fade-right">
+		
+		<div>
+
+		<svg
+   
+   version="1.1"
+   viewBox="0 0 1000 1001"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="africa.svg">
+
+
+
+
+<a id="Angola" xlink:title = "Angola">
+  <path
+     inkscape:connector-curvature="0"
+     id="AO"
+     data-name="Angola"
+     data-id="AO"
+     d="m 495.3,598.6 -36,-0.2 -4.3,1.7 -3.5,-0.3 -5.1,1.9 -1.1,2.7 6,8.7 2.4,9.3 3.6,13.4 -3.8,5.5 -0.6,2.8 2.9,8.3 3.1,8.4 3.6,5 0.6,7.8 -1.4,10.3 -4,6.1 -7.1,9.1 -2.9,5.6 -4.1,12.5 -0.8,5.9 -4.3,12.7 -1.9,12.2 1,8.7 5.9,-2.7 7.2,-2.3 7.8,0.4 7.1,6.3 1.9,-1 48.8,-0.6 8.2,6.6 29.1,2 22.4,-5.7 -7.6,-8.6 -7.8,-11.3 1.6,-44 25.3,0.1 -1,-4.7 2,-5.2 -2,-6.5 1.5,-6.7 -1.2,-4.3 -5.5,-0.8 -7.6,2 -5.3,-0.3 -3,1.3 0.9,-16.5 -3.9,-5.1 -0.8,-8.5 1.9,-8.4 -2.4,-5.3 -0.1,-8.7 -14.8,0.1 1.1,-5 -6.2,0.1 -0.7,2.4 -7.6,0.5 -3.1,8.1 -1.9,3.4 -6.7,-1.9 -4,1.9 -8.1,1.1 -4.6,-7.2 -2.7,-4.5 -3.5,-8.3 -2.9,-10.3 z m -47.4,-2.7 0.4,-6 2,-3.5 4.5,-2.9 -4.6,-4.8 -3.7,2.3 -5,6 3.3,10.4 3.1,-1.5 z"
+      />
+  </a>
+  
+
+
+<a id="Burundi" xlink:title = "Burundi">
+  <path
+
+     inkscape:connector-curvature="0"
+     id="BI"
+     data-name="Burundi"
+     data-id="BI"
+     d="m 669,556.1 -0.6,-5.4 0,0 -6.5,-0.9 -3.8,7.9 -7.4,-1.1 3,6.3 0.1,2.4 4.3,13.2 0,0.6 1.2,-0.2 4.5,-5 4.9,-7.2 3,-2.9 -0.1,-4.5 -2.6,-3.2 z"
+      />
+  </a>
+  
+
+
+<a id="Benin" xlink:title = "Benin">
+  <path
+     inkscape:connector-curvature="0"
+     id="BJ"
+     data-name="Benin"
+     data-id="BJ"
+     d="m 340,356 -9.3,-8 -4.3,0.1 -4.1,4 -2.6,4.2 -6,1.2 -2.5,6.1 -4.1,1.6 -1.6,7.2 3.7,4.1 4.3,4.9 0.4,6.8 2.5,2.8 -0.5,31.8 3,9.5 10.1,-1.6 0.6,-22.3 -0.3,-8.8 2.3,-8.7 3.7,-4.3 5.9,-8.5 -1.3,-3.7 2.4,-5.6 -2.8,-8.2 0.5,-4.6 z"
+      />
+  </a>
+  
+
+
+<a id="Burkina_Faso" xlink:title = "Burkina Faso">
+  <path
+     inkscape:connector-curvature="0"
+     id="BF"
+     data-name="Burkina Faso"
+     data-id="BF"
+     d="m 300.7,310.8 -7.8,0 -3,-2.6 -6.7,1.9 -11.3,5.8 -2.3,4.3 -9.4,6.2 -1.7,3.6 -5.1,2.8 -5.8,-1.9 -3.4,3.4 -1.8,9.5 -9.7,11.4 0.3,4.7 -3.4,5.9 0.8,8 5.5,3 2.1,4.6 5.4,2.9 4.3,-3.4 5.7,-0.6 8.3,3.6 -1.6,-10.4 0.3,-7.9 21.1,-0.6 5.4,1 3.9,-2.2 5.6,1.1 10.7,0.3 4.1,-1.6 2.5,-6.1 6,-1.2 2.6,-4.2 0.3,-9.5 -14,-3.1 -0.4,-6.7 -6.9,-9 -1.6,-6.3 1,-6.7 z"
+      />
+  </a>
+  
+
+
+<a id="Botswana" xlink:title = "Botswana">
+  <path
+     inkscape:connector-curvature="0"
+     id="BW"
+     data-name="Botswana"
+     data-id="BW"
+     d="m 600.6,762.7 -2.2,-1 -6.9,3.1 -3.6,0 -7.9,5.4 -4.4,-5.7 -18.7,4.9 -9,0.4 -1.9,49.3 -11.8,0.5 -1.4,40.4 3.2,2 6.5,13.2 -1.5,8.4 2.5,4.9 8.5,-1.4 6.2,-6.2 5.8,-4.2 3.2,-6.6 6,-3.2 4.9,1.7 5.5,3.9 9.6,0.6 7.8,-3.2 1.4,-4.3 2.4,-6.6 6.5,-1.1 3.9,-5.2 4.4,-9.3 11.2,-10.3 17.3,-10.2 -7.3,-6.2 -9.2,-2.1 -3.1,-8.8 0.2,-4.9 -5.1,-1.5 -13,-15.2 -3.5,-8 -2.3,-2.4 -4.2,-11.1 z"
+      />
+  </a>
+  
+
+
+<a id="CentralAfricanRep" xlink:title = "Central African Rep.">
+  <path
+     inkscape:connector-curvature="0"
+     id="CF"
+     data-name="Central African Rep."
+     data-id="CF"
+     d="m 587,398.1 -1,-0.7 -4.2,-4 -0.9,-4.3 1.9,-5.7 -0.1,-5.7 -7.2,-8.6 -1.5,-5.9 -7.7,2.3 -6,5.6 -8.6,15.1 -11.3,6.4 -11.8,-0.8 -3.4,1.2 1.2,4.9 -6.3,4.8 -5.1,5.4 -15.3,5.3 -3,-3.1 -2.1,-0.3 -2.2,3.6 -10,1 -6.1,14 -2.9,2.6 -0.8,10.7 1.2,5.8 -0.9,4.1 5.8,7.3 1,4.9 4.6,7.2 5.6,4.4 0.6,6.3 1.3,4 6.3,-12.8 7.3,-7.4 8.2,2.4 7.9,0.7 1,-9.6 4.7,-7.1 6.5,-4.4 10.1,4.7 7.8,5.1 9,1.4 9.1,2.7 3.6,-8.4 1.6,-1.1 5.6,1.4 13.5,-6.9 4.9,3 3.9,-0.5 1.8,-3.3 4.5,-1.2 9.2,1.4 7.9,0.4 4,-1.5 -2,-4.4 -9.2,-5.5 -3.2,-8.3 -5.2,-6 -8.3,-7.2 -0.1,-4.5 -6.8,-5.5 -8.4,-5.4 z"
+      />
+  </a>
+  
+
+
+<a id="Cotivoire" xlink:title = "Côte d'Ivoire">
+  <path
+     inkscape:connector-curvature="0"
+     id="CI"
+     data-name="Côte d'Ivoire"
+     data-id="CI"
+     d="m 230.4,373.8 -5,2.1 -2.9,1.7 -1.8,-5.9 -3.5,1.6 -2.1,-0.3 -2.3,4 -9.4,-0.1 -3.3,-2.1 -1.6,1.3 -2.5,1.1 -1,4.7 2.8,5.7 3,11.1 -4.6,1.6 -1.1,1.9 0.9,2.7 -0.8,6.1 -1.9,0 -0.6,4 1.2,6.7 -2.7,6.1 3.6,3.8 3.8,0.9 5.2,5.8 0.3,5.5 -1.1,1.7 -1,11.4 2.3,0.4 12.1,-5.1 8.5,-4 14.5,-2.4 7.8,-0.2 8.5,2.7 5.6,-0.1 0.5,-5.5 -5.2,-11.9 3.2,-15.6 5.1,-11.6 -3.2,-19.7 -8.3,-3.6 -5.7,0.6 -4.3,3.4 -5.4,-2.9 -2.1,-4.6 -5.5,-3 z"
+      />
+  </a>
+  
+
+
+<a id="Cameroon" xlink:title = "Cameroon">
+  <path
+     inkscape:connector-curvature="0"
+     id="CM"
+     data-name="Cameroon"
+     data-id="CM"
+     d="m 477.5,366.6 0.4,-9.2 -1,-9.1 -4.9,-8.9 -3.4,0.8 -0.4,4.4 4.9,5.5 -1.3,2.5 -0.5,4.6 -10.2,10.7 -3.1,8.8 -1.6,7.2 -2.6,3.1 -2.4,9.7 -6.4,5.7 -1.9,7 -2.7,5.6 -1.1,5.7 -8.3,4.7 -6.9,-5.7 -4.6,0.2 -7.2,8.1 -3.6,0.1 -5.7,13.4 -3.1,9.8 -0.1,3.8 3.1,2 2.5,6.2 5.6,2.3 4.8,9.2 -1.8,10.9 19.9,0.3 5.8,-0.9 7.4,1.9 7.3,-1.8 1.5,0.7 15.4,0.6 9.9,3.6 9.7,3.3 0.9,-7.5 -1.3,-4 -0.6,-6.3 -5.6,-4.4 -4.6,-7.2 -1,-4.9 -5.8,-7.3 0.9,-4.1 -1.2,-5.8 0.8,-10.7 2.9,-2.6 6.1,-14 1.8,-3.7 -3.9,-9.6 -1.8,-5.7 -5.3,-2.3 -7.2,-8.1 2.5,-6.5 5.6,1.3 3.4,-0.9 6.8,0.1 -6.8,-12.6 z"
+      />
+  </a>
+  
+
+
+<a id="DemCongo" xlink:title = "Dem. Rep. Congo">
+  <path
+     inkscape:connector-curvature="0"
+     id="CD"
+     data-name="Dem. Rep. Congo"
+     data-id="CD"
+     d="m 618.3,446 -9.2,-1.4 -4.5,1.2 -1.8,3.3 -3.9,0.5 -4.9,-3 -13.5,6.9 -5.6,-1.4 -1.6,1.1 -3.6,8.4 -9.1,-2.7 -9,-1.4 -7.8,-5.1 -10.1,-4.7 -6.5,4.4 -4.7,7.1 -1,9.6 -0.7,8.4 -3.6,7.4 -2.4,8.6 -1.5,12.3 0.7,7.8 -2,4.8 -0.3,5.1 -1.4,4.4 -8.1,6.7 -5.6,7.1 -5.3,13.4 0.3,11.4 -3.1,4.4 -7.2,6.8 -7.2,8.7 -4.5,-2.5 -0.8,-3.9 -6.6,-0.1 -4.2,5.3 -3.2,-1.4 -4.5,2.9 -2,3.5 -0.4,6 -3.1,1.5 1.6,4.3 5.1,-1.9 3.5,0.3 4.3,-1.7 36,0.2 2.9,10.3 3.5,8.3 2.7,4.5 4.6,7.2 8.1,-1.1 4,-1.9 6.7,1.9 1.9,-3.4 3.1,-8.1 7.6,-0.5 0.7,-2.4 6.2,-0.1 -1.1,5 14.8,-0.1 0.1,8.7 2.4,5.3 -1.9,8.4 0.8,8.5 3.9,5.1 -0.9,16.5 3,-1.3 5.3,0.3 7.6,-2 5.5,0.8 4.2,0.3 0.6,4.3 5.7,-0.3 7.7,1.3 3.9,6.2 9.7,2 7.5,-4.4 2.6,7.3 9.2,1.9 4.3,5.9 4.8,7.6 9.3,0.1 -0.6,-14.9 -3.4,2.5 -8.4,-5.4 -3.2,-2.4 1.9,-13.9 2.5,-16.4 -2.6,-6.1 3.6,-8.8 3.3,-1.7 16.4,-2.3 2.1,0.6 0.6,-2.3 -3.4,-3.7 -1.5,-7.6 -7.3,-7.6 -4.1,-9.9 2.3,-5.8 -3.2,-7.8 2.4,-22.1 0.1,0.2 -0.1,-2.4 -3,-6.3 1.2,-7.6 1.7,-1 0.5,-8.3 3.5,-3.8 0.1,-10.5 2.9,-5.3 0.6,-11.1 2.6,-6.4 4.6,-7.2 4.7,-3.7 3.9,-4.9 -4.9,-1.9 0.6,-16.1 0,0 -10.9,-9.2 -2.9,-5.9 -6.8,2.9 -5.7,-0.9 -3.2,2.3 -5.5,-1.7 -7.5,-11.4 -4,1.5 -7.9,-0.4 z"
+      />
+  </a>
+  
+
+
+<a id="Congo" xlink:title = "Congo">
+  <path
+     inkscape:connector-curvature="0"
+     id="CG"
+     data-name="Congo"
+     data-id="CG"
+     d="m 521.5,468.8 -7.9,-0.7 -8.2,-2.4 -7.3,7.4 -6.3,12.8 -0.9,7.5 -9.7,-3.3 -9.9,-3.6 -15.4,-0.6 -0.9,6.1 3.4,7.1 9.1,-1.1 3.1,2.7 -5.3,16.1 5.8,8.2 1.3,10.8 -1.6,9.2 -3.7,6.5 -10.8,-0.6 -6.5,-6.6 -1,6.1 -8.3,1.7 -4.2,3.5 4.6,9.1 -9.3,7.7 9.9,14.6 5,-6 3.7,-2.3 4.6,4.8 3.2,1.4 4.2,-5.3 6.6,0.1 0.8,3.9 4.5,2.5 7.2,-8.7 7.2,-6.8 3.1,-4.4 -0.3,-11.4 5.3,-13.4 5.6,-7.1 8.1,-6.7 1.4,-4.4 0.3,-5.1 2,-4.8 -0.7,-7.8 1.5,-12.3 2.4,-8.6 3.6,-7.4 0.7,-8.4 z"
+      />
+  </a>
+  
+
+
+<a id="Djibouti" xlink:title = "Djibouti">
+  <path
+     inkscape:connector-curvature="0"
+     id="DJ"
+     data-name="Djibouti"
+     data-id="DJ"
+     d="m 820.3,358.7 -5.3,-3.8 6.8,-3.3 0.1,-5.7 -3,-4.3 -3.6,3.4 -5.2,-1.2 -4,6.1 -3.9,6.5 1.1,3.8 0.3,4.2 6.8,0.2 2.9,-0.9 2.8,2.4 4.2,-7.4 z"
+      />
+  </a>
+  
+
+
+<a id="Algeria" xlink:title = "Algeria">
+  <path
+     inkscape:connector-curvature="0"
+     id="DZ"
+     data-name="Algeria"
+     data-id="DZ"
+     d="M 392.4,5.7 384.6,6.5 379.8,3.3 367.6,3.4 357,8.9 351.2,6.8 332.3,8 l -19.4,2.5 -11,4.3 -7.2,5.8 -12.4,2.4 -11.1,7.7 4.2,9 0.7,8.4 3.9,14.7 3.1,2.9 -2.2,5.4 -15.2,2.3 -5.4,5.1 -6.7,1.2 -0.6,10.2 -13.8,5.4 -4.6,7 -9.6,3.7 -11.8,2.1 -19.2,10.2 -0.2,16.3 0,1 -0.3,2.7 44.1,33.5 40,30.2 40.4,30.2 2.9,6.4 7.5,4 5.5,2.2 0.2,8.8 13.3,-1.3 16.9,-6.2 34.5,-27.1 40.5,-26.4 -5.4,-8.7 -9.6,-6.4 -5.5,2.5 -4.3,-7.7 -0.6,-5.9 -7.2,-10.1 4.6,-5.8 -1.3,-8.7 1.4,-7.6 -1,-6.3 1.8,-11.3 -0.8,-6.4 -4.1,-12.2 -5.7,-24.7 -7.3,-5.6 -0.2,-3.3 -9.7,-8.3 -1.3,-10.4 7,-7.8 2.4,-11.6 -2.3,-13.4 2.2,-7.2 z"
+      />
+  </a>
+  
+
+
+<a id="Egypt" xlink:title = "Egypt">
+  <path
+     inkscape:connector-curvature="0"
+     id="EG"
+     data-name="Egypt"
+     data-id="EG"
+     d="m 628.8,88.1 -11.9,-4 -11.5,-3.7 -15.6,0.2 -3.7,6.6 2.2,5.9 -2.4,8.5 4.2,11.2 2.9,49.2 2.2,50.9 48.1,0 46.4,0 47.4,0 -2.2,-2.8 -14.7,-12.4 -0.9,-9 2.2,-2.4 -11.6,-15.3 -4.4,-7.9 -4.9,-7.5 -10.5,-21.6 -8.4,-13.9 -6.1,-14.5 1.1,-1.3 10.1,19.8 5.8,6.2 4.3,4.4 2.5,-2.4 2.7,-7.2 1.6,-10.4 2.8,-5.6 -1.5,-3.5 -8.5,-20.1 0,0 -5.4,3.4 -9.2,-0.8 -9.6,-3.2 -2.3,4.5 -3.8,-6.8 -8.5,-1.8 -10.2,1.2 -4.5,3.9 -8.6,4.4 -5.6,-2.2 z"
+      />
+  </a>
+  
+
+
+<a id="Eritrea" xlink:title = "Eritrea">
+  <path
+     inkscape:connector-curvature="0"
+     id="ER"
+     data-name="Eritrea"
+     data-id="ER"
+     d="m 777.6,303.8 -7,-6.8 -4,-12.7 -7.8,-16 -5.7,7.9 -8.8,2.3 -3.6,4.2 -0.7,9.2 -4.3,20.3 1.5,5.6 14.3,2.9 3.3,-10.4 7.6,6.3 7,-3.2 3,2.9 8.3,0.1 10.8,5.6 3.4,4.8 5.5,4.4 5.4,8.1 4.3,4.5 5.2,1.2 3.6,-3.4 -6.2,-4.2 -4,-4.7 -6.9,-8 -7.1,-7.9 -17.1,-13 z"
+      />
+  </a>
+  
+
+
+<a id="Ethiopia" xlink:title = "Ethiopia">
+  <path
+     inkscape:connector-curvature="0"
+     id="ET"
+     data-name="Ethiopia"
+     data-id="ET"
+     d="m 754.8,310.3 -3.3,10.4 -14.3,-2.9 -1.4,11.9 -4.5,13.6 -7.1,6.8 -4.8,10.6 -1.1,5.7 -5.6,3.8 -3.3,14.5 0.1,1.7 0.4,10.8 -1.8,4.2 -6.4,0.3 -4,7.9 7.5,1 6.3,6.7 2.2,5.6 5.7,3.2 7.4,15 6.4,2.4 0.1,7.7 4.2,4.6 8.5,0 15.7,11.7 3.8,0.2 2.9,-0.4 2.7,1.6 8.2,1.1 3.5,-5.8 11.1,-5.8 4.9,4.7 8.4,0 3.3,-4.4 7.8,-0.2 10.7,-9.8 15.9,-0.6 33.5,-41.5 -10.3,0.1 -40.3,-16.4 -4.8,-5 -4.6,-6.6 -4.8,-7.7 2.5,-4.9 -2.8,-2.4 -2.9,0.9 -6.8,-0.2 -0.3,-4.2 -1.1,-3.8 3.9,-6.5 4,-6.1 -4.3,-4.5 -5.4,-8.1 -5.5,-4.4 -3.4,-4.8 -10.8,-5.6 -8.3,-0.1 -3,-2.9 -7,3.2 -7.6,-6.3 z"
+      />
+  </a>
+  
+
+
+<a id="Gabon" xlink:title = "Gabon">
+  <path
+     inkscape:connector-curvature="0"
+     id="GA"
+     data-name="Gabon"
+     data-id="GA"
+     d="m 455.9,485.9 -1.5,-0.7 -7.3,1.8 -7.4,-1.9 -5.8,0.9 0.1,16.7 -17.7,-0.2 -4.2,0.8 -2.4,10.3 -3,10.1 -2.7,4.4 -0.3,4.6 7.3,14.3 8.1,11.4 12.5,14 9.3,-7.7 -4.6,-9.1 4.2,-3.5 8.3,-1.7 1,-6.1 6.5,6.6 10.8,0.6 3.7,-6.5 1.6,-9.2 -1.3,-10.8 -5.8,-8.2 5.3,-16.1 -3.1,-2.7 -9.1,1.1 -3.4,-7.1 0.9,-6.1 z"
+      />
+  </a>
+  
+
+
+<a id="Ghana" xlink:title = "Ghana">
+  <path
+     inkscape:connector-curvature="0"
+     id="GH"
+     data-name="Ghana"
+     data-id="GH"
+     d="m 296.4,364.9 -5.6,-1.1 -3.9,2.2 -5.4,-1 -21.1,0.6 -0.3,7.9 1.6,10.4 3.2,19.7 -5.1,11.6 -3.2,15.6 5.2,11.9 -0.5,5.5 10.9,3.9 11,-4 6.7,-4.7 19.2,-8.1 -2.8,-4.9 -3.2,-8.8 -1,-6.8 2.7,-12.5 -3,-5 -1.2,-10.9 0,-10.1 -5.1,-7.1 0.9,-4.3 z"
+      />
+  </a>
+  
+
+
+<a id="Guinea" xlink:title = "Guinea">
+  <path
+     inkscape:connector-curvature="0"
+     id="GN"
+     data-name="Guinea"
+     data-id="GN"
+     d="m 156.4,345.2 -1.8,0.7 -6.6,-1.1 -0.9,1.6 -2.7,0.3 -8.7,-3.4 -5.8,-0.1 -0.3,4.7 -1.3,1.4 0.9,4.6 -1.9,1.8 -2.7,0.1 -3.2,2.3 -3.7,-0.3 -5.5,6.8 3.6,2.2 1.7,3.1 1.3,6.1 3,2.7 3.1,1.8 4.7,5.4 5.3,8.2 6.5,-6.1 1.5,-3.8 2.1,-3 3.3,-0.3 2.9,-2.6 9.7,0 3.3,5 2.6,5.8 -0.4,4 1.9,3.6 -0.1,5.1 3.3,-0.8 2.6,-0.3 3.2,-1.6 5.1,8.5 -0.9,5.6 2.4,2.9 3.4,0.1 2.6,-5.6 3.4,0.4 1.9,0 0.8,-6.1 -0.9,-2.7 1.1,-1.9 4.6,-1.6 -3,-11.1 -2.8,-5.7 1,-4.7 2.5,-1.1 -3.7,-4 0.7,-4.1 -1.6,-1.6 -2.6,1.3 0.6,-4.5 2.5,-3.5 -5,-5.8 -1.4,-3.8 -2.7,-3.1 -2.4,-0.3 -2.9,1.9 -4,1.8 -3.3,3 -5.2,-1.1 -3.3,-3.5 -2,-0.4 -3.2,1.8 -2,0 -0.6,-5 z"
+      />
+  </a>
+  
+
+
+<a id="Gambia" xlink:title = "Gambia">
+  <path
+     inkscape:connector-curvature="0"
+     id="GM"
+     data-name="Gambia"
+     data-id="GM"
+     d="m 91.9,335.4 11,0.2 3,-1.9 2.2,-0.1 4.5,-3.2 5.2,2.9 5.2,0.3 5.3,-3.1 -2.4,-4 -4,2.3 -3.8,-0.1 -4.7,-3.4 -3.8,0.2 -2.8,3.3 -13.2,0.4 -1.7,6.2 z"
+      />
+  </a>
+  
+
+
+<a id="Guinea-Bissau" xlink:title = "Guinea-Bissau">
+  <path
+     inkscape:connector-curvature="0"
+     id="GW"
+     data-name="Guinea-Bissau"
+     data-id="GW"
+     d="m 129.9,343.2 -22.4,-0.6 -3.3,1.6 -4,-0.5 -6.5,2.3 0.7,2.9 3.7,3 -0.1,2.1 2.7,3.9 5.1,0.9 6.4,5.8 5.5,-6.8 3.7,0.3 3.2,-2.3 2.7,-0.1 1.9,-1.8 -0.9,-4.6 1.3,-1.4 0.3,-4.7 z"
+      />
+  </a>
+  
+
+
+<a id="Eq_Guinea" xlink:title = "Eq. Guinea">
+  <path
+     inkscape:connector-curvature="0"
+     id="GQ"
+     data-name="Eq. Guinea"
+     data-id="GQ"
+     d="m 433.9,486 -19.9,-0.3 -4.1,15.5 2.2,2.1 4.2,-0.8 17.7,0.2 -0.1,-16.7 z"
+      />
+  </a>
+  
+
+
+<a id="Kenya" xlink:title = "Kenya">
+  <path
+     inkscape:connector-curvature="0"
+     id="KE"
+     data-name="Kenya"
+     data-id="KE"
+     d="m 807.2,463.1 -8.4,0 -4.9,-4.7 -11.1,5.8 -3.5,5.8 -8.2,-1.1 -2.7,-1.6 -2.9,0.4 -3.8,-0.2 -15.7,-11.7 -8.5,0 -4.2,-4.6 -0.1,-7.7 -6.4,-2.4 -8.1,9.1 -7.4,8.3 5.9,9.6 1.5,7 5.5,15.8 -4.4,10.1 -5.9,9.2 -3.5,5.6 0,0.7 2.9,5.2 -0.8,10.3 44.1,28.2 0.7,8 17.3,13.8 5,-4.6 2.5,-9.2 4,-5.5 1.9,-9.8 4.6,-1 3.1,-5.8 8.6,-5.5 -7.2,-11.4 -0.4,-50.4 10.5,-15.7 z"
+      />
+  </a>
+  
+
+
+<a id="Liberia" xlink:title = "Liberia">
+  <path
+     inkscape:connector-curvature="0"
+     id="LR"
+     data-name="Liberia"
+     data-id="LR"
+     d="m 193.3,411 -3.4,-0.4 -2.6,5.6 -3.4,-0.1 -2.4,-2.9 0.9,-5.6 -5.1,-8.5 -3.2,1.6 -2.6,0.3 -5.7,6.5 -5.5,7.5 -0.7,4 -2.9,4.4 8.1,8.9 10.4,7.6 11,10.5 12.6,6.6 3.2,-0.1 1,-11.4 1.1,-1.7 -0.3,-5.5 -5.2,-5.8 -3.8,-0.9 -3.6,-3.8 2.7,-6.1 -1.2,-6.7 0.6,-4 z"
+      />
+  </a>
+  
+
+
+<a id="Libya" xlink:title = "Libya">
+  <path
+     inkscape:connector-curvature="0"
+     id="LY"
+     data-name="Libya"
+     data-id="LY"
+     d="m 589.8,80.6 -3.1,-4.5 -11.7,-1.6 -3.9,-2.4 -4.4,0 -4.4,-6.2 -15.9,-2.8 -7.9,1.8 -7.9,6.5 -3.3,6.7 3.4,10.6 -5.3,6.3 -5.5,3.6 L 507,91.7 490.3,86 479.7,83.3 473.6,71 l -15.7,-6.1 -9.8,-2.3 -4.8,1.2 -13.8,-4.8 -0.3,10.6 -5.6,4 -3.4,4.4 -7.9,5.3 1.5,5.7 -0.9,5.8 -5.6,3.2 4.1,12.2 0.8,6.4 -1.8,11.3 1,6.3 -1.4,7.6 1.3,8.7 -4.6,5.8 7.2,10.1 0.6,5.9 4.3,7.7 5.5,-2.5 9.6,6.4 5.4,8.7 19,6 6.9,7.5 8.3,-5.1 11.9,-7.6 48.4,26.5 48.7,26.5 -0.1,-5.8 13.8,0 -1,-27.7 -2.2,-50.9 -2.9,-49.2 -4.2,-11.2 2.4,-8.5 -2.2,-5.9 3.7,-6.6 z"
+      />
+  </a>
+  
+
+
+<a id="Lesotho" xlink:title = "Lesotho">
+  <path
+     inkscape:connector-curvature="0"
+     id="LS"
+     data-name="Lesotho"
+     data-id="LS"
+     d="m 625.3,939.9 2.5,-4.4 6.7,-2.2 2.4,-4.5 4.1,-6.7 -3.8,-4.2 -4.8,-4.2 -5.7,2.8 -6.8,5.4 -6.9,8.7 8,10.6 4.3,-1.3 z"
+      />
+  </a>
+  
+
+
+<a id="Morocco" xlink:title = "Morocco">
+  <path
+     inkscape:connector-curvature="0"
+     id="MA"
+     data-name="Morocco"
+     data-id="MA"
+     d="m 271.2,30.7 -5,-0.1 -11.9,-3.1 -11,0.9 -6.8,-5.9 -8.5,-0.1 -3.8,8.6 -8,14.5 -8.7,5.7 -11.8,6.4 -7.7,9.3 -1.8,7.3 -4.8,11.8 2.5,17.2 -10.1,11.5 -6,3.7 -9.6,9.4 -11,1.6 -6.1,5.3 -0.2,0.2 -7.9,14.1 -8.1,5.1 -4.5,8.5 -0.5,7.4 -3.4,8.1 -4,2.2 -6.9,8.8 -4.4,9.8 0.7,4.6 -4.1,7.3 -4.7,3.7 -0.8,6.4 0.2,0.1 27,-1.1 1.6,-5 5,-6.2 4.4,-19.1 16.9,-15 6,-17.4 3.7,-1.1 4.2,-10.8 10,-1.4 4.2,1.8 5.4,0 3.9,-3.2 7.3,-0.4 -0.1,-7.5 0,0 1.8,0 0.2,-16.3 19.2,-10.2 11.8,-2.1 9.6,-3.7 4.6,-7 13.8,-5.4 0.6,-10.2 6.7,-1.2 5.4,-5.1 15.2,-2.3 2.2,-5.4 -3.1,-2.9 -3.9,-14.7 -0.7,-8.4 -4.2,-9 z"
+      />
+  </a>
+  
+
+
+<a id="Madagascar" xlink:title = "Madagascar">
+  <path
+     inkscape:connector-curvature="0"
+     id="MG"
+     data-name="Madagascar"
+     data-id="MG"
+     d="m 902.9,704.8 -2.5,-9.1 -3,-5.9 -3.9,-5.9 -4.3,6.2 -0.7,8.3 -7.1,9.6 -5.1,-1.7 1.3,6 -4,6.9 -10.4,8.5 -7.3,7.9 -5.4,0.2 -4.6,2.5 -6.9,2.8 -6,0.6 -2.2,8.7 -4.7,7.8 0.2,12.7 1.7,8.7 2.4,6.6 -1.7,8.8 -6.4,10.5 -0.3,4.6 -5.7,2.4 -2.8,10 0.4,9.9 3.4,11 -0.1,12.3 2.6,7.3 9.1,5 6.5,3.5 10.9,-5.8 9.9,-3.3 6.8,-16.1 6.1,-19.2 9.3,-26.2 7.3,-19.1 5.9,-16.1 1.6,-11.7 3.5,-3.2 1.5,-5.9 -1.7,-10.2 2.6,-4.1 3.5,8.1 2.4,-4.1 1.7,-6.6 -2.8,-6.5 -1,-16.7 z"
+      />
+  </a>
+  
+
+
+<a id="Mali" xlink:title = "Mali">
+  <path
+     inkscape:connector-curvature="0"
+     id="ML"
+     data-name="Mali"
+     data-id="ML"
+     d="m 347.4,252.3 -13.3,1.3 -0.2,-8.8 -5.5,-2.2 -7.5,-4 -2.9,-6.4 -40.4,-30.2 -40,-30.2 -18.2,0.2 5.1,59.7 5.4,59.7 2,1.8 -2.7,9.6 -48.5,0.2 -1.9,3.1 -4.6,-0.9 -6.9,2.7 -8.4,-3.8 -3.8,0.3 -2.2,8.2 -4.1,2.5 0.4,8.6 2.3,7.9 4.5,3.9 1,5.3 -0.6,4.4 0.6,5 2,0 3.2,-1.8 2,0.4 3.3,3.5 5.2,1.1 3.3,-3 4,-1.8 2.9,-1.9 2.4,0.3 2.7,3.1 1.4,3.8 5,5.8 -2.5,3.5 -0.6,4.5 2.6,-1.3 1.6,1.6 -0.7,4.1 3.7,4 1.6,-1.3 3.3,2.1 9.4,0.1 2.3,-4 2.1,0.3 3.5,-1.6 1.8,5.9 2.9,-1.7 5,-2.1 -0.8,-8 3.4,-5.9 -0.3,-4.7 9.7,-11.4 1.8,-9.5 3.4,-3.4 5.8,1.9 5.1,-2.8 1.7,-3.6 9.4,-6.2 2.3,-4.3 11.3,-5.8 6.7,-1.9 3,2.6 7.8,0 7.7,-0.6 4.5,-4.9 16.5,-1.2 10.7,-2.2 1,-8.5 6.6,-9.2 -0.3,-31.9 z"
+      />
+  </a>
+  
+
+
+<a id="Mozambique" xlink:title = "Mozambique">
+  <path
+     inkscape:connector-curvature="0"
+     id="MZ"
+     data-name="Mozambique"
+     data-id="MZ"
+     d="m 788.2,666.2 -1.7,-6.2 0,0 0,0 -10,8.1 -13.4,5.3 -7.3,-0.2 -4.5,4.2 -8.4,0.3 -3.3,1.8 -14.4,-3.9 -4.7,0.5 -3.3,13.1 1.4,15.8 0.7,0 4.2,4.4 4.6,10 0.3,17.8 -5.4,3 -4.1,9.6 -7.5,-8.6 -0.5,-9.7 2.9,-6.5 -0.5,-5.5 -4.7,-3.5 -3.3,1.2 -6.8,-6.6 -37.1,11.4 0.8,9.9 0.6,5.1 10,-0.3 5.5,3 2.5,3.4 5.7,1 6.1,4.4 -0.8,17.5 -2.8,9.6 -1,10.4 1.7,4.1 -1.7,8.1 -1.9,1.3 -3.6,9.9 -13.4,15.7 4.7,19.5 2.5,9.9 -3,15.4 0.7,5 1.3,6.2 0.6,6.1 9,0.1 1.5,-7.3 -2.9,-0.9 -0.6,-5.8 5.5,-5.2 14.8,-7.5 10.1,-4.6 5.3,-5 2.1,-5.7 -2.7,-2.4 2.4,-6.4 1.1,-13.6 -2.2,0.7 0.1,-4.1 -1.9,-8.1 -5.2,-10.5 1.6,-9.9 5.1,-3.2 8.9,-9.8 4.7,-2.5 14.4,-14.9 14,-6.7 11.3,-5.3 8.1,-8.5 5.2,-9.6 4.1,-9.9 -1.8,-6.8 0.4,-21.6 -1,-12.2 0.9,-13.8 z"
+      />
+  </a>
+  
+
+
+<a id="Mauritania" xlink:title = "Mauritania">
+  <path
+     inkscape:connector-curvature="0"
+     id="MR"
+     data-name="Mauritania"
+     data-id="MR"
+     d="m 237.6,171.8 -44.1,-33.5 -0.5,20.9 -38.9,-0.7 -0.4,35.4 -11.2,1.3 -3.1,7.1 1.9,20 -46.9,-0.1 -2.7,4.6 6.1,6 3,6.5 -1.4,6.9 1.3,6.9 1,13.7 -1.8,13 -3.5,6.8 0.9,7.5 4.2,-4.5 6,1.2 5.9,-3 6.8,-0.1 5.7,4 7.9,3.7 7.2,10.2 7.8,9.5 4.1,-2.5 2.2,-8.2 3.8,-0.3 8.4,3.8 6.9,-2.7 4.6,0.9 1.9,-3.1 48.5,-0.2 2.7,-9.6 -2,-1.8 -5.4,-59.7 -5.1,-59.7 18.2,-0.2 z"
+      />
+  </a>
+  
+
+
+<a id="Malawi" xlink:title = "Malawi">
+  <path
+     inkscape:connector-curvature="0"
+     id="MW"
+     data-name="Malawi"
+     data-id="MW"
+     d="m 714.6,711.7 0.3,-5.2 -2.7,-4.1 0.4,-6 -3.3,-10.2 3.7,-7.7 -0.2,-16.7 -4.1,-8.9 0.4,-1.5 0,0 -2.3,-3.8 -11.9,-2.6 5.6,6.2 2.8,11.7 -2.2,3.8 -2.7,11.2 2,11.5 -4,4.8 -4.1,12.8 6.2,3.6 6.8,6.6 3.3,-1.2 4.7,3.5 0.5,5.5 -2.9,6.5 0.5,9.7 7.5,8.6 4.1,-9.6 5.4,-3 -0.3,-17.8 -4.6,-10 -4.2,-4.4 -0.7,0 0.1,1.9 2.3,0.5 2.2,7.4 -0.4,1.7 -4.1,-5.3 -2.2,3.4 -1.9,-2.9 z"
+      />
+  </a>
+  
+
+
+<a id="Namibia" xlink:title = "Namibia">
+  <path
+     inkscape:connector-curvature="0"
+     id="NA"
+     data-name="Namibia"
+     data-id="NA"
+     d="m 576,759.7 -22.4,5.7 -29.1,-2 -8.2,-6.6 -48.8,0.6 -1.9,1 -7.1,-6.3 -7.8,-0.4 -7.2,2.3 -5.9,2.7 0.6,10.6 9.5,13.5 2.5,8.7 6,16.6 5.9,11.4 4.6,5.7 1.3,7.6 -0.1,16.5 3.4,21.3 2.6,10.1 2.2,13.4 4.3,10.1 8.3,10.5 6,-6.8 4.5,3.7 1.7,6 5.2,1 7.3,2.6 6.4,-1 10.8,-7.1 2.2,-51.1 1.4,-40.4 11.8,-0.5 1.9,-49.3 9,-0.4 18.7,-4.9 4.4,5.7 7.9,-5.4 3.6,0 6.9,-3.1 0,-1.2 -4.7,-3.1 -7.8,-0.8 -9.9,3.1 z"
+      />
+  </a>
+  
+
+
+<a id="Niger" xlink:title = "Niger">
+  <path
+     inkscape:connector-curvature="0"
+     id="NE"
+     data-name="Niger"
+     data-id="NE"
+     d="m 458.3,198.6 -19,-6 -40.5,26.4 -34.5,27.1 -16.9,6.2 0.3,31.9 -6.6,9.2 -1,8.5 -10.7,2.2 -16.5,1.2 -4.5,4.9 -7.7,0.6 -1,6.7 1.6,6.3 6.9,9 0.4,6.7 14,3.1 -0.3,9.5 4.1,-4 4.3,-0.1 9.3,8 0.8,-12.4 3.5,-5.5 1.6,-8 3.2,-3 13,-1.6 12.2,5.1 4.6,5.3 6.1,0.2 5.8,-3.4 14.7,7.1 6.2,-0.3 7.1,-5.9 7.1,0.4 3.5,-1.9 6.5,0.8 9.4,4 9.4,-7.7 2.9,0.6 8.4,15.1 2.2,-0.3 0.4,-4.4 3.4,-0.8 1.1,-6.5 -7.8,-0.3 -0.1,-8.9 -5.1,-5.2 4.9,-18.2 15.2,-13 0.2,-18 4,-28.1 2.5,-6 -5.1,-4.7 -0.3,-4.4 -4.6,-3.6 -3.4,-21.5 -8.3,5.1 -6.9,-7.5 z"
+      />
+  </a>
+  
+
+
+<a id="Nigeria" xlink:title = "Nigeria">
+  <path
+     inkscape:connector-curvature="0"
+     id="NG"
+     data-name="Nigeria"
+     data-id="NG"
+     d="m 468.2,344.6 -2.2,0.3 -8.4,-15.1 -2.9,-0.6 -9.4,7.7 -9.4,-4 -6.5,-0.8 -3.5,1.9 -7.1,-0.4 -7.1,5.9 -6.2,0.3 -14.7,-7.1 -5.8,3.4 -6.1,-0.2 -4.6,-5.3 -12.2,-5.1 -13,1.6 -3.2,3 -1.6,8 -3.5,5.5 -0.8,12.4 -0.5,4.6 2.8,8.2 -2.4,5.6 1.3,3.7 -5.9,8.5 -3.7,4.3 -2.3,8.7 0.3,8.8 -0.6,22.3 10.7,0 9.2,-0.1 8.6,9.1 4.1,10 6.5,8.6 9.8,0.3 4.7,-3.1 4.6,0.8 12.7,-5 3.1,-9.8 5.7,-13.4 3.6,-0.1 7.2,-8.1 4.6,-0.2 6.9,5.7 8.3,-4.7 1.1,-5.7 2.7,-5.6 1.9,-7 6.4,-5.7 2.4,-9.7 2.6,-3.1 1.6,-7.2 3.1,-8.8 10.2,-10.7 0.5,-4.6 1.3,-2.5 -4.9,-5.5 z"
+      />
+  </a>
+  
+
+
+<a id="Rwanda" xlink:title = "Rwanda">
+  <path
+     inkscape:connector-curvature="0"
+     id="RW"
+     data-name="Rwanda"
+     data-id="RW"
+     d="m 667.9,533 -7.4,4.3 -2.9,-1.4 -3.5,3.8 -0.5,8.3 -1.7,1 -1.2,7.6 7.4,1.1 3.8,-7.9 6.5,0.9 0,0 3.5,-1.8 0.8,-8.1 -4.8,-7.8 z"
+      />
+  </a>
+  
+
+
+<a id="W_Sahara" xlink:title = "W. Sahara">
+  <path
+     inkscape:connector-curvature="0"
+     id="EH"
+     data-name="W. Sahara"
+     data-id="EH"
+     d="m 193.8,134.6 -1.8,0 0,0 0.1,7.5 -7.3,0.4 -3.9,3.2 -5.4,0 -4.2,-1.8 -10,1.4 -4.2,10.8 -3.7,1.1 -6,17.4 -16.9,15 -4.4,19.1 -5,6.2 -1.6,5 -27,1.1 -0.2,-0.1 -0.6,5.9 2.7,-4.6 46.9,0.1 -1.9,-20 3.1,-7.1 11.2,-1.3 0.4,-35.4 38.9,0.7 0.5,-20.9 0.3,-2.7 0,-1 z"
+      />
+  </a>
+  
+
+
+<a id="Sudan" xlink:title = "Sudan">
+  <path
+     inkscape:connector-curvature="0"
+     id="SD"
+     data-name="Sudan"
+     data-id="SD"
+     d="m 740,291.9 0.7,-9.2 3.6,-4.2 8.8,-2.3 5.7,-7.9 -6.9,-5.1 -4.8,-3.4 -5.3,-16.5 -2.5,-14.3 2.5,-2.5 -4.7,-13.6 -47.4,0 -46.4,0 -48.1,0 1,27.7 -13.8,0 0.1,5.8 2.4,54.9 -10.5,-0.9 -5.2,10.2 -3,8.5 2.6,3.2 -3.8,4.3 1.5,5.7 -3,5.8 -1.2,5 4.3,-0.8 2.6,5.4 0.3,8 4.6,4.1 -0.1,3.4 1.5,5.9 7.2,8.6 0.1,5.7 -1.9,5.7 0.9,4.3 4.2,4 1,0.7 3.8,-1.6 4.1,-2.6 2.9,-12.3 3.2,-6.4 8.8,-1.9 2.1,3.8 6.5,8 3.3,1.2 4.4,-2.3 8.7,0.4 1.8,2.9 12.1,0 0.3,-2.9 6.3,-2.6 1.1,-4 4.6,-2.9 10.4,8.1 6.2,-1.4 5.8,-10 6.5,-7.6 -1.3,-8.3 -3,-4 7.3,-0.8 0.7,-3 5.7,0.9 -1.2,10.2 1.7,10 6.5,5.5 1.5,4.7 0,6.9 1.7,0.3 -0.1,-1.7 3.3,-14.5 5.6,-3.8 1.1,-5.7 4.8,-10.6 7.1,-6.8 4.5,-13.6 1.4,-11.9 -1.5,-5.6 4.3,-20.3 z"
+      />
+  </a>
+  
+
+
+<a id="S_Sudan" xlink:title = "S. Sudan">
+  <path
+     inkscape:connector-curvature="0"
+     id="SS"
+     data-name="S. Sudan"
+     data-id="SS"
+     d="m 707.8,379.2 -1.5,-4.7 -6.5,-5.5 -1.7,-10 1.2,-10.2 -5.7,-0.9 -0.7,3 -7.3,0.8 3,4 1.3,8.3 -6.5,7.6 -5.8,10 -6.2,1.4 -10.4,-8.1 -4.6,2.9 -1.1,4 -6.3,2.6 -0.3,2.9 -12.1,0 -1.8,-2.9 -8.7,-0.4 -4.4,2.3 -3.3,-1.2 -6.5,-8 -2.1,-3.8 -8.8,1.9 -3.2,6.4 -2.9,12.3 -4.1,2.6 -3.8,1.6 8.4,5.4 6.8,5.5 0.1,4.5 8.3,7.2 5.2,6 3.2,8.3 9.2,5.5 2,4.4 7.5,11.4 5.5,1.7 3.2,-2.3 5.7,0.9 6.8,-2.9 2.9,5.9 10.9,9.2 0,0 5,-3.8 7.8,3.1 9.8,-3.3 8.6,0.1 7.4,-6.4 7.4,-8.3 8.1,-9.1 -7.4,-15 -5.7,-3.2 -2.2,-5.6 -6.3,-6.7 -7.5,-1 4,-7.9 6.4,-0.3 1.8,-4.2 -0.4,-10.8 -1.7,-0.3 0,-6.9 z"
+      />
+  </a>
+  
+
+
+<a id="Senegal" xlink:title = "Senegal">
+  <path
+     inkscape:connector-curvature="0"
+     id="SN"
+     data-name="Senegal"
+     data-id="SN"
+     d="m 148.8,315.1 -7.8,-9.5 -7.2,-10.2 -7.9,-3.7 -5.7,-4 -6.8,0.1 -5.9,3 -6,-1.2 -4.2,4.5 -3,7.1 -6.1,9.7 -5.4,2.6 6,4.9 4.8,10.8 13.2,-0.4 2.8,-3.3 3.8,-0.2 4.7,3.4 3.8,0.1 4,-2.3 2.4,4 -5.3,3.1 -5.2,-0.3 -5.2,-2.9 -4.5,3.2 -2.2,0.1 -3,1.9 -11,-0.2 1.8,10.6 6.5,-2.3 4,0.5 3.3,-1.6 22.4,0.6 5.8,0.1 8.7,3.4 2.7,-0.3 0.9,-1.6 6.6,1.1 1.8,-0.7 0.6,-4.4 -1,-5.3 -4.5,-3.9 -2.3,-7.9 -0.4,-8.6 z"
+      />
+  </a>
+  
+
+
+<a id="Sierra_Leone" xlink:title = "Sierra Leone">
+  <path
+     inkscape:connector-curvature="0"
+     id="SL"
+     data-name="Sierra Leone"
+     data-id="SL"
+     d="m 171.5,401 -3.3,0.8 0.1,-5.1 -1.9,-3.6 0.4,-4 -2.6,-5.8 -3.3,-5 -9.7,0 -2.9,2.6 -3.3,0.3 -2.1,3 -1.5,3.8 -6.5,6.1 1.4,10.3 2.1,5 6.3,7.4 8.7,5.6 3.3,1 2.9,-4.4 0.7,-4 5.5,-7.5 5.7,-6.5 z"
+      />
+  </a>
+  
+
+
+<a id="Swaziland" xlink:title = "Swaziland">
+  <path
+     inkscape:connector-curvature="0"
+     id="SZ"
+     data-name="Swaziland"
+     data-id="SZ"
+     d="m 674,874.9 -5.8,-2.6 -3.5,1 -1.4,4 -3.6,5.2 -0.2,4.8 6.6,7.5 7,-1.5 2.8,-6.1 -0.6,-6.1 -1.3,-6.2 z"
+      />
+  </a>
+  
+
+
+<a id="Chad" xlink:title = "Chad">
+  <path
+     inkscape:connector-curvature="0"
+     id="TD"
+     data-name="Chad"
+     data-id="TD"
+     d="m 582.5,246.4 -48.7,-26.5 -48.4,-26.5 -11.9,7.6 3.4,21.5 4.6,3.6 0.3,4.4 5.1,4.7 -2.5,6 -4,28.1 -0.2,18 -15.2,13 -4.9,18.2 5.1,5.2 0.1,8.9 7.8,0.3 -1.1,6.5 4.9,8.9 1,9.1 -0.4,9.2 6.8,12.6 -6.8,-0.1 -3.4,0.9 -5.6,-1.3 -2.5,6.5 7.2,8.1 5.3,2.3 1.8,5.7 3.9,9.6 -1.8,3.7 10,-1 2.2,-3.6 2.1,0.3 3,3.1 15.3,-5.3 5.1,-5.4 6.3,-4.8 -1.2,-4.9 3.4,-1.2 11.8,0.8 11.3,-6.4 8.6,-15.1 6,-5.6 7.7,-2.3 0.1,-3.4 -4.6,-4.1 -0.3,-8 -2.6,-5.4 -4.3,0.8 1.2,-5 3,-5.8 -1.5,-5.7 3.8,-4.3 -2.6,-3.2 3,-8.5 5.2,-10.2 10.5,0.9 -2.4,-54.9 z"
+      />
+  </a>
+  
+
+
+<a id="Togo" xlink:title = "Togo">
+  <path
+     inkscape:connector-curvature="0"
+     id="TG"
+     data-name="Togo"
+     data-id="TG"
+     d="m 307.1,365.2 -10.7,-0.3 -0.9,4.3 5.1,7.1 0,10.1 1.2,10.9 3,5 -2.7,12.5 1,6.8 3.2,8.8 2.8,4.9 9.8,-3 -3,-9.5 0.5,-31.8 -2.5,-2.8 -0.4,-6.8 -4.3,-4.9 -3.7,-4.1 1.6,-7.2 z"
+      />
+  </a>
+  
+
+
+<a id="Tunisia" xlink:title = "Tunisia">
+  <path
+     inkscape:connector-curvature="0"
+     id="TN"
+     data-name="Tunisia"
+     data-id="TN"
+     d="m 429.5,59 -4.5,-2.2 -3.2,-6.6 -6,-0.2 -2.4,-7.6 7.3,-7 1.1,-12.1 -4.1,-3.5 -0.2,-6.5 5.5,-7 -0.9,-2.7 -9.5,5.2 0.1,-7.1 -8.1,-1.7 -12.2,5.7 -2.2,7.2 2.3,13.4 -2.4,11.6 -7,7.8 1.3,10.4 9.7,8.3 0.2,3.3 7.3,5.6 5.7,24.7 5.6,-3.2 0.9,-5.8 -1.5,-5.7 7.9,-5.3 3.4,-4.4 5.6,-4 0.3,-10.6 z"
+      />
+  </a>
+  
+
+
+<a id="Tanzania" xlink:title = "Tanzania">
+  <path
+     inkscape:connector-curvature="0"
+     id="TZ"
+     data-name="Tanzania"
+     data-id="TZ"
+     d="m 672.2,531.3 -4.3,1.7 4.8,7.8 -0.8,8.1 -3.5,1.8 0,0 0.6,5.4 2.6,3.2 0.1,4.5 -3,2.9 -4.9,7.2 -4.5,5 -1.2,0.2 -0.7,5.9 2.3,2 -0.5,5.9 2.3,5.5 -2.9,5.3 9.7,9.4 0.8,8.5 5.9,14.2 0,0 0.6,0.4 4.8,2.3 7.7,2.4 6.8,4.1 11.9,2.6 2.3,3.8 0,0 0.8,-2.7 6.2,7.4 0.6,14.5 3.9,5.3 -0.1,0.2 4.7,-0.5 14.4,3.9 3.3,-1.8 8.4,-0.3 4.5,-4.2 7.3,0.2 13.4,-5.3 10,-8.1 0,0 -4.4,-3 -4.7,-13.6 -4,-8.7 1,-6.6 -0.6,-4.2 3.5,-8.4 -0.3,-3.6 -7.7,-5 -0.6,-7.8 5.9,-17.1 -17.3,-13.8 -0.7,-8 -44.1,-28.2 0,0 -6,6.1 -4.1,6.3 4.8,4.7 -7,3.4 -1.5,-1.6 -7.1,0.9 -5.5,3.1 -3.3,-5.4 2.3,-9.7 0.5,-8.3 0,0 0,0 -13.4,-0.2 z"
+      />
+  </a>
+  
+
+
+<a id="Uganda" xlink:title = "Uganda">
+  <path
+     inkscape:connector-curvature="0"
+     id="UG"
+     data-name="Uganda"
+     data-id="UG"
+     d="m 711.3,458.5 -7.4,6.4 -8.6,-0.1 -9.8,3.3 -7.8,-3.1 -5,3.8 0,0 -0.6,16.1 4.9,1.9 -3.9,4.9 -4.7,3.7 -4.6,7.2 -2.6,6.4 -0.6,11.1 -2.9,5.3 -0.1,10.5 2.9,1.4 7.4,-4.3 4.3,-1.7 13.4,0.2 0,0 -0.7,-5.3 5.7,-8.1 7.7,-2 5.2,-3.3 6.3,2.7 0.6,1 0,-0.7 3.5,-5.6 5.9,-9.2 4.4,-10.1 -5.5,-15.8 -1.5,-7 -5.9,-9.6 z"
+      />
+  </a>
+  
+
+
+<a id="South_Africa" xlink:title = "South Africa">
+  <path
+     inkscape:connector-curvature="0"
+     id="ZA"
+     data-name="South Africa"
+     data-id="ZA"
+     d="m 522.3,999 5.3,-0.3 7.5,-5.3 10,-2.2 12.3,-5.5 4.7,0.7 7.2,-1.7 12.3,2.7 5.9,-2.6 6.9,2 1.8,-3.8 6,-0.8 12.6,-5.3 9.3,-6.3 8.9,-8.3 14.4,-14.2 7.5,-9.9 3.9,-7.1 5.5,-7 2.5,-2 8.6,-7 3.5,-6.2 2.3,-11.5 3.7,-10.1 -9,-0.1 -2.8,6.1 -7,1.5 -6.6,-7.5 0.2,-4.8 3.6,-5.2 1.4,-4 3.5,-1 5.8,2.6 -0.7,-5 3,-15.4 -2.5,-9.9 -4.7,-19.5 -6.3,-1.3 -4.1,1.6 -5.7,-2.3 -4.9,-0.2 -17.3,10.2 -11.2,10.3 -4.4,9.3 -3.9,5.2 -6.5,1.1 -2.4,6.6 -1.4,4.3 -7.8,3.2 -9.6,-0.6 -5.5,-3.9 -4.9,-1.7 -6,3.2 -3.2,6.6 -5.8,4.2 -6.2,6.2 -8.5,1.4 -2.5,-4.9 1.5,-8.4 -6.5,-13.2 -3.2,-2 -2.2,51.1 -10.8,7.1 -6.4,1 -7.3,-2.6 -5.2,-1 -1.7,-6 -4.5,-3.7 -6,6.8 7.7,17.9 0,0.1 5.4,11.7 6.9,12.8 -0.2,10.6 -3.9,2.5 3.2,9.3 -0.5,8.1 1.3,3.8 0.7,-1.9 4.6,6.2 3.8,0.2 4.6,5 z m 103,-59.1 -4.3,1.3 -8,-10.6 6.9,-8.7 6.8,-5.4 5.7,-2.8 4.8,4.2 3.8,4.2 -4.1,6.7 -2.4,4.5 -6.7,2.2 -2.5,4.4 z"
+      />
+  </a>
+  
+
+
+<a id="Zambia" xlink:title = "Zambia">
+  <path
+     inkscape:connector-curvature="0"
+     id="ZM"
+     data-name="Zambia"
+     data-id="ZM"
+     d="m 671.3,636 -4.1,-1.1 0.7,-3 -2.1,-0.6 -16.4,2.3 -3.3,1.7 -3.6,8.8 2.6,6.1 -2.5,16.4 -1.9,13.9 3.2,2.4 8.4,5.4 3.4,-2.5 0.6,14.9 -9.3,-0.1 -4.8,-7.6 -4.3,-5.9 -9.2,-1.9 -2.6,-7.3 -7.5,4.4 -9.7,-2 -3.9,-6.2 -7.7,-1.3 -5.7,0.3 -0.6,-4.3 -4.2,-0.3 1.2,4.3 -1.5,6.7 2,6.5 -2,5.2 1,4.7 -25.3,-0.1 -1.6,44 7.8,11.3 7.6,8.6 9.9,-3.1 7.8,0.8 4.7,3.1 0,1.2 2.2,1 13.4,1.5 3.8,1.6 4.1,-0.3 7,-9 10.9,-11.4 4.4,-1 1.7,-4.8 7,-5.5 9.3,-1.9 -0.8,-9.9 37.1,-11.4 -6.2,-3.6 4.1,-12.8 4,-4.8 -2,-11.5 2.7,-11.2 2.2,-3.8 -2.8,-11.7 -5.6,-6.2 -6.8,-4.1 -7.7,-2.4 -4.8,-2.3 -0.6,-0.4 0,0 0.9,2.3 -2,0.8 -2.6,-2.9 z"
+      />
+  </a>
+  
+
+
+<a id="Zimbabwe" xlink:title = "Zimbabwe">
+  <path
+     inkscape:connector-curvature="0"
+     id="ZW"
+     data-name="Zimbabwe"
+     data-id="ZW"
+     d="m 669.1,825.1 13.4,-15.7 3.6,-9.9 1.9,-1.3 1.7,-8.1 -1.7,-4.1 1,-10.4 2.8,-9.6 0.8,-17.5 -6.1,-4.4 -5.7,-1 -2.5,-3.4 -5.5,-3 -10,0.3 -0.6,-5.1 -9.3,1.9 -7,5.5 -1.7,4.8 -4.4,1 -10.9,11.4 -7,9 -4.1,0.3 -3.8,-1.6 -13.4,-1.5 4.2,11.1 2.3,2.4 3.5,8 13,15.2 5.1,1.5 -0.2,4.9 3.1,8.8 9.2,2.1 7.3,6.2 4.9,0.2 5.7,2.3 4.1,-1.6 6.3,1.3 z"
+      />
+  </a>
+  
+
+
+<a id="Somalia" xlink:title = "Somalia">
+  <path
+     inkscape:connector-curvature="0"
+     id="SO"
+     data-name="a"
+     data-id="SO"
+     d="m 832.6,372.8 -5.7,-5.8 -2.5,-5.7 -4.1,-2.6 -4.2,7.4 -2.5,4.9 4.8,7.7 4.6,6.6 4.8,5 40.3,16.4 10.3,-0.1 -33.5,41.5 -15.9,0.6 -10.7,9.8 -7.8,0.2 -3.3,4.4 -10.5,15.7 0.4,50.4 7.2,11.4 2.7,-3.3 2.9,-7.3 13.4,-16.7 11.4,-10.6 18.1,-13.7 12.1,-11.2 14.1,-18.9 10.1,-15.5 10,-20.2 7,-17.7 5.4,-15.5 2.9,-14.9 2.4,-5 -0.4,-7.3 0.8,-8 -0.5,-3.9 -4.6,0.1 -5.5,4.7 -6.4,1.4 -5.5,2.1 -3.9,0.2 0,0 -6.9,0.5 -4.2,2.6 -6,0.9 -10.5,4.3 -13.2,1.6 -11.3,3.5 -6.1,0 z"
+      />
+
+  </a>
+</svg>
+
+</div>
+</div>
+
+<!-- rightside for countries -->
+<span id="aboutafricancountriess" data-aos="fade-left" style="width: 55%;float: right;">
+	<center>
+		<!-- about africa -->
+		<div id="aboutafrica" class="cou">
+			<h1>
+				Africa
+			</h1>
+			
+			<p style="margin: 30px;">
+				Africa is the world's second-largest and second-most populous continent, after Asia in both cases. At about 30.3 million km² including adjacent islands, it covers 6% of Earth's total surface area and 20% of its land area. With 1.3 billion people as of 2018, it accounts for about 16% of the world's human population.
+
+
+				<p>
+					Area: 30.37 million km²
+					<br>
+					Population: 121.61 crores (2016)
+					<br>
+					Largest city: Lagos
+					<br>
+					Languages: 1250–3000 native languages
+				</p>
+			</p>
+		</div>
+
+
+
+		<!--about Angola-->
+		<div id="aboutAngola" class="cou">
+			<h1>
+				Angola
+			</h1>
+
+			<p style="margin: 30px;">
+			Angola is a Southern African nation whose varied terrain encompasses tropical Atlantic beaches, a labyrinthine system of rivers and Sub-Saharan desert that extends across the border into Namibia. The country's colonial history is reflected in its Portuguese-influenced cuisine and its landmarks including Fortaleza de São Miguel, a fortress built by the Portuguese in 1576 to defend the capital, Luanda.
+
+				<p>
+					Capital: Luanda
+					<br>
+					Dialing code: +244
+					<br>
+					National languages: Chokwe; Kikongo; Kimbundu; Umbundu
+					<br>
+					Currency: Angolan kwanza
+					<br>
+					President: João Lourenço
+					<br>
+					Official language: Portuguese
+				</p>
+
+
+			</p>
+		</div>
+		
+		<!-- about Burundi -->
+		<div id="aboutBurundi" class="cou">
+			<h1>
+				Burundi
+			</h1>
+
+			<p style="margin: 30px;">
+			Burundi, officially the Republic of Burundi, is a landlocked country in the Great Rift Valley where the African Great Lakes region and East Africa converge.
+
+				<p>
+					Capital: Gitega
+					<br>
+					Dialing code: +257
+					<br>
+					President: Évariste Ndayishimiye
+					<br>
+					Currency: Burundian franc
+					<br>
+					Population: 1.15 crores (2019)
+					<br>
+					Official languages: French, Kirundi, English
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Benin -->
+		<div id="aboutBenin" class="cou">
+			<h1>
+				Benin
+			</h1>
+
+			<p style="margin: 30px;">
+			Benin, a French-speaking West African nation, is a birthplace of the vodun (or “voodoo”) religion and home to the former Dahomey Kingdom from circa 1600–1900. In Abomey, Dahomey's former capital, the Historical Museum occupies two royal palaces with bas-reliefs recounting the kingdom’s past and a throne mounted on human skulls. To the north, Pendjari National Park offers safaris with elephants, hippos and lions. 
+
+				<p>
+					Capital: Porto-Novo
+					<br>
+					Dialing code: +229
+					<br>
+					Currency: West African CFA franc
+					<br>
+					President: Patrice Talon
+					<br>
+					Continent: Africa
+					<br>
+					Official language: French
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Burkina_Faso -->
+		<div id="aboutBurkina_Faso" class="cou">
+			<h1>
+				Burkina Faso
+			</h1>
+
+			<p style="margin: 30px;">
+			Burkina Faso is a landlocked country in West Africa that covers an area of around 274,200 square kilometres and is bordered by Mali to the northwest, Niger to the northeast, Benin to the southeast, Togo and Ghana to the south, and the Ivory Coast to the southwest.
+
+				<p>
+					Capital: Ouagadougou
+					<br>
+					Dialing code: +226
+					<br>
+					President: Roch Marc Christian Kaboré
+					<br>
+					Recognised national languages: Mòoré; Fula; Dioula
+					<br>
+					Currency: West African CFA franc
+					<br>
+					Population: 2.03 crores (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+
+		<!-- about Botswana -->
+		<div id="aboutBotswana" class="cou">
+			<h1>
+				Botswana
+			</h1>
+
+			<p style="margin: 30px;">
+			Botswana, a landlocked country in Southern Africa, has a landscape defined by the Kalahari Desert and the Okavango Delta, which becomes a lush animal habitat during the seasonal floods. The massive Central Kalahari Game Reserve, with its fossilized river valleys and undulating grasslands, is home to numerous animals including giraffes, cheetahs, hyenas and wild dogs.
+
+				<p>
+					Capital: Gaborone
+					<br>
+					Dialing code: +267
+					<br>
+					President: Mokgweetsi Masisi
+					<br>
+					Currency: Botswana pula
+					<br>
+					Population: 23 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Central_African_Rep.-->
+		<div id="aboutCentral_African_Rep" class="cou">
+			<h1>
+				Central African Republic
+			</h1>
+
+			<p style="margin: 30px;">
+			The Central African Republic is a landlocked country in Central Africa. It is bordered by Chad to the north, Sudan to the northeast, South Sudan to the southeast, the Democratic Republic of the Congo to the south, the Republic of the Congo to the southwest and Cameroon to the west.
+
+				<p>
+					Capital: Bangui
+					<br>
+					Dialing code: +236
+					<br>
+					President: Faustin-Archange Touadéra
+					<br>
+					Currency: Central African CFA franc
+					<br>
+					Population: 47.5 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Côte_d'Ivoire -->
+		<div id="aboutCotivoire" class="cou">
+			<h1>
+				Côte d'Ivoire
+			</h1>
+
+			<p style="margin: 30px;">
+			Côte d'Ivoire is a West African country with beach resorts, rainforests and a French-colonial legacy. Abidjan, on the Atlantic coast, is the country’s major urban center. Its modern landmarks include zigguratlike, concrete La Pyramide and St. Paul's Cathedral, a swooping structure tethered to a massive cross. North of the central business district, Banco National Park is a rainforest preserve with hiking trails.
+
+				<p>
+					Capital: Yamoussoukro
+					<br>
+					Dialing code: +225
+					<br>
+					President: Alassane Ouattara
+					<br>
+					Currency: West African CFA franc
+					<br>
+					Continent: Africa
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Cameroon -->
+		<div id="aboutCameroon" class="cou">
+			<h1>
+				Cameroon
+			</h1>
+
+			<p style="margin: 30px;">
+			Cameroon, on the Gulf of Guinea, is a Central African country of varied terrain and wildlife. Its inland capital, Yaoundé, and its biggest city, the seaport Douala, are transit points to ecotourism sites as well as beach resorts like Kribi – near the Chutes de la Lobé waterfalls, which plunge directly into the sea – and Limbe, where the Limbe Wildlife Centre houses rescued primates.
+
+				<p>
+					Capital: Yaoundé
+					<br>
+					Dialing code: +237
+					<br>
+					Currency: Central African CFA franc
+					<br>
+					President: Paul Biya
+					<br>
+					Recognised regional languages: Cameroonian Pidgin English; Fula; Ewondo; Chadian Arabic; Camfranglais
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Dem._Rep._Congo -->
+		<div id="aboutDem" class="cou">
+			<h1>
+				Democratic Republic of Congo
+			</h1>
+
+			<p style="margin: 30px;">
+			The Democratic Republic of the Congo, also known as Congo-Kinshasa, DR Congo, the DROC, or simply either Congo or the Congo, and historically Zaire, is a country in Central Africa. It is, by area, the largest country in sub-Saharan Africa, the second-largest in all of Africa, and the 11th-largest in the world.
+
+				<p>
+					Capital: Kinshasa
+					<br>
+					Dialing code: +243
+					<br>
+					Currency: Congolese franc(CDF)
+					<br>
+					President: Félix Tshisekedi
+					<br>
+					Population: 8.68 crores (2019)
+					<br>
+					Official language: French
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Congo -->
+		<div id="aboutCongo" class="cou">
+			<h1>
+				Congo
+			</h1>
+
+			<p style="margin: 30px;">
+			The Republic of the Congo, also known as the Congo-Republic,West Congo,Congo-Brazzaville or simply Congo, is a country located in Central Africa. It is bordered by five countries: Gabon and the Atlantic Ocean to the west; Cameroon to the northwest; the Central African Republic to the northeast; the Democratic Republic to the east and south; and the Angloan exclave of Caninda to the southwest.
+				<p>
+					Capital: Brazzaville
+					<br>
+					Dialing code: +242
+					<br>
+					Currency: 	Central African CFA franc (XAF)
+					<br>
+					President: 	Denis Sassou Nguesso
+					<br>
+					Population: 5 Million (2018)
+					<br>
+					Official language: French, Kituba, Lingala
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Djibouti -->
+		<div id="aboutDjibouti" class="cou">
+			<h1>
+				Djibouti
+			</h1>
+
+			<p style="margin: 30px;">
+			Djibouti, on the Horn of Africa, is a mostly French- and Arabic-speaking country of dry shrublands, volcanic formations and Gulf of Aden beaches. It's home to one of the saltiest bodies of water in the world, the low-lying Lake Assal, in the Danakil Desert. The nomadic Afar people have settlements along Lake Abbe, a body of saltwater featuring chimneylike mineral formations.
+				<p>
+					Capital: Djibouti
+					<br>
+					Dialing code: +253
+					<br>
+					National languages: , Afar
+					<br>
+					President: Ismail Omar Guelleh
+					<br>
+					Currency: Djiboutian franc
+					<br>
+					Population: 9.74 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+
+		<!-- about Algeria-->
+		<div id="aboutAlgeria" class="cou">
+			<h1>
+				Algeria
+			</h1>
+
+			<p style="margin: 30px;">
+			Algeria is a North African country with a Mediterranean coastline and a Saharan desert interior. Many empires have left legacies here, such as the ancient Roman ruins in seaside Tipaza. In the capital, Algiers, Ottoman landmarks like circa-1612 Ketchaoua Mosque line the hillside Casbah quarter, with its narrow alleys and stairways. The city’s Neo-Byzantine basilica Notre Dame d’Afrique dates to French colonial rule.
+				<p>
+					Capital: Algiers
+					<br>
+					Dialing code: +213
+					<br>
+					Currency: Algerian dinar
+					<br>
+					President: Abdelmadjid Tebboune
+					<br>
+					Other languages: Algerian Arabic (Darja) (lingua franca), French
+					<br>
+					Official language: Arabic
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Egypt-->
+		<div id="aboutEgypt" class="cou">
+			<h1>
+				Egypt
+			</h1>
+
+			<p style="margin: 30px;">
+			Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza's colossal Pyramids and Great Sphinx as well as Luxor's hieroglyph-lined Karnak Temple and Valley of the Kings tombs. The capital, Cairo, is home to Ottoman landmarks like Muhammad Ali Mosque and the Egyptian Museum, a trove of antiquities.
+				<p>
+					Capital: Cairo
+					<br>
+					Dialing code: +20
+					<br>
+					President: Abdel Fattah Al-Sisi
+					<br>
+					National language: Egyptian Arabic
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Eritrea -->
+		<div id="aboutEritrea" class="cou">
+			<h1>
+				Eritrea
+			</h1>
+
+			<p style="margin: 30px;">
+			Eritrea is a northeast African country on the Red Sea coast. It shares borders with Ethiopia, Sudan and Djibouti. The capital city, Asmara, is known for its Italian colonial buildings, like St. Joseph's Cathedral, as well as art deco structures. Italian, Egyptian and Turkish architecture in Massawa reflect the port city's colorful history. Notable buildings here include St. Mariam Cathedral and the Imperial Palace.
+				<p>
+					Capital: Asmara
+					<br>
+					Recognised national languages: Tigrinya, Beja, Tigre, Kunama, Saho, Bilen, Nara, Afar
+					<br>
+					Calling code: +291
+					<br>
+					Working languages: Tigrinya; English; Arabic;
+					<br>
+					President: Isaias Afwerki
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Ethiopia-->
+		<div id="aboutEthiopia" class="cou">
+			<h1>
+				Ethiopia
+			</h1>
+
+			<p style="margin: 30px;">
+			Ethiopia, in the Horn of Africa, is a rugged, landlocked country split by the Great Rift Valley. With archaeological finds dating back more than 3 million years, it’s a place of ancient culture. Among its important sites are Lalibela with its rock-cut Christian churches from the 12th–13th centuries. Aksum is the ruins of an ancient city with obelisks, tombs, castles and Our Lady Mary of Zion church.
+				<p>
+					Capital: Addis Ababa
+					<br>
+					Dialing code: +251
+					<br>
+					Currency: Ethiopian birr
+					<br>
+					President: Sahle-Work Zewde
+					<br>
+					Population: 11.21 crores (2019)
+					<br>
+					Official language: Amharic
+				</p>
+
+
+			</p>
+		</div>
+
+
+
+		<!-- about Gabon -->
+		<div id="aboutGabon" class="cou">
+			<h1>
+				Gabon
+			</h1>
+
+			<p style="margin: 30px;">
+			Gabon, a country along the Atlantic coast of Central Africa, has significant areas of protected parkland. The forested coastal terrain of its famed Loango National Park shelters a diversity of wildlife, from gorillas and hippos to whales. Lopé National Park consists of mostly rainforest. Akanda National Park is known for its mangroves and tidal beaches.
+				<p>
+					Capital: Libreville
+					<br>
+					Dialing code: +241
+					<br>
+					President: Ali Bongo Ondimba
+					<br>
+					Currency: Central African CFA franc
+					<br>
+					Vernacular languages: show List: French; Hindi; Arabic; English; Teke; Fang; Punu; Nzebi
+					<br>
+					Prime minister: Rose Christiane Ossouka Raponda
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Ghana -->
+		<div id="aboutGhana" class="cou">
+			<h1>
+				Ghana
+			</h1>
+
+			<p style="margin: 30px;">
+			Ghana, officially the Republic of Ghana, is a country in West Africa. It spans along the Gulf of Guinea and the Atlantic Ocean, sharing borders with the Ivory Coast in the west, Burkina Faso in the north, Togo in the east, the Gulf of Guinea and the Atlantic Ocean in the south.
+				<p>
+					Capital: Accra
+					<br>
+					Dialing code: +233
+					<br>
+					Recognised national languages: Twi; Dagbani; Dangme; Ewe; Fante; Frafra; Ga; Gonja; Nzema; Ghanaian Sign Language
+					<br>
+					Currency: Ghanaian cedi
+					<br>
+					President: Nana Akufo-Addo
+					<br>
+					Demonym(s): Ghanaian
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Guinea -->
+		<div id="aboutGuinea" class="cou">
+			<h1>
+				Guinea
+			</h1>
+
+			<p style="margin: 30px;">
+			Guinea is a country in West Africa, bordered on the west by the Atlantic Ocean. It's known for the Mount Nimba Strict Nature Reserve, in the southeast. The reserve protects a forested mountain range rich in native plants and animals, including chimpanzees and the viviparous toad. On the coast, the capital city, Conakry, is home to the modern Grand Mosque and the National Museum, with its regional artifacts.
+				<p>
+					Capital: Conakry
+					<br>
+					Dialing code: +224
+					<br>
+					President: Alpha Condé
+					<br>
+					Currency: Guinean franc
+					<br>
+					Ethnic groups (): 40% Fula; 23% Mandinka; 21.2% Susu; 7.8% Kpelle; 6.2% Kissi; 5.6% others
+					<br>
+					Population: 1.28 crores (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Gambia -->
+		<div id="aboutGambia" class="cou">
+			<h1>
+				Gambia
+			</h1>
+
+			<p style="margin: 30px;">
+			The Gambia is a small West African country, bounded by Senegal, with a narrow Atlantic coastline. It's known for its diverse ecosystems around the central Gambia River. Abundant wildlife in its Kiang West National Park and Bao Bolong Wetland Reserve includes monkeys, leopards, hippos, hyenas and rare birds. The capital, Banjul, and nearby Serrekunda offer access to beaches.
+				<p>
+					Capital: Banjul
+					<br>
+					Dialing code: +220
+					<br>
+					President: Adama Barrow
+					<br>
+					Currency: Gambian dalasi
+					<br>
+					Population: 23.5 lakhs (2019) 
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about GuineaBissau -->
+		<div id="aboutGuineaBissau" class="cou">
+			<h1>
+				Guinea-Bissau
+			</h1>
+
+			<p style="margin: 30px;">
+			Guinea-Bissau is a tropical country on West Africa’s Atlantic coast that’s known for national parks and wildlife. The forested, sparsely populated Bijagós archipelago is a protected biosphere reserve. Its main island, Bubaque, forms part of the Orango Islands National Park, a habitat for saltwater hippos. On the mainland, the capital, Bissau, is a port with Portuguese colonial buildings in its old city center.
+				<p>
+					Capital: Bissau
+					<br>
+					Dialing code: +245
+					<br>
+					President: Umaro Sissoco Embaló
+					<br>
+					Currency: West African CFA franc
+					<br>
+					Population: 19.2 lakhs (2019)
+					<br>
+					Prime minister: Nuno Gomes Nabiam
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Eq._Guinea -->
+		<div id="aboutEq_Guinea" class="cou">
+			<h1>
+				Equatorial Guinea
+			</h1>
+
+			<p style="margin: 30px;">
+			Equatorial Guinea is a Central African country comprising the Rio Muni mainland and 5 volcanic offshore islands. Capital Malabo, on Bioko Island, has Spanish colonial architecture and is a hub for the country’s prosperous oil industry. Its Arena Blanca beach draws dry-season butterflies. The tropical forest of the mainland’s Monte Alen National Park is home to gorillas, chimpanzees and elephants.
+				<p>
+					Capital: Malabo
+					<br>
+					Dialing code: +240
+					<br>
+					President: Teodoro Obiang Nguema Mbasogo
+					<br>
+					Currency: Central African CFA franc
+					<br>
+					Population: 13.6 lakhs (2019) World Bank
+					<br>
+					Prime minister: Francisco Pascual Obama Asue
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Kenya-->
+		<div id="aboutKenya" class="cou">
+			<h1>
+				Kenya
+			</h1>
+
+			<p style="margin: 30px;">
+			Kenya is a country in East Africa with coastline on the Indian Ocean. It encompasses savannah, lakelands, the dramatic Great Rift Valley and mountain highlands. It's also home to wildlife like lions, elephants and rhinos. From Nairobi, the capital, safaris visit the Maasai Mara Reserve, known for its annual wildebeest migrations, and Amboseli National Park, offering views of Tanzania's 5,895m Mt. Kilimanjaro.
+				<p>
+					Capital: Nairobi
+					<br>
+					Dialing code: +254
+					<br>
+					National language: Swahili
+					<br>
+					Currency: Kenyan shilling
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Liberia -->
+		<div id="aboutLiberia" class="cou">
+			<h1>
+				Liberia
+			</h1>
+
+			<p style="margin: 30px;">
+			Liberia is a country in West Africa, bordering Sierra Leone, Guinea and Côte d'Ivoire. On the Atlantic coast, the capital city of Monrovia is home to the Liberia National Museum, with its exhibits on national culture and history. Around Monrovia are palm-lined beaches like Silver and CeCe. Along the coast, beach towns include the port of Buchanan, as well as laid-back Robertsport, known for its strong surf. 
+				<p>
+					Capital: Monrovia
+					<br>
+					Dialing code: +231
+					<br>
+					Spoken and national languages: Liberian English
+					<br>
+					President: George Weah
+					<br>
+					Currency: Liberian dollar
+					<br>
+					Population: 49.4 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Libya -->
+		<div id="aboutLibya" class="cou">
+			<h1>
+				Libya
+			</h1>
+
+			<p style="margin: 30px;">
+			Libya, officially the State of Libya, is a country in the Maghreb region in North Africa bordered by the Mediterranean Sea to the north, Egypt to the east, Sudan to the southeast, Chad to the south, Niger to the southwest, Algeria to the west and Tunisia to the northwest.
+				<p>
+					Capital: Tripoli
+					<br>
+					Dialing code: +218
+					<br>
+					Currency: Libyan dinar
+					<br>
+					Population: 67.8 lakhs (2019) World Bank
+					<br>
+					Prime minister: Abdul Hamid Dbeibeh
+					<br>
+					Official language: Arabic
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Lesotho-->
+		<div id="aboutLesotho" class="cou">
+			<h1>
+				Lesotho
+			</h1>
+
+			<p style="margin: 30px;">
+			Lesotho, a high-altitude, landlocked kingdom encircled by South Africa, is crisscrossed by a network of rivers and mountain ranges including the 3,482m-high peak of Thabana Ntlenyana. On the Thaba Bosiu plateau, near Lesotho's capital, Maseru, are ruins dating from the 19th-century reign of King Moshoeshoe I. Thaba Bosiu overlooks iconic Mount Qiloane, an enduring symbol of the nation’s Basotho people.
+				<p>
+					Capital: Maseru
+					<br>
+					Dialing code: +266
+					<br>
+					Prime Minister: Moeketsi Majoro
+					<br>
+					Currency: Lesotho loti
+					<br>
+					Population: 21.3 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Morocco -->
+		<div id="aboutMorocco" class="cou">
+			<h1>
+				Morocco
+			</h1>
+
+			<p style="margin: 30px;">
+			Morocco, a North African country bordering the Atlantic Ocean and Mediterranean Sea, is distinguished by its Berber, Arabian and European cultural influences. Marrakesh’s medina, a mazelike medieval quarter, offers entertainment in its Djemaa el-Fna square and souks (marketplaces) selling ceramics, jewelry and metal lanterns. The capital Rabat’s Kasbah of the Udayas is a 12th-century royal fort overlooking the water.
+				<p>
+					Capital: Rabat
+					<br>
+					Dialing code: +212
+					<br>
+					Currency: Moroccan dirham
+					<br>
+					Population: 3.65 crores (2019) World Bank
+					<br>
+					Official language: Arabic
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Mali -->
+		<div id="aboutMali" class="cou">
+			<h1>
+				Mali
+			</h1>
+
+			<p style="margin: 30px;">
+			Mali, officially the Republic of Mali, is a landlocked country in West Africa. Mali is the eighth-largest country in Africa, with an area of just over 1,240,000 square kilometres. The population of Mali is 19.1 million. 67% of its population was estimated to be under the age of 25 in 2017. Its capital is Bamako.
+				<p>
+					Capital: Bamako
+					<br>
+					Dialing code: +223
+					<br>
+					Currency: West African CFA franc
+					<br>
+					National languages: French, Arabic, English, Fulani, Mandinka
+					<br>
+					Population: 1.97 crores (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Madagascar -->
+		<div id="aboutMadagascar" class="cou">
+			<h1>
+				Madagascar
+			</h1>
+
+			<p style="margin: 30px;">
+			Madagascar, officially the Republic of Madagascar, and previously known as the Malagasy Republic, is an island country in the Indian Ocean, approximately 400 kilometres off the coast of East Africa. At 592,800 square kilometres Madagascar is the world's second-largest island country.
+				<p>
+					Capital: Antananarivo
+					<br>
+					Dialing code: +261
+					<br>
+					President: Andry Rajoelina
+					<br>
+					Currency: Malagasy ariary
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Mozambique -->
+		<div id="aboutMozambique" class="cou">
+			<h1>
+				Mozambique
+			</h1>
+
+			<p style="margin: 30px;">
+			Mozambique is a southern African nation whose long Indian Ocean coastline is dotted with popular beaches like Tofo, as well as offshore marine parks. In the Quirimbas Archipelago, a 250km stretch of coral islands, mangrove-covered Ibo Island has colonial-era ruins surviving from a period of Portuguese rule. The Bazaruto Archipelago farther south has reefs which protect rare marine life including dugongs.
+				<p>
+					Capital: Maputo
+					<br>
+					Dialing code: +258
+					<br>
+					Recognized languages: Swahili, Mwani, Chewa, Tsonga
+					<br>
+					Currency: Mozambican metical
+					<br>
+					President: Filipe Nyusi
+					<br>
+					Official language: Portuguese
+				</p>
+
+
+			</p>
+		</div>
+
+
+
+		<!-- about Mauritania -->
+		<div id="aboutMauritania" class="cou">
+			<h1>
+				Mauritania
+			</h1>
+
+			<p style="margin: 30px;">
+			Mauritania, officially the Islamic Republic of Mauritania, is a country in Northwest Africa. It is the twenty-eighth largest country or dependency in the world, the eleventh largest sovereign state in Africa and the largest country lying entirely below an altitude of 1,000 metres.
+				<p>
+					Capital: Nouakchott
+					<br>
+					Dialing code: +222
+					<br>
+					President: Mohamed Ould Ghazouani
+					<br>
+					Currency: Mauritanian ouguiya
+					<br>
+					Recognised languages: French
+					<br>
+					Population: 45.3 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Malawi-->
+		<div id="aboutMalawi" class="cou">
+			<h1>
+				Malawi
+			</h1>
+
+			<p style="margin: 30px;">
+			Malawi, a landlocked country in southeastern Africa, is defined by its topography of highlands split by the Great Rift Valley and enormous Lake Malawi. The lake’s southern end falls within Lake Malawi National Park – sheltering diverse wildlife from colorful fish to baboons – and its clear waters are popular for diving and boating. Peninsular Cape Maclear is known for its beach resorts.
+				<p>
+					Capital: Lilongwe
+					<br>
+					Dialing code: +265
+					<br>
+					Recognised regional languages: Yao, Tumbuka, Tonga, Sena, Lomwe, Ngonde, Lambya
+					<br>
+					Currency: Malawian kwacha
+					<br>
+					President: Lazarus Chakwera
+					<br>
+					Official language: English
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Namibia -->
+		<div id="aboutNamibia" class="cou">
+			<h1>
+				Namibia
+			</h1>
+
+			<p style="margin: 30px;">
+			Namibia, a country in southwest Africa, is distinguished by the Namib Desert along its Atlantic Ocean coast. The country is home to diverse wildlife, including a significant cheetah population. The capital, Windhoek, and coastal town Swakopmund contain German colonial-era buildings such as Windhoek's Christuskirche, built in 1907. In the north, Etosha National Park’s salt pan draws game including rhinos and giraffes.
+				<p>
+					Capital: Windhoek
+					<br>
+					Dialing code: +264
+					<br>
+					Recognised regional languages: Kung, Gciriku, Thimbukushu
+					<br>
+					President: Hage Geingob
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Niger-->
+		<div id="aboutNiger" class="cou">
+			<h1>
+				Niger
+			</h1>
+
+			<p style="margin: 30px;">
+			Niger or the Niger, officially the Republic of the Niger, is a landlocked country in West Africa named after the Niger River. Niger is bordered by Libya to the northeast, Chad to the east, Nigeria to the south, Benin and Burkina Faso to the southwest, Mali to the west, and Algeria to the northwest.
+				<p>
+					Capital: Niamey
+					<br>
+					Dialing code: +227
+					<br>
+					President: Mohamed Bazoum
+					<br>
+					Currency: West African CFA franc
+					<br>
+					Population: 2.33 crores (2019)
+					<br>
+					Prime minister: Brigi Rafini
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Nigeria -->
+		<div id="aboutNigeria" class="cou">
+			<h1>
+				Nigeria
+			</h1>
+
+			<p style="margin: 30px;">
+			Nigeria, an African country on the Gulf of Guinea, has many natural landmarks and wildlife reserves. Protected areas such as Cross River National Park and Yankari National Park have waterfalls, dense rainforest, savanna and rare primate habitats. One of the most recognizable sites is Zuma Rock, a 725m-tall monolith outside the capital of Abuja that’s pictured on the national currency.
+				<p>
+					Capital: Abuja
+					<br>
+					Dialing code: +234
+					<br>
+					National languages: Hausa, Igbo, Yoruba
+					<br>
+					Currency: Nigerian naira
+					<br>
+					Population: 20.1 crores (2019) 
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Rwanda-->
+		<div id="aboutRwanda" class="cou">
+			<h1>
+				Rwanda
+			</h1>
+
+			<p style="margin: 30px;">
+			Rwanda, officially the Republic of Rwanda, is a landlocked country in the Great Rift Valley, where the African Great Lakes region and East Africa converge. One of the smallest countries on the African mainland, its capital city is Kigali.
+				<p>
+					Capital: Kigali
+					<br>
+					Dialing code: +250
+					<br>
+					President: Paul Kagame
+					<br>
+					Currency: Rwandan franc
+					<br>
+					Official languages: Kinyarwanda, French, English
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about W._Sahara -->
+		<div id="aboutW_Sahara" class="cou">
+			<h1>
+				Western Sahara
+			</h1>
+
+			<p style="margin: 30px;">
+			Western Sahara is a disputed territory on the northwest coast and in the Maghreb region of North and West Africa. About 20% of the territory is controlled by the self-proclaimed Sahrawi Arab Democratic Republic, while the remaining 80% of the territory is occupied and administered by neighboring Morocco.
+				<p>
+					Capital: Laayoune
+					<br>
+					Dialing code: +212
+					<br>
+					Area: 266,000 km²
+					<br>
+					Continent: Africa
+					<br>
+					Currencies: Moroccan dirham, Mauritanian ouguiya, Sahrawi peseta
+					<br>
+					Official language: Arabic
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Sudan-->
+		<div id="aboutSudan" class="cou">
+			<h1>
+				Sudan
+			</h1>
+
+			<p style="margin: 30px;">
+			Sudan, officially the Republic of the Sudan, is a country in Northeast Africa. It is bordered by Egypt to the north, Libya to the northwest, Chad to the west, the Central African Republic to the southwest, South Sudan to the south, Ethiopia to the southeast, Eritrea to the east, and the Red Sea to the northeast.
+				<p>
+					Capital: Khartoum
+					<br>
+					Dialing code: +249
+					<br>
+					Currency: Sudanese pound
+					<br>
+					Population: 4.28 crores (2019) World Bank
+					<br>
+					Continent: Africa
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about S._Sudan-->
+		<div id="aboutS_Sudan" class="cou">
+			<h1>
+				South Sudan
+			</h1>
+
+			<p style="margin: 30px;">
+			South Sudan, officially known as the Republic of South Sudan, is a landlocked country in East-Central Africa
+				<p>
+					Capital: Juba
+					<br>
+					Dialing code: +211
+					<br>
+					President: Salva Kiir Mayardit
+					<br>
+					Currency: South Sudanese pound
+					<br>
+					Population: 1.11 crores (2019) 
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Senegal-->
+		<div id="aboutSenegal" class="cou">
+			<h1>
+				Senegal
+			</h1>
+
+			<p style="margin: 30px;">
+			Senegal, officially the Republic of Senegal, is a country in West Africa. Senegal is bordered by Mauritania in the north, Mali to the east, Guinea to the southeast, and Guinea-Bissau to the southwest.
+				<p>
+					Capital: Dakar
+					<br>
+					Dialing code: +221
+					<br>
+					President: Macky Sall
+					<br>
+					Currency: West African CFA franc
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Sierra_Leone -->
+		<div id="aboutSierra_Leone" class="cou">
+			<h1>
+				Sierra Leone
+			</h1>
+
+			<p style="margin: 30px;">
+			Sierra Leone is a country in West Africa, on the Atlantic Ocean. It’s known for the white-sand beaches lining the Freetown Peninsula. The capital city, Freetown, commemorates the nation’s slave-trade history with the Cotton Tree landmark and King’s Yard Gate. Both were known as places of refuge for returned slaves in the 18th and 19th centuries. Nearby Bunce Island was a key departure point during the slave trade. 
+			<p>
+					Capital: Freetown
+					<br>
+					Dialing code: +232
+					<br>
+					President: Julius Maada Bio
+					<br>
+					Recognised national languages: Krio
+					<br>
+					Currency: Sierra Leonean leone
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Swaziland -->
+		<div id="aboutSwaziland" class="cou">
+			<h1>
+				Swaziland
+			</h1>
+
+			<p style="margin: 30px;">
+			Eswatini, officially the Kingdom of Eswatini, sometimes written in English as eSwatini, and formerly and still commonly known in English as Swaziland, is a landlocked country in Southern Africa. It is bordered by Mozambique to its northeast and South Africa to its north, west, and south. 
+			<p>
+						Capitals: Mbabane, Lobamba
+						<br>
+						Dialing code: +268
+						<br>
+						Currency: Swazi lilangeni
+						<br>
+						King: Mswati III
+						<br>
+						Population: 11.5 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Chad -->
+		<div id="aboutChad" class="cou">
+			<h1>
+				Chad
+			</h1>
+
+			<p style="margin: 30px;">
+			Chad, officially known as the Republic of Chad, is a landlocked country in north-central Africa. It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon to the south-west, Nigeria to the southwest, and Niger to the west.
+			<p>
+						Capital: N'Djamena
+						<br>
+						Dialing code: +235
+						<br>
+						President: Idriss Déby
+						<br>
+						Currency: Central African CFA franc
+						<br>
+						Population: 1.59 crores (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Togo -->
+		<div id="aboutTogo" class="cou">
+			<h1>
+				Togo
+			</h1>
+
+			<p style="margin: 30px;">
+			Togo, a West African nation on the Gulf of Guinea, is known for its palm-lined beaches and hilltop villages. Koutammakou, inhabited by the Batammariba people, is a traditional settlement of fortresslike clay huts dating to the 17th century. In the capital, Lomé, are the multistory Grand Marché bazaar and the Fetish Market, offering traditional talismans and remedies relating to the vodun (voodoo) religion. 
+			<p>
+						Capital: Lomé
+						<br>
+						Dialing code: +228
+						<br>
+						Recognised national languages: Ewe • Kabiye
+						<br>
+						Currency: West African CFA franc
+						<br>
+						President: Faure Gnassingbé
+						<br>
+						Population: 80.8 lakhs (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+
+		<!-- about Tunisia -->
+		<div id="aboutTunisia" class="cou">
+			<h1>
+				Tunisia
+			</h1>
+
+			<p style="margin: 30px;">
+			Tunisia, officially the Republic of Tunisia, is the northernmost country in Africa. It is a part of the Maghreb region of North Africa, and is bordered by Algeria to the west and southwest, Libya to the southeast, and the Mediterranean Sea to the north and east; covering 163,610 km², with a population of 11 million.
+			<p>
+						Capital: Tunis
+						<br>
+						Dialing code: +216
+						<br>
+						President: Kais Saied
+						<br>
+						Currency: Tunisian dinar
+						<br>
+						Continent: Africa
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Tanzania -->
+		<div id="aboutTanzania" class="cou">
+			<h1>
+				Tanzania
+			</h1>
+
+			<p style="margin: 30px;">
+			Tanzania is an East African country known for its vast wilderness areas. They include the plains of Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the tropical islands of Zanzibar, with Arabic influences, and Mafia, with a marine park home to whale sharks and coral reefs.
+			<p>
+						Capital: Dodoma
+						<br>
+						Dialing code: +255
+						<br>
+						President: Samia Suluhu Hassan
+						<br>
+						National language: Swahili
+						<br>
+						Currency: Tanzanian shilling
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Uganda-->
+		<div id="aboutUganda" class="cou">
+			<h1>
+				Uganda
+			</h1>
+
+			<p style="margin: 30px;">
+			Uganda is a landlocked country in East Africa whose diverse landscape encompasses the snow-capped Rwenzori Mountains and immense Lake Victoria. Its abundant wildlife includes chimpanzees as well as rare birds. Remote Bwindi Impenetrable National Park is a renowned mountain gorilla sanctuary. Murchison Falls National Park in the northwest is known for its 43m-tall waterfall and wildlife such as hippos.
+			<p>
+						Capital: Kampala
+						<br>
+						Dialing code: +256
+						<br>
+						President: Yoweri Museveni
+						<br>
+						Currency: Ugandan shilling
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about South_Africa -->
+		<div id="aboutSouth_Africa" class="cou">
+			<h1>
+				South Africa
+			</h1>
+
+			<p style="margin: 30px;">
+			South Africa is a country on the southernmost tip of the African continent, marked by several distinct ecosystems. Inland safari destination Kruger National Park is populated by big game. The Western Cape offers beaches, lush winelands around Stellenbosch and Paarl, craggy cliffs at the Cape of Good Hope, forest and lagoons along the Garden Route, and the city of Cape Town, beneath flat-topped Table Mountain.
+			<p>
+						Capitals: Cape Town, Pretoria, Bloemfontein
+						<br>
+						Dialing code: +27
+						<br>
+						President: Cyril Ramaphosa
+						<br>
+						Population: 5.86 crores (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+
+		<!-- about Zambia -->
+		<div id="aboutZambia" class="cou">
+			<h1>
+				Zambia
+			</h1>
+
+			<p style="margin: 30px;">
+			Zambia, in southern Africa, is a landlocked country of rugged terrain and diverse wildlife, with many parks and safari areas. On its border with Zimbabwe is famed Victoria Falls – indigenously called Mosi-oa-Tunya, or "Smoke That Thunders” – plunging a misty 108m into narrow Batoka Gorge. Spanning the Zambezi River just below the falls is Victoria Falls Bridge, a spectacular viewpoint.
+			<p>
+						Capital: Lusaka
+						<br>
+						Dialing code: +260
+						<br>
+						Currency: Zambian kwacha
+						<br>
+						President: Edgar Lungu
+						<br>
+						Population: 1.79 crores (2019)
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Zimbabwe -->
+		<div id="aboutZimbabwe" class="cou">
+			<h1>
+				Zimbabwe
+			</h1>
+
+			<p style="margin: 30px;">
+			Zimbabwe is a landlocked country in southern Africa known for its dramatic landscape and diverse wildlife, much of it within parks, reserves and safari areas. On the Zambezi River, Victoria Falls make a thundering 108m drop into narrow Batoka Gorge, where there’s white-water rafting and bungee-jumping. Downstream are Matusadona and Mana Pools national parks, home to hippos, rhinos and birdlife.
+			<p>
+						Currencies: United States Dollar, Real Time Gross Settlement dollar Trending
+						<br>
+						Capital: Harare
+						<br>
+						President: Emmerson Mnangagwa
+						<br>
+						Calling code: +263
+						<br>
+						Population: 14,215,809
+				</p>
+
+
+			</p>
+		</div>
+
+		<!-- about Somalia -->
+		<div id="aboutSomalia" class="cou">
+			<h1>
+				Somalia
+			</h1>
+
+			<p style="margin: 30px;">
+			Somalia, officially the Federal Republic of Somalia, is a country in the Horn of Africa. It is bordered by Ethiopia to the west, Djibouti to the Northwest, the Gulf of Aden to the north, the Indian Ocean to the east, and Kenya to the southwest. Somalia has the longest coastline on Africa's mainland.
+			<p>
+						Capital: Mogadishu
+						<br>
+						Currency:  shilling
+						<br>
+						President: Mohamed Abdullahi Farmaajo
+						<br>
+						Population: 1.54 crores (2019) 
+				</p>
+
+
+			</p>
+		</div>
+
+	</center>
+</span>
+</div>
+
+
+<div id="topsightstable">
+
+	<p id="topsightstitle">Top sights
+		<span style="display: block;font-size: 11px;">Based on traveller visits and local insights</span></p>
+
+	<div id="herethetablecomes">
+		
+		<div id="flexbox1">
+
+<!-- 1 -->
+			
+
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee1" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/mountkilimanjaro.png" alt="">
+					      	<figcaption class="caption">
+					      		Mount Kilimanjaro<br>
+					      		
+					      		<span class="ratings">
+					      			4.4 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (2,444)
+					      				<br>
+					      				Legendary mountain, highest in Africa
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee2" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/gizanecropolis.png" alt="">
+					      	<figcaption class="caption">
+					      		Giza Necropolis<br>
+					      		
+					      		<span class="ratings">
+					      			4.6 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (58,729)
+					      				<br>
+					      				Site of the Great Pyramids & the Sphinx
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee3" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/victoriafalls.png" alt="">
+					      	<figcaption class="caption">
+					      		Victoria Falls<br>
+					      		
+					      		<span class="ratings">
+					      			4.7 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (3,205)
+					      				<br>
+					      				Waterfall known as the world's largest
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee4" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/Krugernationalpark.png" alt="">
+					      	<figcaption class="caption">
+					      		Kruger National Park<br>
+					      		
+					      		<span class="ratings">
+					      			4.7 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (16,501)
+					      				<br>
+					      				Immense South African game reserve
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+
+
+
+<!-- 2 -->
+			
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee5" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/Theegyptianmuseum.png" alt="">
+					      	<figcaption class="caption">
+					      		The Egyptian Museum<br>
+					      		
+					      		<span class="ratings">
+					      			4.5 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (30,807)
+					      				<br>
+					      				Tracing 5,000 years of Egyptian history
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee6" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/Jemaaelfna.png" alt="">
+					      	<figcaption class="caption">
+					      		Jemaa el-Fna<br>
+					      		
+					      		<span class="ratings">
+					      			4.3 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- empty star --><i class="lar la-star"></i> (11,331)
+					      				<br>
+					      				Local market stalls & street performers
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee7" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/V&Awaterfront.png" alt="">
+					      	<figcaption class="caption">
+					      		V&A Waterfront<br>
+					      		
+					      		<span class="ratings">
+					      			4.6 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (69,585)
+					      				<br>
+					      				Harbor-side commercial & residential hub
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee8" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/kasbahoftheudayas.png" alt="">
+					      	<figcaption class="caption">
+					      		Kasbah of the Udayas<br>
+					      		
+					      		<span class="ratings">
+					      			4.5 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (7,721)
+					      				<br>
+					      				Ancient citadel with a museum & gardens
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+<!-- 3 -->
+			
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee8" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/Mauritiusisland.png" alt="">
+					      	<figcaption class="caption">
+					      		Mauritius Island<br>
+					      		
+					      		<span class="ratings">
+					      			4.4 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (1,194)
+					      				<br>
+					      				Volcanic island with reserves & beaches
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee8" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/Hassantower.png" alt="">
+					      	<figcaption class="caption">
+					      		Hassan Tower<br>
+					      		
+					      		<span class="ratings">
+					      			4.5 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- halfstar --><i class="las la-star-half-alt"></i> (3,614)
+					      				<br>
+					      				Ancient, unfinished tower of a mosque
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee8" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/Izikobokaapmuseum.png" alt="">
+					      	<figcaption class="caption">
+					      		Iziko Bo-Kaap Museum<br>
+					      		
+					      		<span class="ratings">
+					      			4.3 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- empty star --><i class="lar la-star"></i> (3,245)
+					      				<br>
+					      				Displays on local Islamic culture
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+				
+					
+						<div class="item">
+					    <figure class="polaroidloc"><i id="savemee8" class="lar la-bookmark saving"></i>
+					      <img class="GBR" src="./africaimagesforAFRICA/Saadienstombs.png" alt="">
+					      	<figcaption class="caption">
+					      		Saadien's Tombs<br>
+					      		
+					      		<span class="ratings">
+					      			4.1 <i class="las la-star"></i> <!-- fullstar -->
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i>
+					      				<i class="las la-star"></i> 
+					      				<!-- empty star --><i class="lar la-star"></i> (6,768)
+					      				<br>
+					      				Sultan's mausoleum & cemetery gardens
+					      		</span>
+
+					  		</figcaption>
+					    </figure>
+					  </div>
+
+			</div>
+
+	</div>
+	<br>
+	<center>
+		<button id="seeingallsights">See all top sights</button>
+	</center>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+	
+
+	$(".cou").hide();
+	$("#aboutafrica").show();
+	//to show Angola
+	$("#Angola").click(function(){
+		 $(".cou").hide();
+		 $("#aboutAngola").show();
+		 
+	});
+
+	$("#Burundi").click(function(){
+		 $(".cou").hide();
+		 $("#aboutBurundi").show();
+	});
+
+	$("#Benin").click(function(){
+		 $(".cou").hide();
+		 $("#aboutBenin").show();
+	});
+
+	$("#Zambia").click(function(){
+		 $(".cou").hide();
+		 $("#aboutZambia").show();
+	});
+
+	$("#Burkina_Faso").click(function(){
+		 $(".cou").hide();
+		 $("#aboutBurkina_Faso").show();
+	});
+
+	$("#Botswana").click(function(){
+		 $(".cou").hide();
+		 $("#aboutBotswana").show();
+	});
+
+	$("#Lesotho").click(function(){
+		 $(".cou").hide();
+		 $("#aboutLesotho").show();
+	});
+
+	$("#Cameroon").click(function(){
+		 $(".cou").hide();
+		 $("#aboutCameroon").show();
+	});
+
+	$("#Congo").click(function(){
+		 $(".cou").hide();
+		 $("#aboutCongo").show();
+	});
+
+	$("#DemCongo").click(function(){
+		 $(".cou").hide();
+		 $("#aboutDem").show();
+	});
+
+	$("#Djibouti").click(function(){
+		 $(".cou").hide();
+		 $("#aboutDjibouti").show();
+	});
+
+	$("#Somalia").click(function(){
+		 $(".cou").hide();
+		 $("#aboutSomalia").show();
+	});
+
+	$("#Eritrea").click(function(){
+		 $(".cou").hide();
+		 $("#aboutEritrea").show();
+	});
+
+	$("#Ghana").click(function(){
+		 $(".cou").hide();
+		 $("#aboutGhana").show();
+	});
+
+	$("#Guinea").click(function(){
+		 $(".cou").hide();
+		 $("#aboutGuinea").show();
+	});
+
+	$("#Swaziland").click(function(){
+		 $(".cou").hide();
+		 $("#aboutSwaziland").show();
+	});
+
+	$("#Chad").click(function(){
+		 $(".cou").hide();
+		 $("#aboutChad").show();
+	});
+
+	$("#Mauritania").click(function(){
+		 $(".cou").hide();
+		 $("#aboutMauritania").show();
+	});
+
+	$("#Tanzania").click(function(){
+		 $(".cou").hide();
+		 $("#aboutTanzania").show();
+	});
+
+	$("#Kenya").click(function(){
+		 $(".cou").hide();
+		 $("#aboutKenya").show();
+	});
+
+	$("#Liberia").click(function(){
+		 $(".cou").hide();
+		 $("#aboutLiberia").show();
+	});
+
+	$("#Togo").click(function(){
+		 $(".cou").hide();
+		 $("#aboutTogo").show();
+	});
+
+
+	$("#Sierra_Leone").click(function(){
+		 $(".cou").hide();
+		 $("#aboutSierra_Leone").show();
+	});
+
+	$("#Guinea-Bissau").click(function(){
+		 $(".cou").hide();
+		 $("#aboutGuineaBissau").show();
+	});
+
+	$("#CentralAfricanRep").click(function(){
+		 $(".cou").hide();
+		 $("#aboutCentral_African_Rep").show();
+	});
+
+	$("#Sudan").click(function(){
+		 $(".cou").hide();
+		 $("#aboutSudan").show();
+	});
+
+	$("#Madagascar").click(function(){
+		 $(".cou").hide();
+		 $("#aboutMadagascar").show();
+	});
+
+	$("#Egypt").click(function(){
+		 $(".cou").hide();
+		 $("#aboutEgypt").show();
+	});
+
+	$("#Ethiopia").click(function(){
+		 $(".cou").hide();
+		 $("#aboutEthiopia").show();
+	});
+
+	$("#Niger").click(function(){
+		 $(".cou").hide();
+		 $("#aboutNiger").show();
+	});
+
+	$("#Nigeria").click(function(){
+		 $(".cou").hide();
+		 $("#aboutNigeria").show();
+	});
+
+
+	$("#Mali").click(function(){
+		 $(".cou").hide();
+		 $("#aboutMali").show();
+	});
+
+	$("#Cotivoire").click(function(){
+		 $(".cou").hide();
+		 $("#aboutCotivoire").show();
+	});
+
+	$("#Libya").click(function(){
+		 $(".cou").hide();
+		 $("#aboutLibya").show();
+	});
+
+
+	$("#Algeria").click(function(){
+		 $(".cou").hide();
+		 $("#aboutAlgeria").show();
+	});
+
+
+$("#Tunisia").click(function(){
+		 $(".cou").hide();
+		 $("#aboutTunisia").show();
+	});
+
+
+$("#Morocco").click(function(){
+		 $(".cou").hide();
+		 $("#aboutMorocco").show();
+	});
+
+
+$("#W_Sahara").click(function(){
+		 $(".cou").hide();
+		 $("#aboutW_Sahara").show();
+	});
+
+
+$("#Senegal").click(function(){
+		 $(".cou").hide();
+		 $("#aboutSenegal").show();
+	});
+
+
+$("#Eq_Guinea").click(function(){
+		 $(".cou").hide();
+		 $("#aboutEq_Guinea").show();
+	});
+
+
+$("#Mozambique").click(function(){
+		 $(".cou").hide();
+		 $("#aboutMozambique").show();
+	});
+
+$("#Gabon").click(function(){
+		 $(".cou").hide();
+		 $("#aboutGabon").show();
+	});
+
+$("#Uganda").click(function(){
+		 $(".cou").hide();
+		 $("#aboutUganda").show();
+	});
+
+$("#S_Sudan").click(function(){
+		 $(".cou").hide();
+		 $("#aboutS_Sudan").show();
+	});
+
+$("#South_Africa").click(function(){
+		 $(".cou").hide();
+		 $("#aboutSouth_Africa").show();
+	});
+
+$("#Rwanda").click(function(){
+		 $(".cou").hide();
+		 $("#aboutRwanda").show();
+	});
+
+$("#Malawi").click(function(){
+		 $(".cou").hide();
+		 $("#aboutMalawi").show();
+	});
+
+$("#Zimbabwe").click(function(){
+		 $(".cou").hide();
+		 $("#aboutZimbabwe").show();
+	});
+
+$("#Namibia").click(function(){
+		 $(".cou").hide();
+		 $("#aboutNamibia").show();
+	});
+
+
+// $("#savemee1").click(function(){
+// 	this.removeClass("lar");
+// 	this.addClass("las");
+// });
+
+
+});
+
+
+</script>
+
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

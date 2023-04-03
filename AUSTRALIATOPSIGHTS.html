@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+	<title>PLANGO/Australia Sights</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0%;
+			top: 0;
+			background-color: #25262a;
+			overflow: hidden;
+		}
+		
+		/*/*header
+		#headerdiv1{
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,0.9);
+			  z-index: 1;
+			  border-bottom-left-radius: 20px;
+			  border-bottom-right-radius: 20px;
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		Underline From Center
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+
+
+
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+
+		}
+
+header end*/
+
+		#div1{
+			background-color: transparent;
+			width: 62%;
+			height: 650px;
+			float: left;
+			font-family: 'Anton', sans-serif;
+			overflow: auto;
+			text-transform: uppercase;
+		}
+
+		.arrowicon{
+			font-size: 50px;
+			color: black;
+			background-color: grey;
+			border-radius: 50%;
+			padding: 10px;
+			margin: 10px;
+			transition: 0.3s all;
+			position: fixed;
+		}
+
+		.arrowicon:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.para{
+			font-size:100px;
+			margin: 0px 0px 0px 30px;
+			line-height: 100%;
+			cursor: default;
+		}
+		.para:hover{
+			color: grey;
+		}
+
+		#divforparainit{
+			margin-top: 130px;
+		}
+
+		#div2{
+			background-color: grey;
+			width: 38%;
+			height: 650px;
+			float: right;
+			font-family: 'Roboto', sans-serif;
+			overflow: auto;
+		}
+
+		.GBR {
+			  width: 100%;
+			  height: auto;
+			  border-radius: 10px;
+			}
+
+		.polaroidloc {
+			  background-color: transparent;
+			  padding-bottom: 1.5em;
+			  margin: 3px 5px;
+			}
+
+		.stars{
+			color: #e6e600;
+			word-spacing: 1px;
+			font-size: 15px;
+		}
+
+		.ratings{
+			color: black;
+			font-size: 20px;
+		}
+			
+		.caption {
+			font-size: 35px;
+			text-align: left;
+			margin: 10px 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			line-height: 93%;
+		}
+			
+		.cross{
+			position: fixed;
+			font-size: 30px;
+			background-color: rgba(179, 179, 179,0.9);
+			border-radius: 50%;
+			padding:5px;
+			transition: 0.3s all;
+			color: black;
+		}
+
+		.cross:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.info{
+			font-size: 17px;
+			padding: 5px;
+		}
+
+		.reviews{
+			font-size: 30px;
+			text-decoration: underline;
+		}
+
+		.herethereviewscome p{
+			padding: 0px 10px;
+			line-height: 120%;
+		}
+
+		.name{
+			font-size: 22px;
+			font-weight: bold;
+			color: #00004d;
+		}
+
+		.bolo{
+			font-size: 20px;
+		}
+
+		.time{
+			font-size: 13px;
+			color: black;
+		}
+
+		.quote{
+			font-size: 17px;
+		}
+
+		.like{
+			font-size: 30px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		.webresults{
+			padding: 10px;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+			background-color: black;
+			border-radius: 30px;
+			border:none;
+			color: white;
+			outline: none;
+			transition: 0.3s all;
+		}
+
+		.webresults:hover{
+			transform: scale(1.1);
+			color: white;
+			background-color: #000066;
+		}
+
+		
+
+
+
+
+		::-webkit-scrollbar {
+				  width: 10px;
+				  border-radius: 15px;
+				  background-color: none;
+					}
+		/* Track */
+		::-webkit-scrollbar-track {
+			  background: none;
+					}
+					 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			 background: none; border-radius: 15px;
+			 opacity: 0.5;
+					}
+
+			/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			  background: none; border-radius: 15px;
+					}
+
+	</style>
+
+</head>
+
+<!-- fixed header 
+<div id="headerdiv1">
+		
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				
+
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+
+			<li class="li1" title="Explore">
+				
+
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+			
+			<li class="li1">
+				<img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png">
+			</li>
+			<li class="li1" title="Contact">
+				
+
+				<a href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				
+
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+		
+		</ul>
+</div> -->
+
+<body>
+
+<div id="div1">
+	
+	<div>
+		<a href="AUSTRALIA.html"><i class="las la-long-arrow-alt-left arrowicon"></i></a>
+	</div>
+
+	<div>
+		<div id="divforparainit">
+			<p class="para" id="Great_Barrier_Reef">Great Barrier Reef</p>
+			<p class="para" id="Sydney_Opera_House">Sydney Opera House</p>
+			<p class="para" id="Bondi_Beach">Bondi Beach</p>
+			<p class="para" id="Cable_Beach">Cable Beach</p>
+			<p class="para" id="Mona_">MONA</p>
+			<p class="para" id="Sovereign_Hill">Sovereign Hill</p>
+			<p class="para" id="Scienceworks_">Scienceworks</p>
+			<p class="para" id="Fox_Glacier">Fox Glacier</p>
+			<p class="para" id="Uluru_">Uluru</p>
+			<p class="para" id="Dreamworld_">Dreamworld</p>
+			<p class="para" id="Crown_Melbourne">Crown Melbourne</p>
+			<p class="para" id="Sky_Tower">Sky Tower</p>
+			<p class="para" id="Thredbo_">Thredbo</p>
+			<p class="para" id="The_Rocks_Market">The Rocks Market</p>
+			<p class="para" id="White_Rabbit_Gallery">Rabbit Gallery</p>
+		</div>
+	</div>
+
+</div>
+
+
+<div id="div2">
+
+	<div>
+		<img class="cou" id="sidewallpaper" src="sidewallpaper.png">
+	</div>
+
+	<!-- GreatBarrierReef -->
+	<div class="cou" id="GreatBarrierReef">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/GreatBarrierReef.png">
+  		<figcaption class="caption">
+	      		Great Barrier Reef<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (7,637)
+	      				<br>
+	      				2,300km of coral & other marine life
+
+	      				<p class="info">The Great Barrier Reef is the world's largest coral reef system composed of over 2,900 individual reefs and 900 islands stretching for over 2,300 kilometres over an area of approximately 344,400 square kilometres. The reef is located in the Coral Sea, off the coast of Queensland, Australia. The Great Barrier Reef can be seen from outer space and is the world's biggest single structure made by living organisms. This reef structure is composed of and built by billions of tiny organisms, known as coral polyps. It supports a wide diversity of life and was selected as a World Heritage Site in 1981. CNN labelled it one of the seven natural wonders of the world in 1997. Australian World Heritage places included it in its list in 2007. The Queensland National Trust named it a state icon of Queensland in 2006. A large part of the reef is protected by the Great Barrier Reef Marine Park, which helps to limit the impact of human use, such as fishing and tourism. Other environmental pressures on the reef and its ecosystem include runoff, climate change accompanied by mass coral bleaching, dumping of dredging sludge and cyclic population outbreaks of the crown-of-thorns starfish.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Dinesh kumara
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 9 reviews | 78 photos <span class="time"> (2 days ago)</span></p>
+									
+									<p class="quote">Its a big experience and unforgettable thing in my life.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">A A K A S H
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 63 reviews | 180 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Imma go one day.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">RARE VIDEOS
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Was 1 km away from top.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Game Clips TJ
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">pop sock.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry Daws
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">i havent been.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Great+Barrier+Reef&oq=Great+Barrier+Reef&aqs=chrome..69i57.769j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+	
+
+	<!-- SydneyOperaHouse -->
+	<div class="cou" id="SydneyOperaHouse">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/SydneyOperaHouse.png">
+  		<figcaption class="caption">
+	      		Sydney Opera House<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (59,284)
+	      				<br>
+	      				Australia's iconic performing-arts venue
+
+	      				<p class="info">The Sydney Opera House is a multi-venue performing arts centre at Sydney Harbour located in Sydney, New South Wales, Australia. It is one of the 20th century's most famous and distinctive buildings. Designed by Danish architect Jørn Utzon, but completed by an Australian architectural team headed up by Peter Hall, the building was formally opened on 20 October 1973 after a gestation beginning with Utzon's 1957 selection as winner of an international design competition. The Government of New South Wales, led by the premier, Joseph Cahill, authorised work to begin in 1958 with Utzon directing construction. The government's decision to build Utzon's design is often overshadowed by circumstances that followed, including cost and scheduling overruns as well as the architect's ultimate resignation. The building and its surrounds occupy the whole of Bennelong Point on Sydney Harbour, between Sydney Cove and Farm Cove, adjacent to the Sydney central business district and the Royal Botanic Gardens, and close by the Sydney Harbour Bridge. The building comprises multiple performance venues, which together host well over 1,500 performances annually, attended by more than 1.2 million people.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote"> Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Sydney+Opera+House&oq=Sydney+Opera+House&aqs=chrome..69i57.868j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Bondi Beach -->
+	<div class="cou" id="BondiBeach">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/BondiBeach.png">
+  		<figcaption class="caption">
+	      		Bondi Beach<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (2,683)
+	      				<br>
+	      				Iconic surf beach & Hall Street cafes
+
+	      				<p class="info">Bondi Beach is a popular beach and the name of the surrounding suburb in Sydney, New South Wales, Australia. Bondi Beach is located 7 km east of the Sydney central business district, in the local government area of Waverley Council, in the Eastern Suburbs. It has a population of 11,656 residents. Its post code is 2026. Bondi, North Bondi, and Bondi Junction are neighbouring suburbs. Bondi Beach is one of the most visited tourist sites in Australia.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Josh West
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 110 reviews | 123 photos <span class="time"> (18 days ago)</span>
+									</p>
+									
+									<p class="quote">exquisite, enjoyed every moment of these places will certainly be back !</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Phil Halson
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 238 reviews | 4961 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">Beautiful spot to watch the sunset over a feed of fish and chips with a couple of beers.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">The Naturalist View
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 83 reviews | 261 photos <span class="time"> (150 days ago)</span></p>
+								
+								<p class="quote">Beautiful to see how nature slowly conqueres</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Kimlang Chen
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 28 reviews | 67 photos <span class="time"> (60 days ago)</span></p>
+								
+								<p class="quote">Nice</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">भटकंती
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (300 days ago)</span></p>
+								
+								<p class="quote">All time great destination to visit... World best beaches are here only.. Must visited places.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Bondi+Beach&oq=Bondi+Beach&aqs=chrome..69i57.1027j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- Cable Beach -->
+	<div class="cou" id="CableBeach">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/CableBeach.png">
+  		<figcaption class="caption">
+	      		Cable Beach<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (91)
+	      				<br>
+	      				Opulent former royal residence & museum
+
+	      				<p class="info">Cable Beach is a 22 km stretch of white sand beach on the eastern Indian Ocean and the name of the surrounding suburb in Broome, Western Australia. Cable Beach was named after the telegraph cable laid between Broome and Java in 1889. Low cliffs of red ochre rise behind the very flat and wide beach, with waves that are mostly gentle in the dry season from May to October. In 2016, the population was 5,436.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">B S Kevin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 112 reviews | 790 photos <span class="time"> (80 days ago)</span>
+									</p>
+									
+									<p class="quote">One place you have to visit when you're travelling to Australia.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">DREAM CHASER
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 35 reviews | 324 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">Another interesting place in Bangkok is the Grand Palace </p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Twain
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (70000 days ago)</span></p>
+								
+								<p class="quote">TOO GOOD</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Elon Musk
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (69 days ago)</span></p>
+								
+								<p class="quote">Never visited but looks cool in pics</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 100 reviews | 1 photos <span class="time"> (556 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Cable+Beach&oq=Cable+Beach&aqs=chrome..69i57.914j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- MONA -->
+	<div class="cou" id="MONA">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/MONA.png">
+  		<figcaption class="caption">
+	      		MONA<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (7,344)
+	      				<br>
+	      				Playful subterranean museum of art
+
+	      				<p class="info">The Museum of Old and New Art is an art museum located within the Moorilla winery on the Berriedale peninsula in Hobart, Tasmania, Australia. It is the largest privately funded museum in the Southern Hemisphere. MONA houses ancient, modern and contemporary art from the David Walsh collection. Noted for its central themes of sex and death, the museum has been described by Walsh as a "subversive adult Disneyland". MONA was officially opened on 21 January 2011. Along with its frequently updated indoor collection, MONA also hosts the annual MOFO and Dark Mofo music and arts festivals which showcase large-scale public art and live performances.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=mona+australia&ei=5VuaYLTFCZKO4-EPld2woAg&gs_ssp=eJzj4tLP1TdIio9PyjY1YLRSNahITDRLNTc2STSzMDczSTNKsjKoSDYyN0wyMTAzTjEzTU1OMfXiy83PS1RILC0uKUrMyUwEAH7_E_Y&oq=MONA+austra&gs_lcp=Cgdnd3Mtd2l6EAEYADILCC4QxwEQrwEQkwIyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BwgAEEcQsAM6CgguELEDEEMQkwI6BwgAELEDEEM6BgguEAoQQzoECAAQQzoKCC4QxwEQrwEQQzoECC4QQzoICC4QxwEQrwE6CAguELEDEJMCOgIIADoCCC46BQguELEDOgQILhAKOgUILhCTAjoICAAQFhAKEB46BAgAEAo6CQgAEMkDEBYQHlDUI1iSYWDJbGgFcAJ4AIABiAKIAZcWkgEGMC4yLjEwmAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Sovereign Hill -->
+	<div class="cou" id="SovereignHill">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/SovereignHill.png">
+  		<figcaption class="caption">
+	      		Sovereign Hill<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (7,199)
+	      				<br>
+	      				Living museum of a gold mining town
+
+	      				<p class="info">Sovereign Hill is an open-air museum in Golden Point, a suburb of Ballarat, Victoria, Australia. Sovereign Hill depicts Ballarat's first ten years after the discovery of gold there in 1851. It was officially opened on 29 November 1970 and has become a nationally acclaimed tourist attraction. It is one of Victoria's most popular attractions and Ballarat's most famous. Set in the Australian 1850s, the complex is located on a 25-hectare site that is linked to the richest alluvial gold rush in the world. The site comprises over 60 historically recreated buildings, with costumed staff and volunteers, who are able to answer questions and will pose for photos. The recreation is completed with antiques, artwork, books and papers, machinery, livestock and animals, carriages, and devices all appropriate to the era.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Sovereign+Hill&oq=Sovereign+Hill&aqs=chrome..69i57.985j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!--Scienceworks -->
+	<div class="cou" id="Scienceworks">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/Scienceworks.png">
+  		<figcaption class="caption">
+	      		Scienceworks<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (4,644)
+	      				<br>
+	      				Interactive science museum & planetarium
+
+	      				<p class="info">Scienceworks is a science museum in Melbourne, Australia. It is a venue of Museums Victoria which administers the cultural and scientific collections of the State of Victoria. It is located in the suburb of Spotswood. Opened on 28 March 1992, Scienceworks is housed in a purpose-built building "styled along industrial lines" near the historic Spotswood Pumping Station, constructed in 1897, whose steam engines form an associated exhibit. Displays and activities offered by the museum include hands-on experiments, demonstrations, and tours. The "lightning room" is a 120-seat auditorium that presents demonstrations about electricity, featuring a giant Tesla Coil, capable of generating two million volts of electricity, producing three metre lightning bolts. Melbourne Planetarium is housed on site. Until late 2013, the 1883 clock tower from Flinders Street station was also located at the museum. The clock had been moved to Princes Bridge station in 1905 and Spencer Street station in 1911, where it remained until sold into private ownership after the station redevelopment of 1967. The clock restored with an electric movement is now located at the Southern Cross station.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Scienceworks&oq=Scienceworks&aqs=chrome..69i57.1888j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Fox Glacier -->
+	<div class="cou" id="FoxGlacier">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/FoxGlacier.png">
+  		<figcaption class="caption">
+	      		Fox Glacier<br>
+	      		
+	      		<span class="ratings">
+	      			4.8 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (36)
+	      				<br>
+	      				Glacier, hiking and parachuting
+
+	      				<p class="info">Fox Glacier / Te Moeka o Tuawe is a 13-kilometre-long temperate maritime glacier located in Westland Tai Poutini National Park on the West Coast of New Zealand's South Island. Like nearby Franz Josef Glacier, Fox Glacier is one of the most accessible glaciers in the world, with a terminal face as low as 300 m above sea level, close to Fox Glacier village / Weheka. It is a major tourist attraction and about 1000 people daily visit it during high tourist season.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Fox+Glacier&oq=Fox+Glacier&aqs=chrome..69i57.939j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+		<!-- Uluru -->
+	<div class="cou" id="Uluru">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/Uluru.png">
+  		<figcaption class="caption">
+	      		Uluru<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (4,415)
+	      				<br>
+	      				Palace complex from 1420 with a museum
+
+	      				<p class="info">Uluru, also known as Ayers Rock and officially gazetted as Uluru / Ayers Rock, is a large sandstone rock formation in the southern part of the Northern Territory in Australia. It lies 335 km south west of the nearest large town, Alice Springs. Uluru is sacred to the Pitjantjatjara, the Aboriginal people of the area, known as the Aṉangu. The area around the formation is home to an abundance of springs, waterholes, rock caves and ancient paintings. Uluru is listed as a UNESCO World Heritage Site. Uluru and Kata Tjuta, also known as the Olgas, are the two major features of the Uluṟu-Kata Tjuṯa National Park. Uluru is one of Australia's most recognisable natural landmarks and has been a popular destination for tourists since the late 1930s. It is also one of the most important indigenous sites in Australia.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Uluru&oq=Uluru&aqs=chrome..69i57.844j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+	<!-- Dreamworld -->
+		<div class="cou" id="Dreamworld">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/Dreamworld.png">
+  		<figcaption class="caption">
+	      		Dreamworld<br>
+	      		
+	      		<span class="ratings">
+	      			4.2 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (9,169)
+	      				<br>
+	      				Historical place in Beijing, China
+
+	      				<p class="info">Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions. The park is made up of several themed lands: Ocean Parade, DreamWorks Experience, ABC Kids World, Tiger Island, Main Street, Gold Rush Country, Whitewater World and Corroboree. These lands have a collection of rides, animal exhibits, shows, food outlets and merchandise shops. Dreamworld is currently home to four roller coasters. The oldest is The Gold Coaster and the newest is BuzzSaw. Dreamworld was known to have a lack of coasters compared to overseas park and their competitor, Warner Bros. Movie World. Dreamworld had seen the lack of coasters and decided to take action with the announcement of a new roller coaster built by Mack Rides, named Steel Taipan. Due to COVID-19, the opening of the coaster has been moved to late 2021. Dreamworld was known for being the former location of the Australian Big Brother house filmed at the Dreamworld Studios, since the program began in Australia in 2001. In December 2006, Dreamworld expanded its offerings by opening WhiteWater World next door.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Dreamworld+(Australia)&stick=H4sIAAAAAAAAAONgecT4mJFb4OWPe8JSNxknrTl5jfESIxdXcEZ-uWteSWZJpVAcFxuUJcPFK8Wpn6tvYJphWWaswSDFzYXgSikocfHuiU15LyrMmxStJcRZGzCz-ZnwxGxBo94Hy2TeR7gYiXDx6qfrGxpmFRQZZCcVJAk8fDuDUSnYyH3XpWnn2BwFGYCgY0agg5SmlhAXu2exT35yYo6gTdvBZc3r9tprCXNxhCRW5Ofl51YKxv37v__S__f2SpycQE0NKfwH7LUYmvatOMTGwsEowBDED7UqLbeyKCsjo4hnEauYS1FqYm55flFOioKGY2lxSVFiTmaiJgBpe4tKAgEAAA&sa=X&ved=2ahUKEwiEz7KMtsHwAhW5lEsFHcKwAEIQ6RN6BAgHEAE&biw=1366&bih=635">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- Crown Melbourne -->
+	<div class="cou" id="CrownMelbourne">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/CrownMelbourne.png">
+  		<figcaption class="caption">
+	      		Crown Melbourne<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (10,035)
+	      				<br>
+	      				Hotel, entertainment & casino complex
+
+	      				<p class="info">Crown Melbourne is a casino and resort located on the south bank of the Yarra River, in Melbourne, Australia. Crown Casino is a unit of Crown Limited, and the first casino of the now-international Crown brand. Initially having opened in 1994 on the north bank of the Yarra, Crown Melbourne relocated and re–opened on the south bank of the Yarra, in 1997. It remains one of the central features of the Southbank precinct of the Melbourne central business district. The entire complex has a space of 510,000 m²—the equivalent to two city blocks—making it the largest casino complex in the Southern Hemisphere and one of the largest in the world. The complex also hosts four hotels, Crown Towers, Crown Promenade, and Crown Metropol, with a fourth hotel approved for construction which is expected to commence in 2018. The casino is accessible by tram routes 12, 58, 96, 109 which all pass near Southern Cross railway station and the Melbourne City Centre.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Crown+Melbourne&oq=Crown+Melbourne&aqs=chrome..69i57.793j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- Sky Tower-->
+	<div class="cou" id="SkyTower">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/SkyTower.png">
+  		<figcaption class="caption">
+	      		Sky Tower<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (12,389)
+	      				<br>
+	      				Panoramic city views & bungee jumping
+
+	      				<p class="info">The Sky Tower is a telecommunications and observation tower in Auckland, New Zealand. Located at the corner of Victoria and Federal Streets within the city's CBD, it is 328 metres tall, as measured from ground level to the top of the mast, making it the tallest freestanding structure in the Southern Hemisphere and the 27th tallest tower in the world. It has become an iconic landmark in Auckland's skyline due to its height and design. The tower is part of the SkyCity Auckland casino complex, originally built in 1994–1997 for Harrah's Entertainment. Several upper levels are accessible to the public, attracting an average of 1,150 visitors per day.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=sky+tower+auckland&ei=91yaYPnGJpPdrQHQ1J7QCg&gs_ssp=eJzj4tTP1TcwzDMtNjNgtFIxqDBLMUgxMU8zMEsxSUpJNjK1MqgwSjFMMk02tjBITLE0tjD3EirOrlQoyS9PLVJILE3OzknMSwEAmKgUlQ&oq=Sky+Tower+&gs_lcp=Cgdnd3Mtd2l6EAEYATIFCAAQkQIyCwguEMcBEK8BEJECMgUIABCRAjIICC4QxwEQrwEyCAguEMcBEK8BMggILhDHARCvATICCAAyAggAMggILhDHARCvATIICC4QxwEQrwE6BwgAEEcQsANQtB1YtB1g8zVoAXACeACAAe8BiAH2ApIBBTAuMS4xmAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- Thredbo -->
+	<div class="cou" id="Thredbo">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/Thredbo.png">
+  		<figcaption class="caption">
+	      		Thredbo<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (2,091)
+	      				<br>
+	      				Snowy Mountains & Mount Kosciuszko
+
+	      				<p class="info">Thredbo is an alpine village and ski resort in the Snowy Mountains of southeastern Australia. The Kosciuszko Express chairlift provides access to ski runs and offers panoramic mountain views year-round. The Mount Kosciuszko summit walk leads to the top of Australia’s highest peak. Wildflowers dot the mountains of Kosciuszko National Park in spring and summer. The trout-filled Thredbo River winds through the village.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Thredbo&oq=Thredbo&aqs=chrome..69i57.939j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- The Rocks Market -->
+	<div class="cou" id="TheRocksMarket">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/TheRocksMarket.png">
+  		<figcaption class="caption">
+	      		The Rocks Market<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (4,664)
+	      				<br>
+	      				Lively weekend crafts & food market
+
+	      				<p class="info">Vibrant open-air waterfront market, held each weekend, with stalls for local crafts & street food.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=The+Rocks+Market&oq=The+Rocks+Market&aqs=chrome..69i57.834j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- White Rabbit Gallery -->
+	<div class="cou" id="WhiteRabbitGallery">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./AUSTRALIAsights/WhiteRabbitGallery.png">
+  		<figcaption class="caption">
+	      		White Rabbit Gallery<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (1,348)
+	      				<br>
+	      				Gallery with contemporary Chinese art
+
+	      				<p class="info">The White Rabbit Gallery is a contemporary art museum located in the inner city Sydney suburb of Chippendale, New South Wales, Australia, which exhibits selections from the White Rabbit Collection of 21st-century Chinese contemporary art. The collection, one of the largest of its kind in the world, is owned by Judith Neilson. The gallery was founded in 2009 by Judith Neilson.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=white+rabbit+gallery&ei=Ml2aYJ-wOYKm9QOh3buICA&gs_ssp=eJzj4tLP1TdIyckrMyw3YLRSNagwSzI0Skw1MrdITjRLNDc3tzKosLS0NLJMtExMNk5JNjZPNfASKc_ILElVKEpMSsosUUhPzMlJLaoEAA1EFng&oq=WhiteRabbit+Gallery&gs_lcp=Cgdnd3Mtd2l6EAEYADINCC4QxwEQrwEQChCTAjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQClCJjwFYo58BYNO1AWgAcAJ4AIABmwGIAbcEkgEDMC40mAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+	$(".cou").hide();
+	$("#sidewallpaper").show();
+	//to show Great_Barrier_Reef
+	$("#Great_Barrier_Reef").click(function(){
+		 $(".cou").hide();
+		 $("#GreatBarrierReef").show();
+		 
+	});
+
+	//to show Sydney_Opera_House
+	$("#Sydney_Opera_House").click(function(){
+		 $(".cou").hide();
+		 $("#SydneyOperaHouse").show();
+		 
+	});
+
+	//to show Bondi_Beach
+	$("#Bondi_Beach").click(function(){
+		 $(".cou").hide();
+		 $("#BondiBeach").show();
+		 
+	});
+
+	//to show Cable_Beach
+	$("#Cable_Beach").click(function(){
+		 $(".cou").hide();
+		 $("#CableBeach").show();
+		 
+	});
+
+	//to show Mona_
+	$("#Mona_").click(function(){
+		 $(".cou").hide();
+		 $("#MONA").show();
+		 
+	});
+
+	//to show Sovereign_Hill
+	$("#Sovereign_Hill").click(function(){
+		 $(".cou").hide();
+		 $("#SovereignHill").show();
+		 
+	});
+
+	//to show Scienceworks_
+	$("#Scienceworks_").click(function(){
+		 $(".cou").hide();
+		 $("#Scienceworks").show();
+		 
+	});
+
+	//to show Fox_Glacier
+	$("#Fox_Glacier").click(function(){
+		 $(".cou").hide();
+		 $("#FoxGlacier").show();
+		 
+	});
+
+	//to show Uluru_
+	$("#Uluru_").click(function(){
+		 $(".cou").hide();
+		 $("#Uluru").show();
+		 
+	});
+
+	//to show Dreamworld_
+	$("#Dreamworld_").click(function(){
+		 $(".cou").hide();
+		 $("#Dreamworld").show();
+		 
+	});
+
+	//to show Crown_Melbourne
+	$("#Crown_Melbourne").click(function(){
+		 $(".cou").hide();
+		 $("#CrownMelbourne").show();
+		 
+	});
+
+	//to show Sky_Tower
+	$("#Sky_Tower").click(function(){
+		 $(".cou").hide();
+		 $("#SkyTower").show();
+		 
+	});
+
+
+	//to show Thredbo_
+	$("#Thredbo_").click(function(){
+		 $(".cou").hide();
+		 $("#Thredbo").show();
+		 
+	});
+
+	//to show The_Rocks_Market
+	$("#The_Rocks_Market").click(function(){
+		 $(".cou").hide();
+		 $("#TheRocksMarket").show();
+		 
+	});
+
+	//to show White_Rabbit_Gallery
+	$("#White_Rabbit_Gallery").click(function(){
+		 $(".cou").hide();
+		 $("#WhiteRabbitGallery").show();
+		 
+	});
+
+
+	//to show cross
+	$(".cross").click(function(){
+		 $(".cou").hide();
+		 $("#sidewallpaper").show();
+	});
+
+
+});
+
+</script>
+
+
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

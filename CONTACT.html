@@ -1,0 +1,2807 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<script src="https://kit.fontawesome.com/8083d68eae.js" crossorigin="anonymous"></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+	
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+
+	<title>PLANGO/Contact</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0%;
+			margin-top: 5%;
+			background-color: #121212;
+			overflow-x: hidden;
+
+		}
+
+/*header start*/
+
+		#headerdiv1{
+			position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,0.9);
+			  z-index: 1;
+			  border-bottom-left-radius:20px;
+			  border-bottom-right-radius:20px;
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		/* Underline From Center */
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+		}
+/*header end*/
+
+
+/*div with contact us heading*/
+
+		.night{
+			height: 60%;
+			width: 100%;
+			
+			margin-top: -110px;
+			background: url(./assets/bgcolourfulll.png);
+			background-size: cover;
+			position: absolute;
+			overflow-x: hidden;
+		}
+
+		.surface{
+			height: 120px;
+			width: 500%;
+			background: url(./assets/trees.png);
+			position: absolute;
+			bottom: 0%;
+			left: 0%;
+			background-repeat: repeat-x;
+			animation: moveRight 11s linear infinite;
+		}
+
+		.car{
+			position: absolute;
+			bottom: 5%;
+			left: 24%;
+			animation: moveUp 1s linear infinite;
+		}
+
+		/*animation*/
+
+		@keyframes moveRight{
+			100%{transform: translateX(-2950px);}
+		}
+
+		@keyframes moveUp{
+			100%{
+				transform: translateY(-1px);
+			}
+			50%{
+				transform: translateY(1px);
+			}
+			0%{
+				transform: translateY(-1px);
+			}
+		}
+
+/*end animation*/
+
+		#query{
+			height: auto;
+			width: auto;
+			margin: 100px;
+			margin-top: 250px;
+			position: absolute;
+			float: left;
+			font-size: 25px
+		}
+
+		a.email_us{color: grey}
+
+
+		a.email_us:hover {
+ 			 color: white;
+			}
+
+
+/*donate us button created*/
+/*hiring button*/
+		#btntable{
+			float: right;
+			margin-right: 100px; 
+			margin-top: 300px;
+			padding: 20px;
+			cursor: default;
+		}
+
+		.shitallaround{
+			width: 350px;
+			height: 25px;
+			background-color: black;
+			font-family: 'Almarai', sans-serif;
+			color: white;
+			text-align: center;
+			border:2px solid white;
+			border-radius: 30px;
+			padding: 30px;
+			font-size: 30px;
+			transition: 0.3s ease-in-out;
+			margin: 5px;
+		}
+
+		.shitallaround:hover{
+			background-color: white;
+			color: black;
+			border:2px solid black;
+			border-radius: 60px;
+		}
+
+
+
+
+
+/*donate us div created*/
+
+
+		#donateuspage{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			border:1px solid grey;
+			border-radius: 50px;
+			position: absolute;
+			margin-left: 800px;
+			margin-top: 295px;
+			color: grey;
+			
+		}
+
+
+		.divfordonatinguswithqrcode{
+			width: 350px;
+			height: 350px;
+			display: none;
+		}
+
+		#donateuspagebtn1{
+			border: 1px solid white;
+			background-color: #121212;
+			outline: none;
+			transition: 0.1s ease-in-out;
+			border-radius: 10px;
+		}
+		#donateuspagebtn1:hover{
+			background-color: white;
+			border-radius: 30px;
+		}
+
+		.tdfordonation{
+			margin-top:-50px;
+			padding:10px 10px;
+		}
+
+
+/*hiring div created with content*/
+
+
+		#wearehiringdiv{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			border:1px solid grey;
+			border-radius: 50px;
+			position: absolute;
+			margin-left: 800px;
+			margin-top: 300px;
+			color: grey;
+
+		}
+		  .wearehiringfreepeople{
+		  	width: 350px;
+			height: 350px;
+			display: none;
+		  }
+
+
+
+
+/*crosses*/
+		.crosses{
+			color: #f54956;
+			right: 15px;
+			padding: 8px;
+			top:10px;
+		}
+
+		.crosses:hover{
+			color: white;
+			transform: scale(1.2);
+		}
+
+
+		/*scrollbar*/
+
+			::-webkit-scrollbar {
+				  width: 10px;
+				  border-radius: 15px;
+				  background-color: #121212;
+					}
+		/* Track */
+		::-webkit-scrollbar-track {
+			  background: #121212;
+					}
+					 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			 background: white; border-radius: 15px;
+			 opacity: 0.5;
+					}
+
+			/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			  background: grey; border-radius: 15px;
+					}
+
+
+
+/*media queries*/
+
+@media only screen and (min-width: 100px) {
+
+	#headerlist .li1{
+		font-size: 14px;
+	}
+
+
+	#headerimg1{
+		width: 50px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 2500%;
+			left: 0%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 20px;
+			margin-top: 60%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 10px;
+		}
+
+		.shitallaround{
+			width: 250px;
+			height: 25px;
+			padding: 20px;
+			font-size: 20px;
+		}
+
+		#btntable{
+			margin-top: 540px;
+			margin-right: 5%;
+			
+		}
+
+		#donateuspage{
+			width: 360px;
+			height: 220px;
+			font-size: 17px;
+			margin-top: 480px;
+			margin-left: 4%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 360px;
+			height: 220px;
+			font-size: 17px;
+			margin-top: 480px;
+			margin-left: 4%;	
+		}
+		
+
+}
+
+
+@media only screen and (min-width: 450px) {
+
+	#headerlist .li1{
+		font-size: 18px;
+	}
+
+
+	#headerimg1{
+		width: 60px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 20px;
+			margin-top: 50%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 10px;
+		}
+
+		.shitallaround{
+			width: 250px;
+			height: 25px;
+			padding: 20px;
+			font-size: 20px;
+		}
+
+		#btntable{
+			margin-top: 520px;
+			margin-right: 14%;
+			
+		}
+
+		#donateuspage{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 480px;
+			margin-left: 10%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 480px;
+			margin-left: 10%;	
+		}
+		
+
+}
+
+		/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 535px) {
+
+	#headerlist .li1{
+		font-size: 18px;
+	}
+
+
+	#headerimg1{
+		width: 60px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 20px;
+			margin-top: 40%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px;
+		}
+
+		.shitallaround{
+			width: 250px;
+			height: 25px;
+			padding: 20px;
+			font-size: 20px;
+		}
+
+		#btntable{
+			margin-top: 480px;
+			text-align: center;
+			
+		}
+
+		#donateuspage{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 430px;
+			margin-left: 14%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 430px;
+			margin-left: 14%;	
+		}
+		
+
+}
+
+@media only screen and (min-width: 580px) {
+
+	#headerlist .li1{
+		font-size: 20px;
+	}
+
+
+	#headerimg1{
+		width: 65px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 20px;
+			margin-top: 38%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 20px;
+		}
+
+		.shitallaround{
+			width: 250px;
+			height: 25px;
+			padding: 20px;
+			font-size: 20px;
+			margin-left: -8%;
+		}
+
+		#btntable{
+			margin-top: 480px;
+			text-align: center;
+
+			
+		}
+
+		#donateuspage{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 430px;
+			margin-left: 14%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 430px;
+			margin-left: 14%;	
+		}
+		
+
+}
+
+@media only screen and (min-width: 605px) {
+
+	#headerlist .li1{
+		font-size: 22px;
+	}
+
+
+	#headerimg1{
+		width: 75px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 20px;
+			margin-top: 35%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 25px;
+		}
+
+		.shitallaround{
+			width: 270px;
+			height: 25px;
+			padding: 20px;
+			font-size: 20px;
+			margin-left: -10%;
+		}
+
+		#btntable{
+			margin-top: 490px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 440px;
+			margin-left: 16%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 440px;
+			margin-left: 16%;	
+		}
+		
+
+}
+
+@media only screen and (min-width: 620px) {
+
+	#headerlist .li1{
+		font-size: 22px;
+	}
+
+
+	#headerimg1{
+		width: 75px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 20px;
+			margin-top: 40%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 25px;
+		}
+
+		.shitallaround{
+			width: 300px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+			
+		}
+
+		#donateuspage{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 450px;
+			margin-left: 16%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 400px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 450px;
+			margin-left: 16%;	
+		}
+		
+
+}
+
+@media only screen and (min-width: 645px) {
+
+	#headerlist .li1{
+		font-size: 22px;
+	}
+
+
+	#headerimg1{
+		width: 75px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 22px;
+			margin-top: 30%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 30px;
+		}
+
+		.shitallaround{
+			width: 300px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+		}
+
+		#btntable{
+			margin-top: 490px;
+			text-align: left;
+			
+		}
+
+		#donateuspage{
+			width: 410px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 440px;
+			margin-left: 18%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 410px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 440px;
+			margin-left: 18%;	
+		}
+		
+
+}
+
+
+@media only screen and (min-width: 680px) {
+
+	#headerlist .li1{
+		font-size: 22px;
+	}
+
+
+	#headerimg1{
+		width: 75px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 22px;
+			margin-top: 30%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 30px;
+		}
+
+		.shitallaround{
+			width: 320px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+		}
+
+		#btntable{
+			margin-top: 495px;
+			text-align: left;
+			
+		}
+
+		#donateuspage{
+			width: 410px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 450px;
+			margin-left: 19%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 410px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 450px;
+			margin-left: 19%;	
+		}
+		
+
+}
+
+
+@media only screen and (min-width: 715px) {
+
+	#headerlist .li1{
+		font-size: 23px;
+	}
+
+
+	#headerimg1{
+		width: 75px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 22px;
+			margin-top: 30%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 30px;
+		}
+
+		.shitallaround{
+			width: 330px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -15%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 420px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 450px;
+			margin-left: 19%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 420px;
+			height: 230px;
+			font-size: 22px;
+			margin-top: 450px;
+			margin-left: 19%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 745px) {
+
+	#headerlist .li1{
+		font-size: 23px;
+	}
+
+
+	#headerimg1{
+		width: 80px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 23%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 340px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -15%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 440px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 19%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 440px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 19%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 785px) {
+
+	#headerlist .li1{
+		font-size: 23px;
+	}
+
+
+	#headerimg1{
+		width: 85px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 23%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 370px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -15%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 19%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 19%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 810px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 85px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 23%;
+			margin-right: 0px;
+			margin-left: 7%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 370px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -15%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 25%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 25%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 865px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 20%;
+			margin-right: 0px;
+			margin-left: 9%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 370px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -18%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 26%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 26%;	
+		}
+		
+}
+
+
+
+@media only screen and (min-width: 890px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 20%;
+			margin-right: 0px;
+			margin-left: 10%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 370px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -21%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 26%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 26%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 915px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 19%;
+			margin-right: 0px;
+			margin-left: 10%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 370px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -21%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 28%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 450px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 28%;	
+		}
+		
+}
+
+@media only screen and (min-width: 930px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 19%;
+			margin-right: 0px;
+			margin-left: 10%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 380px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -28%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 460px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 28%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 460px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 28%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 965px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 19%;
+			margin-right: 0px;
+			margin-left: 10%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 380px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -33%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 460px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 27%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 460px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 27%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 15%;
+			margin-right: 0px;
+			margin-left: 10%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 400px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -38%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 1030px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 14%;
+			margin-right: 0px;
+			margin-left: 10%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 400px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -43%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 1060px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 14%;
+			margin-right: 0px;
+			margin-left: 10%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 400px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -47%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 1085px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 14%;
+			margin-right: 0px;
+			margin-left: 12%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 400px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -50%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 24%;	
+		}
+		
+}
+
+
+
+@media only screen and (min-width: 1136px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 13%;
+			margin-right: 0px;
+			margin-left: 12%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 400px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -59%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 25%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 25%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 1175px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 12%;
+			margin-right: 0px;
+			margin-left: 16%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 400px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -59%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 28%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 28%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 1220px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	.night{
+			margin-top:-10%;
+			overflow-y: hidden;
+			height: 300px;
+			width: 100%;
+		}
+
+
+	.surface{
+			height: 40%;
+			width: 1500%;
+			left: -10%;
+			background-repeat: repeat-x;
+		}
+
+
+		.car{
+			bottom: 7%;
+			left: 20%;
+		}
+
+		#carimage{
+			width: 70%;
+			height: auto;
+		}
+
+
+		#query{
+			font-size: 24px;
+			margin-top: 11%;
+			margin-right: 0px;
+			margin-left: 19%;
+			padding: 35px;
+		}
+
+		.shitallaround{
+			width: 400px;
+			height: 25px;
+			padding: 20px;
+			font-size: 22px;
+			margin-left: -59%;
+		}
+
+		#btntable{
+			margin-top: 500px;
+			text-align: left;
+
+			
+		}
+
+		#donateuspage{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 29%;		
+		}
+
+
+		#wearehiringdiv{
+			width: 480px;
+			height: 235px;
+			font-size: 22px;
+			margin-top: 445px;
+			margin-left: 29%;	
+		}
+		
+}
+
+
+@media only screen and (min-width: 1240px) {
+
+	#headerlist .li1{
+		font-size: 24px;
+	}
+
+
+	#headerimg1{
+		width: 90px;
+		height: auto;
+	}
+
+
+	#query{
+			height: auto;
+			width: auto;
+			margin: 10px;
+			margin-top: 190px;
+			padding: 5px;
+			float: left;
+			font-size: 25px
+		}
+
+
+	#btntable{
+			float: right;
+			margin-right: 70px; 
+			margin-top: 250px;
+			padding: 20px;
+			cursor: default;
+		}
+
+	.shitallaround{
+			width: 350px;
+			height: 25px;
+			text-align: center;
+			padding: 30px;
+			font-size: 30px;
+			margin: 5px;
+		}
+
+
+		#donateuspage{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			position: absolute;
+			margin-left: 57%;
+			margin-top: 265px;
+			
+		}
+
+
+		#wearehiringdiv{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			border:1px solid grey;
+			border-radius: 50px;
+			position: absolute;
+			margin-left: 57%;
+			margin-top: 265px;
+			color: grey;
+
+		}
+
+}
+
+
+@media only screen and (min-width: 1306px) {
+
+	#headerlist .li1{
+		font-size: 25px;
+	}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+
+	.night{
+			height: 375px;
+			width: 100%;
+			margin-top: -110px;
+			overflow-x: hidden;
+		}
+
+		.surface{
+			height: 120px;
+			width: 500%;
+			bottom: 0%;
+			left: 0%;
+			background-repeat: repeat-x;
+		}
+
+		.car{
+			position: absolute;
+			bottom: 5%;
+			left: 24%;
+		}
+
+		#carimage{
+			width: 95%;
+			height: auto;
+		}
+
+
+	#query{
+			height: auto;
+			width: auto;
+			margin: 10px;
+			margin-top: 250px;
+			padding: 5px;
+			float: left;
+			font-size: 25px
+		}
+
+
+	#btntable{
+			float: right;
+			margin-right: 70px; 
+			margin-top: 270px;
+			
+		}
+
+	.shitallaround{
+			width: 350px;
+			height: 25px;
+			text-align: center;
+			padding: 30px;
+			font-size: 30px;
+			margin: 5px;
+		}
+
+
+		#donateuspage{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			position: absolute;
+			margin-left: 57%;
+			margin-top: 305px;
+			
+		}
+
+
+		#wearehiringdiv{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			border:1px solid grey;
+			border-radius: 50px;
+			position: absolute;
+			margin-left: 57%;
+			margin-top: 305px;
+			color: grey;
+
+		}
+
+}
+
+
+
+
+@media only screen and (min-width: 1475px) {
+
+	#headerlist .li1{
+		font-size: 25px;
+	}
+
+
+	#headerimg1{
+		width: 100px;
+		height: auto;
+	}
+
+
+	.night{
+			height: 400px;
+			width: 100%;
+			margin-top: -110px;
+			overflow-x: hidden;
+		}
+
+		.surface{
+			height: 120px;
+			width: 500%;
+			bottom: 0%;
+			left: 0%;
+			background-repeat: repeat-x;
+		}
+
+		.car{
+			position: absolute;
+			bottom: 6%;
+			left: 26%;
+		}
+
+		#carimage{
+			width: 95%;
+			height: auto;
+		}
+
+
+	#query{
+			height: auto;
+			width: auto;
+			margin: 10px;
+			margin-top: 355px;
+			margin-left: 100px;
+			padding: 5px;
+			float: left;
+			font-size: 25px
+		}
+
+
+	#btntable{
+			float: right;
+			margin-right: 130px; 
+			margin-top: 420px;
+			
+		}
+
+	.shitallaround{
+			width: 350px;
+			height: 25px;
+			text-align: center;
+			padding: 30px;
+			font-size: 30px;
+			margin: 5px;
+		}
+
+
+		#donateuspage{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			border:1px solid grey;
+			border-radius: 50px;
+			position: absolute;
+			margin-left: 57%;
+			margin-top: 415px;
+			color: grey;
+		}
+
+
+		#wearehiringdiv{
+			width: 525px;
+			height: 225px;
+			background-color: #121212;
+			font-size: 30px;
+			border:1px solid grey;
+			border-radius: 50px;
+			position: absolute;
+			margin-left: 57%;
+			margin-top: 415px;
+			color: grey;
+
+		}
+
+}
+
+
+
+
+
+
+
+	</style>
+</head>
+
+<!-- fixed header -->
+<div id="headerdiv1">
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+			
+			<li class="li1" title="Explore">
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+			
+			<li class="li1"><img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png"></li>
+			
+			<li class="li1" title="Contact">
+				<a  href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+
+			<li class="li1">
+				<a href="SIGNIN.html" class="navlinks signin" title="login">
+					<i class="lar la-user-circle"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+<body>
+
+<div style="background-color: #121212;">
+<!-- animation start-->
+	<div class="night fixedanimation">
+		<div class="surface"></div>
+		<div class="car">
+			<img id="carimage" src="./assets/lightcaroriginal.png">
+		</div>
+	</div>
+<!-- end animation -->
+
+<div id="query" style="font-family: 'Almarai', sans-serif;text-align: center;color: grey;">
+		<center>
+			<p style="color: #f54956">______</p>
+			<p><span style="color: #ed485d">Contact Our Team:</span> <span style="color: grey">(+91) 828-733-2960</span></p>
+			<p>Have a question? Not sure what you need? <br>Give us a call, or message us via Telegram, or Instagram<br> Alternatively email us below, we'll get back to you within the hour.</p>
+
+			<p><span style="color: #ed485d">Email Us:</span> <a class="email_us"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=prabhsimars21@gmail.com&su=%20!!!&body=Hello!!">plango@gmail.com</a></p>
+		</center>
+</div>
+
+
+<!-- btns -->
+
+<div class="soeasy">
+<div>
+	
+	<table id="btntable">
+
+	<tr>
+		<td>
+			<div  class="shitallaround" id="Donate_us">
+				Become a Patreon
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<div class="shitallaround" id="hiring">
+				We Are Hiring
+			</div>
+		</td>
+	</tr>
+
+</table>
+
+</div>
+</div>
+
+
+<!-- donate us -->
+
+
+
+
+
+<div class="divfordonatinguswithqrcode">
+
+	<div id="donateuspage">
+		<center>
+			<p style="margin-top: 20px;color: #f54956;">Support Us
+				<i id="cross1" style="font-size: 25px;position: absolute;" class="las la-times-circle crosses"></i>
+			</p>
+			
+
+		<table class="tdfordonation">
+			<tr>
+				<td>
+						<p>
+							<button id="donateuspagebtn1" style="padding: 5px 20px;">
+								<img src="https://img.icons8.com/color/48/000000/google-pay-india.png">
+								<br>
+								<img src="https://img.icons8.com/color/50/000000/paytm.png">
+							</button>
+						</p>
+				</td>
+
+				<td>
+						<p id="parafordonating" style="font-size: 18px;text-align: center;">...<br>If you ever think of wasting your precious money, Please Don't.<br>
+						Donate to Us<br>Your Money Can Help Our Startup Grow!<br>...</p>
+				</td>
+
+				<td>
+						<p id="qrcodefordonatingyourshit" style="display: none;text-align: center;font-size: 20px;padding:0px 83px;margin-left: -70px;"><img style="height: 110px;width: 110px;" src="Prabhsimarsgpaycode.jpg"><span style="display: inline-block;"> Donate: (+91) 998-850-3362</span></p>
+				</td>
+			</tr>
+		</table>
+
+		</center>
+	</div>
+</div>
+
+<!-- donate end -->
+
+
+<div class="wearehiringfreepeople">
+
+	<div id="wearehiringdiv">
+		<center>
+			<p style="padding: 10px;color: #f54956;margin-top:3px;">We Are Hiring
+			<i id="cross2" style="font-size: 25px;position: absolute;" class="las la-times-circle crosses"></i>
+			</p>
+			
+			<p style="font-size: 20px;margin: 20px;margin-top: -25px;">________<br>
+				We are hiring Experienced Individuals. We split the profits equally amongst our team members. Anyone interested can Email us. And the best part? You don't even need to have a college degree. <br>_________
+
+			</p>
+
+		</center>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+	// first donation click for hiding and showing
+	$("#Donate_us").click(function(){
+    	$(".divfordonatinguswithqrcode").toggle();
+    	$(".wearehiringfreepeople").hide();
+    	$(".soeasy").hide();
+	});
+	//second for para show and hide
+	$("#donateuspagebtn1").click(function(){
+    	$("#parafordonating").toggle();
+    	$("#qrcodefordonatingyourshit").toggle();
+    	$(".soeasy").hide();
+	});
+
+	//using cross to hide to
+	$(".crosses").click(function(){
+    	$(".divfordonatinguswithqrcode").hide();
+    	$(".wearehiringfreepeople").hide();
+    	$("#qrcodefordonatingyourshit").hide();
+    	$("#parafordonating").show();
+    	$(".soeasy").show();
+	});
+
+	// for hiring div  
+	$("#hiring").click(function(){
+    	$(".wearehiringfreepeople").toggle();
+    	$(".divfordonatinguswithqrcode").hide();
+    	$(".soeasy").hide();
+	});
+});
+
+	
+</script>
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2285 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+	<title>PLANGO/N.America Sights</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0%;
+			top: 0;
+			background-color: #25262a;
+			overflow: hidden;
+		}
+		
+		/*/*header
+		#headerdiv1{
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,0.9);
+			  z-index: 1;
+			  border-bottom-left-radius: 20px;
+			  border-bottom-right-radius: 20px;
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		Underline From Center
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+
+
+
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+
+		}
+
+header end*/
+
+		#div1{
+			background-color: transparent;
+			width: 62%;
+			height: 650px;
+			float: left;
+			font-family: 'Anton', sans-serif;
+			overflow: auto;
+			text-transform: uppercase;
+		}
+
+		.arrowicon{
+			font-size: 50px;
+			color: black;
+			background-color: grey;
+			border-radius: 50%;
+			padding: 10px;
+			margin: 10px;
+			transition: 0.3s all;
+			position: fixed;
+		}
+
+		.arrowicon:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.para{
+			font-size:100px;
+			margin: 0px 0px 0px 30px;
+			line-height: 100%;
+			cursor: default;
+		}
+		.para:hover{
+			color: grey;
+		}
+
+		#divforparainit{
+			margin-top: 130px;
+		}
+
+		#div2{
+			background-color: grey;
+			width: 38%;
+			height: 650px;
+			float: right;
+			font-family: 'Roboto', sans-serif;
+			overflow: auto;
+		}
+
+		.GBR {
+			  width: 100%;
+			  height: auto;
+			  border-radius: 10px;
+			}
+
+		.polaroidloc {
+			  background-color: transparent;
+			  padding-bottom: 1.5em;
+			  margin: 3px 5px;
+			}
+
+		.stars{
+			color: #e6e600;
+			word-spacing: 1px;
+			font-size: 15px;
+		}
+
+		.ratings{
+			color: black;
+			font-size: 20px;
+		}
+			
+		.caption {
+			font-size: 35px;
+			text-align: left;
+			margin: 10px 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			line-height: 93%;
+		}
+			
+		.cross{
+			position: fixed;
+			font-size: 30px;
+			background-color: rgba(179, 179, 179,0.9);
+			border-radius: 50%;
+			padding:5px;
+			transition: 0.3s all;
+			color: black;
+		}
+
+		.cross:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.info{
+			font-size: 17px;
+			padding: 5px;
+		}
+
+		.reviews{
+			font-size: 30px;
+			text-decoration: underline;
+		}
+
+		.herethereviewscome p{
+			padding: 0px 10px;
+			line-height: 120%;
+		}
+
+		.name{
+			font-size: 22px;
+			font-weight: bold;
+			color: #00004d;
+		}
+
+		.bolo{
+			font-size: 20px;
+		}
+
+		.time{
+			font-size: 13px;
+			color: black;
+		}
+
+		.quote{
+			font-size: 17px;
+		}
+
+		.like{
+			font-size: 30px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		.webresults{
+			padding: 10px;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+			background-color: black;
+			border-radius: 30px;
+			border:none;
+			color: white;
+			outline: none;
+			transition: 0.3s all;
+		}
+
+		.webresults:hover{
+			transform: scale(1.1);
+			color: white;
+			background-color: #000066;
+		}
+
+		
+
+
+
+
+		::-webkit-scrollbar {
+				  width: 10px;
+				  border-radius: 15px;
+				  background-color: none;
+					}
+		/* Track */
+		::-webkit-scrollbar-track {
+			  background: none;
+					}
+					 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			 background: none; border-radius: 15px;
+			 opacity: 0.5;
+					}
+
+			/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			  background: none; border-radius: 15px;
+					}
+
+	</style>
+
+</head>
+
+<!-- fixed header 
+<div id="headerdiv1">
+		
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				
+
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+
+			<li class="li1" title="Explore">
+				
+
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+			
+			<li class="li1">
+				<img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png">
+			</li>
+			<li class="li1" title="Contact">
+				
+
+				<a href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				
+
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+		
+		</ul>
+</div> -->
+
+<body>
+
+<div id="div1">
+	
+	<div>
+		<a href="NORTHAMERICA.html"><i class="las la-long-arrow-alt-left arrowicon"></i></a>
+	</div>
+
+	<div>
+		<div id="divforparainit">
+			<p class="para" id="Statue_Of_Liberty">Statue Of Liberty</p>
+			<p class="para" id="Walt_Disney_World">Walt Disney World</p>
+			<p class="para" id="Niagara_Falls">Niagara Falls </p>
+			<p class="para" id="Times_Square">Times Square</p>
+			<p class="para" id="The_CN_Tower">The CN Tower</p>
+			<p class="para" id="Golden_Gate_Bridge">Golden Gate Bridge</p>
+			<p class="para" id="Washington_Monument">Washington Monument</p>
+			<p class="para" id="Copper_Canyon">Copper Canyon</p>
+			<p class="para" id="Quebec_City">Quebec City</p>
+			<p class="para" id="Yellowstone_National_Park">Yellowstone National Park</p>
+			<p class="para" id="Chichen_Itza">Chichen Itza</p>
+			<p class="para" id="Memorial_Museum">Memorial & Museum 9/11</p>
+			<p class="para" id="National_Mall">National Mall</p>
+			<p class="para" id="Lincoln_Memorial">Lincoln Memorial</p>
+			<p class="para" id="Las_Vegas_Strip"> Las Vegas Strip</p>
+		</div>
+	</div>
+
+</div>
+
+
+<div id="div2">
+
+	<div>
+		<img class="cou" id="sidewallpaper" src="sidewallpaper.png">
+	</div>
+
+	<!-- Statue Of Liberty -->
+	<div class="cou" id="StatueOfLiberty">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/StatueOfLiberty.png">
+  		<figcaption class="caption">
+	      		Statue Of Liberty<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (7,637)
+	      				<br>
+	      				American icon in New York harbour
+
+	      				<p class="info">The Statue of Liberty (Liberty Enlightening the World; French: La Liberté éclairant le monde) is a colossal neoclassical sculpture on Liberty Island in New York Harbor within New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886.The statue is a figure of Libertas, a robed Roman liberty goddess. She holds a torch above her head with her right hand, and in her left hand carries a tabula ansata inscribed JULY IV MDCCLXXVI (July 4, 1776 in Roman numerals), the date of the U.S. Declaration of Independence. A broken shackle and chain lie at her feet as she walks forward, commemorating the recent national abolition of slavery.After its dedication, the statue became an icon of freedom and of the United States, seen as a symbol of welcome to immigrants arriving by sea.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Dinesh kumara
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 9 reviews | 78 photos <span class="time"> (2 days ago)</span></p>
+									
+									<p class="quote">Its a big experience and unforgettable thing in my life.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">A A K A S H
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 63 reviews | 180 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Imma go one day.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">RARE VIDEOS
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Was 1 km away from top.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Game Clips TJ
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">pop sock.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry Daws
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">i havent been.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Statue+Of+Liberty&oq=Statue+Of+Liberty&aqs=chrome..69i57j0i271.1768j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+	
+
+	<!-- WaltDisneyWorld -->
+	<div class="cou" id="WaltDisneyWorld">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/WaltDisneyWorld.png">
+  		<figcaption class="caption">
+	      		Walt Disney World<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (59,284)
+	      				<br>
+	      				Theme Park in Florida,USA
+
+	      				<p class="info">The Walt Disney World Resort, also called Walt Disney World and Disney World, is an entertainment resort complex in Bay Lake and Lake Buena Vista, Florida, in the United States, near the cities of Orlando and Kissimmee. Opened on October 1, 1971, the resort is owned and operated by Disney Parks, Experiences and Products, a division of The Walt Disney Company. It was first operated by Walt Disney World Company. The property covers nearly 25,000 acres (39 sq mi; 101 km2), of which half has been used.The resort comprises four theme parks (consisting of Magic Kingdom, Epcot, Disney's Hollywood Studios, and Disney's Animal Kingdom), two water parks, 27 themed resort hotels, nine non-Disney hotels, several golf courses, a camping resort, and other entertainment venues, including the outdoor shopping center Disney Springs.Designed to supplement Disneyland in Anaheim, California, which had opened in 1955, the complex was developed by Walt Disney in the 1960s. "The Florida Project", as it was known, was intended to present a distinct vision with its own diverse set of attractions.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote"> Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Walt+Disney+World&oq=Walt+Disney+World&aqs=chrome..69i57j0i271l2.1038j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Niagara Falls -->
+	<div class="cou" id="NiagaraFalls">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/NiagaraFalls.png">
+  		<figcaption class="caption">
+	      		Niagara Falls<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (2,683)
+	      				<br>
+	      				Iconic, monumental group of waterfalls
+
+	      				<p class="info">Niagara Falls is a city in Ontario, Canada. It is on the western bank of the Niagara River in the Golden Horseshoe region of Southern Ontario, with a population of 88,071 at the 2016 census.[1] It is part of the St. Catharines - Niagara Census Metropolitan Area (CMA). Incorporated on 12 June 1903, the city is across the river from Niagara Falls, New York. The Niagara River flows over Niagara Falls at this location, creating a natural spectacle which attracts millions of tourists each year.
+	      				The tourist area near the falls includes observation towers, high-rise hotels, souvenir shops, museums, indoor water parks, casinos and theatres, mostly with colourful neon billboards and advertisements. Other parts of the city include golf courses, parks, historic sites from the War of 1812, and residential neighbourhoods.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Josh West
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 110 reviews | 123 photos <span class="time"> (18 days ago)</span>
+									</p>
+									
+									<p class="quote">exquisite, enjoyed every moment of these places will certainly be back !</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Phil Halson
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 238 reviews | 4961 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">Beautiful spot to watch the sunset over a feed of fish and chips with a couple of beers.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">The Naturalist View
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 83 reviews | 261 photos <span class="time"> (150 days ago)</span></p>
+								
+								<p class="quote">Beautiful to see how nature slowly conqueres</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Kimlang Chen
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 28 reviews | 67 photos <span class="time"> (60 days ago)</span></p>
+								
+								<p class="quote">Nice</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">भटकंती
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (300 days ago)</span></p>
+								
+								<p class="quote">All time great destination to visit... World best beaches are here only.. Must visited places.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Niagara+Falls&oq=Niagara+Falls&aqs=chrome..69i57j0i271l3.1208j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- Times Square -->
+	<div class="cou" id="TimesSquare">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/TimesSquare.png">
+  		<figcaption class="caption">
+	      		Times Square<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (91)
+	      				<br>
+	      				Times Square, square in Midtown Manhattan, New York City,USA
+
+	      				<p class="info">Times Square is a major commercial intersection, tourist destination, entertainment center, and neighborhood in the Midtown Manhattan section of New York City, at the junction of Broadway and Seventh Avenue. Brightly lit by numerous billboards and advertisements, it stretches from West 42nd to West 47th Streets, and is sometimes referred to as "the Crossroads of the World", "the Center of the Universe", "the heart of the Great White Way",and "the heart of the world".One of the world's busiest pedestrian areas,[9] it is also the hub of the Broadway Theater District and a major center of the world's entertainment industry.Times Square is one of the world's most visited tourist attractions, drawing an estimated 50 million visitors annually.Approximately 330,000 people pass through Times Square daily, many of them tourists,[14] while over 460,000 pedestrians walk through Times Square on its busiest days.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">B S Kevin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 112 reviews | 790 photos <span class="time"> (80 days ago)</span>
+									</p>
+									
+									<p class="quote">One place you have to visit when you're travelling to Australia.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">DREAM CHASER
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 35 reviews | 324 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">Another interesting place in Bangkok is the Grand Palace </p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Twain
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (70000 days ago)</span></p>
+								
+								<p class="quote">TOO GOOD</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Elon Musk
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (69 days ago)</span></p>
+								
+								<p class="quote">Never visited but looks cool in pics</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 100 reviews | 1 photos <span class="time"> (556 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Times+Square&oq=Times+Square&aqs=chrome..69i57j0i271.1672j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- CN Tower -->
+	<div class="cou" id="TheCNTower">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/TheCNTower.png">
+  		<figcaption class="caption">
+	      		The CN Tower<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (7,344)
+	      				<br>
+	      				The CN Tower is Canada’s most recognizable and celebrated icon
+
+	      				<p class="info">The CN Tower (French: Tour CN) is a 553.3 m-high (1,815.3 ft) concrete communications and observation tower located in the downtown core of Toronto, Ontario, Canada. Built on the former Railway Lands, it was completed in 1976. Its name "CN" originally referred to Canadian National, the railway company that built the tower. Following the railway's decision to divest non-core freight railway assets prior to the company's privatization in 1995, it transferred the tower to the Canada Lands Company, a federal Crown corporation responsible for real estate development.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=The+CN+Tower&oq=The+CN+Tower&aqs=chrome..69i57.1323j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Golden Gate Bridge -->
+	<div class="cou" id="GoldenGateBridge">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/GoldenGateBridge.png">
+  		<figcaption class="caption">
+	      		Golden Gate Bridge<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (7,199)
+	      				<br>
+	      				The Golden Gate Bridge is an iconic structure connecting the city of San Francisco to Marin County, California
+
+	      				<p class="info">The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California—the northern tip of the San Francisco Peninsula—to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait. The bridge is one of the most internationally recognized symbols of San Francisco and California. It was initially designed by engineer Joseph Strauss in 1917. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Golden+Gate+Bridge&oq=Golden+Gate+Bridge&aqs=chrome..69i57j0i271.1158j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!--Washington_Monument -->
+	<div class="cou" id="WashingtonMonument">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/WashingtonMonument.png">
+  		<figcaption class="caption">
+	      		Washington Monument<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (4,644)
+	      				<br>
+	      				Towering Tribute to George Washington
+
+	      				<p class="info">The Washington Monument is an obelisk within the National Mall in Washington, D.C., built to commemorate George Washington, once commander-in-chief of the Continental Army (1775–1784) in the American Revolutionary War and the first President of the United States (1789–1797). Located almost due east of the Reflecting Pool and the Lincoln Memorial, the monument, made of marble, granite, and bluestone gneiss, is both the world's tallest predominantly stone structure and the world's tallest obelisk, standing 554 feet 7+11⁄32 inches (169.046 m) tall according to the U.S. National Geodetic Survey (measured 2013–14) or 555 feet 5+1⁄8 inches (169.294 m) tall according to the National Park Service (measured 1884). It is the tallest monumental column in the world if all are measured above their pedestrian entrances.[A] Overtaking the Cologne Cathedral, it was the tallest structure in the world between 1884 and 1889, after which it was overtaken by the Eiffel Tower in Paris.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Washington+Monument&oq=Washington+Monument&aqs=chrome..69i57j0i271.1156j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Copper Canyon -->
+	<div class="cou" id="CopperCanyon">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/CopperCanyon.png">
+  		<figcaption class="caption">
+	      		Copper Canyon<br>
+	      		
+	      		<span class="ratings">
+	      			4.8 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (36)
+	      				<br>
+	      				"Copper Canyon" (Barranca del Cobre) is really a series of canyons which drain the western side of the Sierra Tarahumara.
+
+	      				<p class="info">Copper Canyon (Spanish: Barrancas del Cobre) is a group of six distinct canyons in the Sierra Madre Occidental in the southwestern part of the state of Chihuahua in northwestern Mexico that is 65,000 square kilometres (25,000 sq mi) in size. The canyons were formed by six rivers that drain the western side of the Sierra Tarahumara (a part of the Sierra Madre Occidental). All six rivers merge into the Rio Fuerte and empty into the Gulf of California. The walls of the canyon are a copper/green color, which is the origin of the name.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Copper+Canyon&oq=Copper+Canyon&aqs=chrome..69i57.981j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+		<!-- Uluru -->
+	<div class="cou" id="QuebecCity">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/QuebecCity.png">
+  		<figcaption class="caption">
+	      		Quebec City<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (4,415)
+	      				<br>
+	      				Canadian city with Château Frontenac, Hôtel de Glace (seasonal ice hotel) & famed winter carnival.
+
+	      				<p class="info">Quebec (French: Québec [kebɛk] is one of the thirteen provinces and territories of Canada. Located in Central Canada, the province shares land borders with Ontario to the southwest, Newfoundland and Labrador to the northeast, New Brunswick to the southeast, a coastal border with Nunavut; and land borders with the states of Maine, New Hampshire, Vermont and New York to the south. Quebec is the largest province by area, being 1,542,056 km2 (595,391 sq mi), and the second-largest by population, with 8,164,361 people. Much of the population live in urban areas along the Saint Lawrence River, between the most populous city, Montreal, and its capital city, Quebec City. A motion was passed in the House of Commons of Canada in 2006, recognizing the "Québécois as a nation within a united Canada".</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Quebec+City&oq=Quebec+City&aqs=chrome..69i57j0i271.778j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+	<!-- Yellowstone National Park -->
+		<div class="cou" id="YellowstoneNationalPark">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/YellowstoneNationalPark.png">
+  		<figcaption class="caption">
+	      		Yellowstone National Park<br>
+	      		
+	      		<span class="ratings">
+	      			4.2 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (9,169)
+	      				<br>
+	      				Wilderness & recreation area with active geysers like Old Faithful, plus canyons, rivers & lakes.
+
+	      				<p class="info">Yellowstone National Park is an American national park located in the western United States, largely in the northwest corner of Wyoming and extending into Montana and Idaho. It was established by the U.S. Congress and signed into law by President Ulysses S. Grant on March 1, 1872.[6][7][8] Yellowstone was the first national park in the U.S. and is also widely held to be the first national park in the world.[9] The park is known for its wildlife and its many geothermal features, especially Old Faithful geyser, one of its most popular.[10] While it represents many types of biomes, the subalpine forest is the most abundant. It is part of the South Central Rockies forests ecoregion.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Yellowstone+National+Park&oq=Yellowstone+National+Park&aqs=chrome..69i57j0i271.1248j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- Chichen Itza -->
+	<div class="cou" id="ChichenItza">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/Chichen_Itza.png">
+  		<figcaption class="caption">
+	      		Chichen Itza<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (10,035)
+	      				<br>
+	      				Legendary remains of an ancient Mayan city, featuring a large stone pyramid & elaborate carvings
+
+	      				<p class="info">Chichen Itza was a large pre-Columbian city built by the Maya people of the Terminal Classic period. The archaeological site is located in Tinúm Municipality, Yucatán State, Mexico.[1]
+                        Chichen Itza was a major focal point in the Northern Maya Lowlands from the Late Classic (c. AD 600–900) through the Terminal Classic (c. AD 800–900) and into the early portion of the Postclassic period (c. AD 900–1200). The site exhibits a multitude of architectural styles, reminiscent of styles seen in central Mexico and of the Puuc and Chenes styles of the Northern Maya lowlands. The presence of central Mexican styles was once thought to have been representative of direct migration or even conquest from central Mexico, but most contemporary interpretations view the presence of these non-Maya styles more as the result of cultural diffusion.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Chichen+Itza&oq=Chichen+Itza&aqs=chrome..69i57j0i271.1227j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- 9/11 Memorial & Museum-->
+	<div class="cou" id="MemorialMuseum">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/MemorialMuseum.png">
+  		<figcaption class="caption">
+	      		Memorial & Museum 9/11<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (12,389)
+	      				<br>
+	      				Located at the World Trade Center in New York City
+
+	      				<p class="info">The National September 11 Memorial & Museum (also known as the 9/11 Memorial & Museum) is a memorial and museum in New York City commemorating the September 11, 2001 attacks, which killed 2,977 people, and the 1993 World Trade Center bombing, which killed six. The memorial is located at the World Trade Center site, the former location of the Twin Towers that were destroyed during the September 11 attacks. It is operated by a non-profit institution whose mission is to raise funds for, program, and operate the memorial and museum at the World Trade Center site.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Memorial+%26+Museum+9%2F11&oq=Memorial+%26+Museum+9%2F11&aqs=chrome..69i57.929j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- National Mall -->
+	<div class="cou" id="NationalMall">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/NationalMall.png">
+  		<figcaption class="caption">
+	      		National Mall<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (2,091)
+	      				<br>
+	      				Smithsonian museums & the White House
+
+	      				<p class="info">The National Mall is a landscaped park within the National Mall and Memorial Parks, an official unit of the United States National Park System. It is located near the downtown area of Washington, D.C., the capital city of the United States, and is administered by the National Park Service (NPS) of the United States Department of the Interior.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=National+Mall&oq=National+Mall&aqs=chrome..69i57.977j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- Lincoln Memorial -->
+	<div class="cou" id="LincolnMemorial">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/LincolnMemorial.png">
+  		<figcaption class="caption">
+	      		Lincoln Memorial<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (4,664)
+	      				<br>
+	      				Marble monument to the 16th president
+
+	      				<p class="info">The Lincoln Memorial is a US national memorial built to honor the 16th President of the United States, Abraham Lincoln. It is on the western end of the National Mall in Washington, D.C., across from the Washington Monument, and is in the form of a neoclassical temple. The memorial's architect was Henry Bacon. The designer of the memorial interior's large central statue – Abraham Lincoln, 1920 – was Daniel Chester French; the Lincoln statue was carved by the Piccirilli Brothers.[3] The painter of the interior murals was Jules Guerin, and the epithet above the statue was written by Royal Cortissoz. Dedicated in May 1922, it is one of several memorials built to honor an American president. It has always been a major tourist attraction and since the 1930s has been a symbolic center focused on race relations.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Lincoln+Memorial&oq=Lincoln+Memorial&aqs=chrome..69i57j0i271.1770j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- Las Vegas Strip -->
+	<div class="cou" id="LasVegasStrip">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./NORTHAMERICAsights/LasVegasStrip.png">
+  		<figcaption class="caption">
+	      		Las Vegas Strip<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (1,348)
+	      				<br>
+	      				Huge casino hotels & High Roller wheel
+
+	      				<p class="info">The Las Vegas Strip is a stretch of South Las Vegas Boulevard in Clark County, Nevada, that is known for its concentration of resort hotels and casinos. The Strip, as it is known, is about 4.2 mi (6.8 km) long, and is immediately south of the Las Vegas city limits in the unincorporated towns of Paradise and Winchester, but is often referred to simply as "Las Vegas".</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool australia is amazing i am in love with australia.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Las+Vegas+Strip&oq=Las+Vegas+Strip&aqs=chrome..69i57j0i271l3.1388j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+	$(".cou").hide();
+	$("#sidewallpaper").show();
+	//to show Statue Of Liberty
+	$("#Statue_Of_Liberty").click(function(){
+		 $(".cou").hide();
+		 $("#StatueOfLiberty").show();
+		 
+	});
+
+	//to show Walt Disney World
+	$("#Walt_Disney_World").click(function(){
+		 $(".cou").hide();
+		 $("#WaltDisneyWorld").show();
+		 
+	});
+
+	//to show Niagara Falls
+	$("#Niagara_Falls").click(function(){
+		 $(".cou").hide();
+		 $("#NiagaraFalls").show();
+		 
+	});
+
+	//to show Times Square
+	$("#Times_Square").click(function(){
+		 $(".cou").hide();
+		 $("#TimesSquare").show();
+		 
+	});
+
+	//to show The CN Tower
+	$("#The_CN_Tower").click(function(){
+		 $(".cou").hide();
+		 $("#TheCNTower").show();
+		 
+	});
+
+	//to show Golden Gate Bridge
+	$("#Golden_Gate_Bridge").click(function(){
+		 $(".cou").hide();
+		 $("#GoldenGateBridge").show();
+		 
+	});
+
+	//to show Washington_Monument
+	$("#Washington_Monument").click(function(){
+		 $(".cou").hide();
+		 $("#WashingtonMonument").show();
+		 
+	});
+
+	//to show Copper Canyon
+	$("#Copper_Canyon").click(function(){
+		 $(".cou").hide();
+		 $("#CopperCanyon").show();
+		 
+	});
+
+	//to show Quebec City
+	$("#Quebec_City").click(function(){
+		 $(".cou").hide();
+		 $("#QuebecCity").show();
+		 
+	});
+
+	//to show Yellowstone National Park
+	$("#Yellowstone_National_Park").click(function(){
+		 $(".cou").hide();
+		 $("#YellowstoneNationalPark").show();
+		 
+	});
+
+	//to show Chichen Itza
+	
+	$("#Chichen_Itza").click(function(){
+		 $(".cou").hide();
+		 $("#ChichenItza").show();
+		 
+	});
+
+	//to show Memorial & Museum 9/11
+	$("#Memorial_Museum").click(function(){
+		 $(".cou").hide();
+		 $("#MemorialMuseum").show();
+		 
+	});
+
+
+	//to show National Mall
+	$("#National_Mall").click(function(){
+		 $(".cou").hide();
+		 $("#NationalMall").show();
+		 
+	});
+
+	//to show Lincoln Memorial
+
+	$("#Lincoln_Memorial").click(function(){
+		 $(".cou").hide();
+		 $("#LincolnMemorial").show();
+		 
+	});
+
+	//to show Las Vegas Strip
+	$("#Las_Vegas_Strip").click(function(){
+		 $(".cou").hide();
+		 $("#LasVegasStrip").show();
+		 
+	});
+
+
+	//to show cross
+	$(".cross").click(function(){
+		 $(".cou").hide();
+		 $("#sidewallpaper").show();
+	});
+
+
+});
+
+</script>
+
+
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

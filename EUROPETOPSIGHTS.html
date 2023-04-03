@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+	<title>PLANGO/Europe Sights</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0%;
+			top: 0;
+			background-color: #25262a;
+			overflow: hidden;
+		}
+		
+		/*/*header
+		#headerdiv1{
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,0.9);
+			  z-index: 1;
+			  border-bottom-left-radius: 20px;
+			  border-bottom-right-radius: 20px;
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		Underline From Center
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+
+
+
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+
+		}
+
+header end*/
+
+		#div1{
+			background-color: transparent;
+			width: 62%;
+			height: 650px;
+			float: left;
+			font-family: 'Anton', sans-serif;
+			overflow: auto;
+			text-transform: uppercase;
+		}
+
+		.arrowicon{
+			font-size: 50px;
+			color: black;
+			background-color: grey;
+			border-radius: 50%;
+			padding: 10px;
+			margin: 10px;
+			transition: 0.3s all;
+			position: fixed;
+		}
+
+		.arrowicon:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.para{
+			font-size:100px;
+			margin: 0px 0px 0px 30px;
+			line-height: 100%;
+			cursor: default;
+		}
+		.para:hover{
+			color: grey;
+		}
+
+		#divforparainit{
+			margin-top: 130px;
+		}
+
+		#div2{
+			background-color: grey;
+			width: 38%;
+			height: 650px;
+			float: right;
+			font-family: 'Roboto', sans-serif;
+			overflow: auto;
+		}
+
+		.GBR {
+			  width: 100%;
+			  height: auto;
+			  border-radius: 10px;
+			}
+
+		.polaroidloc {
+			  background-color: transparent;
+			  padding-bottom: 1.5em;
+			  margin: 3px 5px;
+			}
+
+		.stars{
+			color: #e6e600;
+			word-spacing: 1px;
+			font-size: 15px;
+		}
+
+		.ratings{
+			color: black;
+			font-size: 20px;
+		}
+			
+		.caption {
+			font-size: 35px;
+			text-align: left;
+			margin: 10px 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			line-height: 93%;
+		}
+			
+		.cross{
+			position: fixed;
+			font-size: 30px;
+			background-color: rgba(179, 179, 179,0.9);
+			border-radius: 50%;
+			padding:5px;
+			transition: 0.3s all;
+			color: black;
+		}
+
+		.cross:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.info{
+			font-size: 17px;
+			padding: 5px;
+		}
+
+		.reviews{
+			font-size: 30px;
+			text-decoration: underline;
+		}
+
+		.herethereviewscome p{
+			padding: 0px 10px;
+			line-height: 120%;
+		}
+
+		.name{
+			font-size: 22px;
+			font-weight: bold;
+			color: #00004d;
+		}
+
+		.bolo{
+			font-size: 20px;
+		}
+
+		.time{
+			font-size: 13px;
+			color: black;
+		}
+
+		.quote{
+			font-size: 17px;
+		}
+
+		.like{
+			font-size: 30px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		.webresults{
+			padding: 10px;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+			background-color: black;
+			border-radius: 30px;
+			border:none;
+			color: white;
+			outline: none;
+			transition: 0.3s all;
+		}
+
+		.webresults:hover{
+			transform: scale(1.1);
+			color: white;
+			background-color: #000066;
+		}
+
+		
+
+
+
+
+		::-webkit-scrollbar {
+				  width: 10px;
+				  border-radius: 15px;
+				  background-color: none;
+					}
+		/* Track */
+		::-webkit-scrollbar-track {
+			  background: none;
+					}
+					 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			 background: none; border-radius: 15px;
+			 opacity: 0.5;
+					}
+
+			/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			  background: none; border-radius: 15px;
+					}
+
+	</style>
+
+</head>
+
+<!-- fixed header 
+<div id="headerdiv1">
+		
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				
+
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+
+			<li class="li1" title="Explore">
+				
+
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+			
+			<li class="li1">
+				<img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png">
+			</li>
+			<li class="li1" title="Contact">
+				
+
+				<a href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				
+
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+		
+		</ul>
+</div> -->
+
+<body>
+
+<div id="div1">
+	
+	<div>
+		<a href="EUROPE.html"><i class="las la-long-arrow-alt-left arrowicon"></i></a>
+	</div>
+
+	<div>
+		<div id="divforparainit">
+			<p class="para" id="Hyde_Park">Hyde Park</p>
+			<p class="para" id="Prague_Zoo">Prague Zoo</p>
+			<p class="para" id="Buckingham_Palace">Buckingham Palace</p>
+			<p class="para" id="Doges_Palace">Doge's Palace</p>
+			<p class="para" id="The_British_Museum">The British Museum</p>
+			<p class="para" id="La_Molina">La Molina</p>
+			<p class="para" id="Europa_Park">Europa Park</p>
+			<p class="para" id="Gardaland_Resort">Gardaland Resort</p>
+			<p class="para" id="Es_Trenc">Es Trenc</p>
+			<p class="para" id="Preveli_beach">Preveli beach</p>
+			<p class="para" id="Coral_Bay">Coral Bay</p>
+			<p class="para" id="Casino_Estoril">Casino Estoril</p>
+			<p class="para" id="Kazino_Sochi">Kazino Sochi</p>
+			<p class="para" id="Cliffs_of_Moher">Cliffs of Moher</p>
+			<p class="para" id="Lake_Orta">Lake Orta</p>
+		</div>
+	</div>
+
+</div>
+
+
+<div id="div2">
+
+	<div>
+		<img class="cou" id="sidewallpaper" src="sidewallpaper.png">
+	</div>
+
+	<!-- Hyde Park -->
+	<div class="cou" id="HydePark">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/HydePark.png">
+  		<figcaption class="caption">
+	      		Hyde Park<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (98,386)
+	      				<br>
+	      				Acres of greenery in Central London
+
+	      				<p class="info">Hyde Park is a Grade I-listed major park in Central London. It is the largest of four Royal Parks that form a chain from the entrance of Kensington Palace through Kensington Gardens and Hyde Park, via Hyde Park Corner and Green Park past the main entrance to Buckingham Palace.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Dinesh kumara
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 9 reviews | 78 photos <span class="time"> (2 days ago)</span></p>
+									
+									<p class="quote">Its a big experience and unforgettable thing in my life.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">A A K A S H
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 63 reviews | 180 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Imma go one day.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">RARE VIDEOS
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Was 1 km away from top.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Game Clips TJ
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">pop sock.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry Daws
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">i havent been.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Hyde+Park,+London&stick=H4sIAAAAAAAAAONgecT4mJFb4OWPe8JSNxknrTl5jfESIxdXcEZ-uWteSWZJpVAcFxuUJcPFK8Wpn6tvYJgSb1CgwSDFzYXgSikocfGuStosJ6q57dl_LSHOVikJTU_WMg9Bnr1bPP1z1l80EuHi1U_XNzTMKigyyE4qSBJ4-HYGo1KwkfuuS9POsTkKMgCB3-dgBylNLSEuds9in_zkxBzBw8ElF37b9NhrCXNxhCRW5Ofl51YKhn74b3_j_3t7JU5OoCYHztUv7bUYmvatOMTGwsEowBDED7UqLbeyKCsjo4hnEaugR2VKqkJAYlG2joJPfl5Kfh4A3Hh3iP0AAAA&sa=X&ved=2ahUKEwjByeDo-sHwAhXRF3IKHR9qAykQ6RN6BAgXEAE&biw=1366&bih=635">Web Results</a></button>
+	      				</center>
+	      		</span>
+
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+	
+
+	<!-- Prague Zoo -->
+	<div class="cou" id="PragueZoo">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/PragueZoo.png">
+  		<figcaption class="caption">
+	      		Prague Zoo<br>
+	      		
+	      		<span class="ratings">
+	      			4.8 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (38,135)
+	      				<br>
+	      				Australia's iconic performing-arts venue
+
+	      				<p class="info">Prague Zoological Garden is a zoo in Prague, Czech Republic. It was opened in 1931 with the goal to "advance the study of zoology, protect wildlife, and educate the public" in the district of Troja in the north of Prague. In 2013, the zoo occupied 58 hectares with 50 hectares in use for exhibits, and housed around 5,000 animals from just 676 species, including 132 species listed as threatened. The zoo is rated as the seventh best zoo in the world by Forbes Travel Guide in 2007, and is rated as the fifth best in the world by TripAdvisor. The zoo has contributed significantly to saving Przewalski's horse; for many years, it was the leading breeder of the subspecies. Director is Miroslav Bobek.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote"> Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=prague+zoo&biw=1366&bih=635&ei=0aSaYOX7MY7e9QPnmpmQAQ&oq=Prague+Zoo&gs_lcp=Cgdnd3Mtd2l6EAEYADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCABQjs0BWI7NAWCr2QFoAHACeACAAbYBiAHMApIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- BuckinghamPalace -->
+	<div class="cou" id="BuckinghamPalace">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/BuckinghamPalace.png">
+  		<figcaption class="caption">
+	      		Buckingham Palace<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (138,816)
+	      				<br>
+	      				Home of the British Queen & State Rooms
+
+	      				<p class="info">Buckingham Palace is the London residence and administrative headquarters of the monarchy of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning. Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703 on a site that had been in private ownership for at least 150 years. It was acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House. During the 19th century it was enlarged, principally by architects John Nash and Edward Blore, who constructed three wings around a central courtyard. Buckingham Palace became the London residence of the British monarch on the accession of Queen Victoria in 1837.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Josh West
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 110 reviews | 123 photos <span class="time"> (18 days ago)</span>
+									</p>
+									
+									<p class="quote">exquisite, enjoyed every moment of these places will certainly be back !</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Phil Halson
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 238 reviews | 4961 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">Beautiful spot to watch the sunset over a feed of fish and chips with a couple of beers.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">The Naturalist View
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 83 reviews | 261 photos <span class="time"> (150 days ago)</span></p>
+								
+								<p class="quote">Beautiful to see how nature slowly conqueres</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Kimlang Chen
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 28 reviews | 67 photos <span class="time"> (60 days ago)</span></p>
+								
+								<p class="quote">Nice</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">भटकंती
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (300 days ago)</span></p>
+								
+								<p class="quote">All time great destination to visit... World best beaches are here only.. Must visited places.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=buckingham+palace&biw=1366&bih=635&ei=76SaYID9D8zc9QOHy5iYAw&gs_ssp=eJzj4tDP1TcwtLRIN2C0UjGoMLEwNzMwNTJITjFNMk1NMrUyqEg0MktMSjM1NEmxNDBKNPcSTCpNzs7MS89IzFUoSMxJTE4FAFfEE3w&oq=Buckingham+Palace&gs_lcp=Cgdnd3Mtd2l6EAEYATIECAAQQzINCC4QsQMQxwEQrwEQQzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAUL6cAVi-nAFgyKYBaABwAngAgAHnAYgBhwOSAQUwLjEuMZgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- Doge's Palace -->
+	<div class="cou" id="DogesPalace">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/DogesPalace.png">
+  		<figcaption class="caption">
+	      		Doge's Palace<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (18,615)
+	      				<br>
+	      				Gothic-style palace & museum
+
+	      				<p class="info">The Doge's Palace is a palace built in Venetian Gothic style, and one of the main landmarks of the city of Venice in northern Italy. The palace was the residence of the Doge of Venice, the supreme authority of the former Republic. It was built in 1340 and extended and modified in the following centuries. It became a museum in 1923 and is one of the 11 museums run by the Fondazione Musei Civici di Venezia.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">B S Kevin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 112 reviews | 790 photos <span class="time"> (80 days ago)</span>
+									</p>
+									
+									<p class="quote">One place you have to visit when you're travelling to Australia.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">DREAM CHASER
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 35 reviews | 324 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">Another interesting place in Bangkok is the Grand Palace </p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Twain
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (70000 days ago)</span></p>
+								
+								<p class="quote">TOO GOOD</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Elon Musk
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (69 days ago)</span></p>
+								
+								<p class="quote">Never visited but looks cool in pics</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 100 reviews | 1 photos <span class="time"> (556 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=doge%27s+palace&biw=1366&bih=635&ei=BqWaYLqjDZm1rQHkiYn4Cg&oq=Doge%27s+Palace&gs_lcp=Cgdnd3Mtd2l6EAEYADIECAAQQzICCAAyAggAMgIIADICCAAyAggAMgIIADIICC4QxwEQrwEyAggAMgIIAFDn2wJY59sCYIrmAmgAcAJ4AIABsQGIAdcCkgEDMC4ymAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- The British Museum -->
+	<div class="cou" id="TheBritishMuseum">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/TheBritishMuseum.png">
+  		<figcaption class="caption">
+	      		The British Museum<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (111,337)
+	      				<br>
+	      				A historian's treasure trove
+
+	      				<p class="info">British Museum Co Ltd operates as a museum. The company was founded in 1972 and is based in London, United Kingdom. It was formerly known as British Museum Publications Limited and changed its name in 1995. British Museum Co Ltd operates as a subsidiary of The Trustees Of The British Museum.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=The+British+Museum&biw=1366&bih=635&ei=NaWaYOrtHIr99QPf0oy4Ag&oq=The+British+Museum&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEIMBMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCC4yAggAUNK4AVjSuAFghcMBaABwAngAgAHRAYgBzQKSAQUwLjEuMZgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwiq3Iyb-8HwAhWKfn0KHV8pAycQ4dUDCA4&uact=5">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- La Molina -->
+	<div class="cou" id="LaMolina">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/LaMolina.png">
+  		<figcaption class="caption">
+	      		La Molina<br>
+	      		
+	      		<span class="ratings">
+	      			4.3 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (1,478)
+	      				<br>
+	      				Ski area with multiple slopes & hiking
+
+	      				<p class="info">La Molina is a ski resort in the Pyrenees mountains of northeastern Spain, in the municipality of Alp in the comarca of Cerdanya in Girona, Catalonia. Together with Masella, it forms the Alp 2500 resort.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=la+molina+ski&biw=1366&bih=635&ei=Z6WaYLu9NraortoPg9qd8A4&oq=la+molina+&gs_lcp=Cgdnd3Mtd2l6EAEYADICCAAyAggAMggILhDHARCvATICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgAEEcQsAM6DQguEMcBEK8BELADEEM6BwgAELADEENQ70dY70dgsGtoAXACeACAAa0BiAHEApIBAzAuMpgBAKABAaoBB2d3cy13aXrIAQrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!--Europa-Park -->
+	<div class="cou" id="EuropaPark">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/EuropaPark.png">
+  		<figcaption class="caption">
+	      		Europa-Park<br>
+	      		
+	      		<span class="ratings">
+	      			4.8 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (110,609)
+	      				<br>
+	      				Expansive amusement park with rides
+
+	      				<p class="info">Europa-Park is the largest theme park in Germany, and the second most popular theme park in Europe, after Disneyland Paris. Europa-Park is located in Rust, south-western Germany, between Freiburg im Breisgau and Strasbourg. The park is home to 13 roller coasters, the oldest, which opened in 1984, is the Alpenexpress Enzian, which is a powered coaster that speeds through a diamond mine. Europa-Park has very high capacity roller coasters and attractions, meaning the park can accommodate approximately 60,000 guests per day. The park counted 5.75 million visitors in 2019. It is also the location of the Euro Dance Festival. The resort occupies roughly 95 hectares. It hosts six hotels, one campground, and one movie theater. In November 2019, Europa-Park's "Rulantica" water park opened, along with the Museum-Themed Hotel, "Krønasår".</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=europa+park&biw=1366&bih=635&ei=d6WaYOX3E4L99QOHubKgAg&gs_ssp=eJzj4tTP1Tcwj8-ryDVgtFI1qDAxtzQ0trQwNzZKNTZNTbG0MqgwNEkyNzYxMElLSzNKTEk08OJOLS3KL0hUKEgsygYAHs0SKA&oq=Europa+Park&gs_lcp=Cgdnd3Mtd2l6EAEYADIOCC4QsQMQxwEQrwEQkwIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCABQn7wBWJ-8AWCozQFoAHACeACAAcUBiAHYApIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Gardaland Resort -->
+	<div class="cou" id="GardalandResort">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/GardalandResort.png">
+  		<figcaption class="caption">
+	      		Gardaland Resort<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (76,671)
+	      				<br>
+	      				Theme park with thrill & family rides
+
+	      				<p class="info">Gardaland Resort is an amusement park located in northeastern Italy. Opened 19 July 1975, the resort includes Gardaland Park, Gardaland Sea-Life, and the Gardaland Hotel. It is adjacent to Lake Garda. The entire complex covers an area of 445,000 m², while the theme park alone measures 200,000 m². Sporting both traditional attractions and entertainment shows, it attracts nearly 3 million visitors every year. In June 2005, Gardaland was ranked fifth in Forbes Magazine's list of the top ten amusement parks in the world, with the best turnover. According to 2011 data is the eighth in Europe by the number of park visitors. Since October 2006, the park has been owned by the British company Merlin Entertainments. Major attractions at the park include Mammut, Jungle Rapids, Fuga Da Atlantide, Shaman, Blue Tornado, Ramses: Il Risveglio, Raptor and Oblivion: The Black Hole which opened on 28 March 2015. The park's mascot, Prezzemolo, was popular in the Italian licensing market during the 1990s and the 2000s.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=gardaland+resort+italy&biw=1366&bih=635&ei=p6WaYOiEIdr0rAHgn7OQBA&oq=gardaland+resort+&gs_lcp=Cgdnd3Mtd2l6EAEYATICCAAyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BwgAEEcQsAM6BwgAELADEEM6EAguEMcBEKMCELADEMgDEEM6EAguEMcBEK8BELADEMgDEENKBQg4EgExUJMeWJMeYIkpaAFwAngAgAGCAogBiQOSAQUwLjEuMZgBAKABAaoBB2d3cy13aXrIAQvAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+		<!-- Es Trenc -->
+	<div class="cou" id="EsTrenc">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/EsTrenc.png">
+  		<figcaption class="caption">
+	      		Es Trenc<br>
+	      		
+	      		<span class="ratings">
+	      			4.3 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (5,662)
+	      				<br>
+	      				Ocean getaway with serene waters
+
+	      				<p class="info">The beach of Es Trenc close to Campos on the southern coast of Majorca is part of the Natural Area of Special Interest Es Trenc-Salobrar de Campos. The beach is about 10 km long and extends from Sa Ràpita to Colònia de Sant Jordi. The beach has shallow, calm water and is very popular among families. At the same time Es Trenc is the most popular naturist beach in Mallorca, however, the majority of the visitors do wear swimsuits. Close behind the beach are facilities where Fleur de sel is harvested in the Salinas d'Es Trenc.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=es+trenc&biw=1366&bih=635&ei=rqWaYOqfJNDe9QPgkbCQBg&gs_ssp=eJzj4tbP1TcwNMoozs6rNGD04kgtVigpSs1LBgBR-Ac4&oq=Es+Trenc&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QkwIyAggAMggILhDHARCvATICCAAyAggAMgIIADICCAAyAggAMgIIADICCABQwNsBWMDbAWDf5QFoAHACeACAAaABiAG8ApIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+	<!-- Preveli beach -->
+		<div class="cou" id="PreveliBeach">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/PreveliBeach.png">
+  		<figcaption class="caption">
+	      		Preveli Beach<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (5,177)
+	      				<br>
+	      				Scenic hangout near a palm-lined river
+
+	      				<p class="info">Preveli Beach is a beach located on the south coast of the Greek Mediterranean island of Crete. It is located in the municipality of Agios Vasilios in the Rethymno regional unit, not far from the Moni Preveli monastery, which name has passed on to it. According to local legend, the king of Ithaca, Odysseus, remained in the wider area of Lake Preveli after the end of the Trojan War on his return to Ithaca from Troy. The area is a popular tourist destination due to the river, the forest with palm trees in the gorge and the sandy beach with clear waters. On the beach there is a rock in the shape of a heart, "The stone of lovers" according to the locals. The area is accessible from the port of Plakias.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=preveli+beach&biw=1366&bih=635&ei=zaWaYKCBNoWR9QO2kq2wCg&gs_ssp=eJzj4tZP1zc0Mqo0Nc2JN2D04i0oSi1LzclUSEpNTM4AAHN-CLA&oq=Preveli+beach&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QkwIyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlCRkAFYkZABYI2bAWgAcAJ4AIABqQKIAb4DkgEFMC4xLjGYAQCgAQKgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- Coral Bay -->
+	<div class="cou" id="CoralBay">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/CoralBay.png">
+  		<figcaption class="caption">
+	      		Coral Bay<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (1,007)
+	      				<br>
+	      				Bustling beach for swimming & boating
+
+	      				<p class="info">Coral Bay is a popular tourist resort in the Peyia municipality 11 km north of the city of Paphos. The coast to the north and to the south of Coral Bay is characterized by rocky headlands and sea caves, Coral Bay itself is a 600m crescent of soft white sand, enclosed by a pair of limestone headlands. Coral Bay beach carries an EU Blue Flag certification which means that it adheres to all standards, rules and regulations required by the relevant committee of the European Union. The broader area of Coral Bay encloses another beach called Potima Bay. It is situated about 1.5 km / 1 mile away bordering the boundaries of Kissonerga village.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=coral+bay+cyprus&biw=1366&bih=635&ei=46WaYOzUFNf79QO9sKDQDA&oq=Coral+Bay&gs_lcp=Cgdnd3Mtd2l6EAEYATIFCC4QkwIyAggAMggILhDHARCvATIICC4QxwEQrwEyAggAMgIIADICCAAyAggAMgIILjICCABQhnpYhnpgsbIBaABwAngAgAG9AYgB5QKSAQMwLjKYAQCgAQKgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- Casino Estoril-->
+	<div class="cou" id="CasinoEstoril">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/CasinoEstoril.png">
+  		<figcaption class="caption">
+	      		Casino Estoril<br>
+	      		
+	      		<span class="ratings">
+	      			4.3 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (9,370)
+	      				<br>
+	      				Roulette, blackjack & live shows
+
+	      				<p class="info">The Estoril Casino is a casino in the Portuguese Riviera, in the municipality of Cascais, Portugal. Today, it is one of the biggest working casinos in Europe.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=casino+estoril&biw=1366&bih=635&ei=-6WaYLS6LJHRrQHkiqKYCw&gs_ssp=eJzj4tTP1TcwtLQwqzJgtFIxqEgxTE02TTYxNjQyM7I0MLcCiiQmpqYkpiSaGVqkmqeamnjxJScWZ-blK6QWl-QXZeYAAETcE1Y&oq=Casino+Estoril&gs_lcp=Cgdnd3Mtd2l6EAEYADILCC4QxwEQrwEQkwIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCABQsOoCWLDqAmCHgwNoAHACeACAAfwBiAG0A5IBBTAuMS4xmAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- Kazino Sochi -->
+	<div class="cou" id="KazinoSochi">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/KazinoSochi.png">
+  		<figcaption class="caption">
+	      		Kazino Sochi<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (4,221)
+	      				<br>
+	      				Casino and poker
+
+	      				<p class="info"></p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=Kazino+Sochi&biw=1366&bih=635&ei=L6aaYKj8A9DLrQG0xYy4BQ&oq=Kazino+Sochi&gs_lcp=Cgdnd3Mtd2l6EANQ_YYBWP2GAWDskQFoAHACeACAAYsBiAGBApIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwjoz46S_MHwAhXQZSsKHbQiA1cQ4dUDCA4&uact=5">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- Cliffs of Moher -->
+	<div class="cou" id="CliffsofMoher">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/CliffsofMoher.png">
+  		<figcaption class="caption">
+	      		Cliffs of Moher<br>
+	      		
+	      		<span class="ratings">
+	      			4.8 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (2,379)
+	      				<br>
+	      				Popular cliffs with a visitor centre
+
+	      				<p class="info">The Cliffs of Moher are sea cliffs located at the southwestern edge of the Burren region in County Clare, Ireland. They run for about 14 kilometres. At their southern end, they rise 120 metres above the Atlantic Ocean at Hag's Head, and, 8 kilometres to the north, they reach their maximum height of 214 metres just north of O'Brien's Tower, a round stone tower near the midpoint of the cliffs, built in 1835 by Sir Cornelius O'Brien, then continue at lower heights. The closest settlements are the villages of Liscannor 6 km to the south, and Doolin 7 km to the north. From the cliffs, and from atop the tower, visitors can see the Aran Islands in Galway Bay, the Maumturks and Twelve Pins mountain ranges to the north in County Galway, and Loop Head to the south. The cliffs rank among the most visited tourist sites in Ireland, with around 1.5 million visits per annum.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=cliffs+of+moher&biw=1366&bih=635&ei=T6aaYO2aLcO7rQHukKGYDw&gs_ssp=eJzj4tTP1TcwSsotNzNg9OJPzslMSytWyE9TyM3PSC0CAHfgCO4&oq=Cliffs+of+Moher&gs_lcp=Cgdnd3Mtd2l6EAEYADILCC4QsQMQgwEQkwIyAggAMgIIADICCAAyAggAMgIIADICCAAyCAguEMcBEK8BMggILhDHARCvATICCABQv98BWL_fAWCV-wFoAHAAeACAAc8BiAHWApIBBTAuMS4xmAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- Lake Orta -->
+	<div class="cou" id="LakeOrta">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./EUROPEsights/LakeOrta.png">
+  		<figcaption class="caption">
+	      		Lake Orta<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (1,331)
+	      				<br>
+	      				Sprawling lake in picturesque surrounds
+
+	      				<p class="info">Lake Orta is a lake in northern Italy, west of Lake Maggiore. It has been so named since the 16th century, but was previously called the Lago di San Giulio, after Saint Julius, the patron saint of the region. Its southern end is about 35 kilometers by rail to the northwest of the city of Novara, while its north end is about 6 kilometers by rail south of the Gravellona-Toce railway station, itself located halfway between Ornavasso and Omegna. Its scenery is characteristically Italian, while the San Giulio island has some picturesque buildings, and takes its name from the local saint, who lived in the 4th century. Located around the lake are Orta San Giulio, built on a peninsula projecting from the east shore of the lake, Omegna at its northern extremity, Pettenasco to the east, and Pella to the west. It is supposed that the lake is the remnant of a much larger sheet of water by which originally the waters of the Toce flowed south towards Novara. As the glaciers retreated the waters flowing from them diminished, and were gradually diverted into Lake Maggiore. The inaugural European Rowing Championships were held on Lake Orta in 1893.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool Europe is amazing i am in love with Europe.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=lake+orta&biw=1366&bih=635&ei=caaaYLyuItHt9QPQ4YWADQ&gs_ssp=eJzj4tTP1TcwzTOoqDRg9OLMScxOVcgvKkkEAEjaBso&oq=Lake+Orta&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QkwIyAggAMgIIADICCAAyAggAMgIILjICCAAyBQgAEMkDMgQILhAKMgIIAFDCfVjCfWCIhwFoAHACeACAAcgBiAHWApIBBTAuMS4xmAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+	$(".cou").hide();
+	$("#sidewallpaper").show();
+	//to show Hyde_Park
+	$("#Hyde_Park").click(function(){
+		 $(".cou").hide();
+		 $("#HydePark").show();
+		 
+	});
+
+	//to show Prague_Zoo
+	$("#Prague_Zoo").click(function(){
+		 $(".cou").hide();
+		 $("#PragueZoo").show();
+		 
+	});
+
+	//to show Buckingham_Palace
+	$("#Buckingham_Palace").click(function(){
+		 $(".cou").hide();
+		 $("#BuckinghamPalace").show();
+		 
+	});
+
+	//to show Doges_Palace
+	$("#Doges_Palace").click(function(){
+		 $(".cou").hide();
+		 $("#DogesPalace").show();
+		 
+	});
+
+	//to show The_British_Museum
+	$("#The_British_Museum").click(function(){
+		 $(".cou").hide();
+		 $("#TheBritishMuseum").show();
+		 
+	});
+
+	//to show La_Molina
+	$("#La_Molina").click(function(){
+		 $(".cou").hide();
+		 $("#LaMolina").show();
+		 
+	});
+
+	//to show Europa_Park
+	$("#Europa_Park").click(function(){
+		 $(".cou").hide();
+		 $("#EuropaPark").show();
+		 
+	});
+
+	//to show Gardaland_Resort
+	$("#Gardaland_Resort").click(function(){
+		 $(".cou").hide();
+		 $("#GardalandResort").show();
+		 
+	});
+
+	//to show Es_Trenc
+	$("#Es_Trenc").click(function(){
+		 $(".cou").hide();
+		 $("#EsTrenc").show();
+		 
+	});
+
+	//to show Preveli_beach
+	$("#Preveli_beach").click(function(){
+		 $(".cou").hide();
+		 $("#PreveliBeach").show();
+		 
+	});
+
+	//to show Coral_Bay
+	$("#Coral_Bay").click(function(){
+		 $(".cou").hide();
+		 $("#CoralBay").show();
+		 
+	});
+
+	//to show Casino_Estoril
+	$("#Casino_Estoril").click(function(){
+		 $(".cou").hide();
+		 $("#CasinoEstoril").show();
+		 
+	});
+
+
+	//to show Kazino_Sochi
+	$("#Kazino_Sochi").click(function(){
+		 $(".cou").hide();
+		 $("#KazinoSochi").show();
+		 
+	});
+
+	//to show Cliffs_of_Moher
+	$("#Cliffs_of_Moher").click(function(){
+		 $(".cou").hide();
+		 $("#CliffsofMoher").show();
+		 
+	});
+
+	//to show Lake_Orta
+	$("#Lake_Orta").click(function(){
+		 $(".cou").hide();
+		 $("#LakeOrta").show();
+		 
+	});
+
+
+	//to show cross
+	$(".cross").click(function(){
+		 $(".cou").hide();
+		 $("#sidewallpaper").show();
+	});
+
+
+});
+
+</script>
+
+
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

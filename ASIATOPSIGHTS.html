@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- header font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- div animations aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- div animations end aos -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+	<title>PLANGO/Asia Sights</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0%;
+			top: 0;
+			background-color: #25262a;
+			overflow: hidden;
+		}
+		
+		/*/*header
+		#headerdiv1{
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0,0,0,0.9);
+			  z-index: 1;
+			  border-bottom-left-radius: 20px;
+			  border-bottom-right-radius: 20px;
+		}
+
+
+		#headerlist{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.navlinks{
+			color: #cccccc;
+			text-decoration: none;
+			transition: 0.1s ease-in-out;
+					}
+
+		Underline From Center
+		.navlinks {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  position: relative;
+		  overflow: hidden;
+		  padding-top: -3px;
+		  border-radius: 15%;
+		  transition: 0.1s ease-in-out;
+		}
+		.navlinks:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  left: 51%;
+		  right: 51%;
+		  bottom: 0;
+		  background: #f54956;
+		  height: 4px;
+		  -webkit-transition-property: left, right;
+		  transition-property: left, right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.navlinks:hover:before, .navlinks:focus:before, .navlinks:active:before {
+		  left: 0;
+		  right: 0;
+		}
+
+		.navlinks:hover{
+			color: white;
+			transform: scale(1.1);
+		}
+		
+
+
+
+		.li1{
+			list-style: none;
+			display: inline-block;
+			font-family: 'Righteous', cursive;
+			font-size: 25px;
+			padding-right: 5%;
+			cursor: default;
+
+		}
+
+		#headerimg1{
+			width: 100px;
+			height: auto;
+			margin-top: -5px;
+			position: relative;
+
+		}
+
+header end*/
+
+		#div1{
+			background-color: transparent;
+			width: 62%;
+			height: 650px;
+			float: left;
+			font-family: 'Anton', sans-serif;
+			overflow: auto;
+			text-transform: uppercase;
+		}
+
+		.arrowicon{
+			font-size: 50px;
+			color: black;
+			background-color: grey;
+			border-radius: 50%;
+			padding: 10px;
+			margin: 10px;
+			transition: 0.3s all;
+			position: fixed;
+		}
+
+		.arrowicon:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.para{
+			font-size:100px;
+			margin: 0px 0px 0px 30px;
+			line-height: 100%;
+			cursor: default;
+		}
+		.para:hover{
+			color: grey;
+		}
+
+		#divforparainit{
+			margin-top: 130px;
+		}
+
+		#div2{
+			background-color: grey;
+			width: 38%;
+			height: 650px;
+			float: right;
+			font-family: 'Roboto', sans-serif;
+			overflow: auto;
+		}
+
+		.GBR {
+			  width: 100%;
+			  height: auto;
+			  border-radius: 10px;
+			}
+
+		.polaroidloc {
+			  background-color: transparent;
+			  padding-bottom: 1.5em;
+			  margin: 3px 5px;
+			}
+
+		.stars{
+			color: #e6e600;
+			word-spacing: 1px;
+			font-size: 15px;
+		}
+
+		.ratings{
+			color: black;
+			font-size: 20px;
+		}
+			
+		.caption {
+			font-size: 35px;
+			text-align: left;
+			margin: 10px 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			line-height: 93%;
+		}
+			
+		.cross{
+			position: fixed;
+			font-size: 30px;
+			background-color: rgba(179, 179, 179,0.9);
+			border-radius: 50%;
+			padding:5px;
+			transition: 0.3s all;
+			color: black;
+		}
+
+		.cross:hover{
+			background-color: black;
+			color: grey;
+		}
+
+		.info{
+			font-size: 17px;
+			padding: 5px;
+		}
+
+		.reviews{
+			font-size: 30px;
+			text-decoration: underline;
+		}
+
+		.herethereviewscome p{
+			padding: 0px 10px;
+			line-height: 120%;
+		}
+
+		.name{
+			font-size: 22px;
+			font-weight: bold;
+			color: #00004d;
+		}
+
+		.bolo{
+			font-size: 20px;
+		}
+
+		.time{
+			font-size: 13px;
+			color: black;
+		}
+
+		.quote{
+			font-size: 17px;
+		}
+
+		.like{
+			font-size: 30px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		.webresults{
+			padding: 10px;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+			background-color: black;
+			border-radius: 30px;
+			border:none;
+			color: white;
+			outline: none;
+			transition: 0.3s all;
+		}
+
+		.webresults:hover{
+			transform: scale(1.1);
+			color: white;
+			background-color: #000066;
+		}
+
+		
+
+
+
+
+		::-webkit-scrollbar {
+				  width: 10px;
+				  border-radius: 15px;
+				  background-color: none;
+					}
+		/* Track */
+		::-webkit-scrollbar-track {
+			  background: none;
+					}
+					 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			 background: none; border-radius: 15px;
+			 opacity: 0.5;
+					}
+
+			/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			  background: none; border-radius: 15px;
+					}
+
+	</style>
+
+</head>
+
+<!-- fixed header 
+<div id="headerdiv1">
+		
+		<ul id="headerlist">
+			<li class="li1" title="Home">
+				
+
+				<a href="TOURISMHOMEPAGE.html" class="navlinks">
+					Home
+				</a>
+			</li>
+
+			<li class="li1" title="Explore">
+				
+
+				<a href="TOURISMHOMEPAGE.html#divforskyshit" class="navlinks">
+					Explore
+				</a>
+			</li>
+			
+			<li class="li1">
+				<img data-aos="fade-down" id="headerimg1" src="./homepage/plango.png">
+			</li>
+			<li class="li1" title="Contact">
+				
+
+				<a href="CONTACT.html" class="navlinks">
+					Contact
+				</a>
+			</li>
+			
+			<li class="li1" title="About">
+				
+
+				<a href="ABOUT.html" class="navlinks">
+					About
+				</a>
+			</li>
+		
+		</ul>
+</div> -->
+
+<body>
+
+<div id="div1">
+	
+	<div>
+		<a href="ASIA.html"><i class="las la-long-arrow-alt-left arrowicon"></i></a>
+	</div>
+
+	<div>
+		<div id="divforparainit">
+			<p class="para" id="Mount_Fuji">Mount Fuji</p>
+			<p class="para" id="Mori_Art_Museum">Mori Art Museum</p>
+			<p class="para" id="Ta_Prohm_Temple">Ta Prohm Temple</p>
+			<p class="para" id="The_Grand_Palace">The Grand Palace</p>
+			<p class="para" id="Hawa_Mahal">Hawa Mahal</p>
+			<p class="para" id="Potala_Palace">Potala Palace</p>
+			<p class="para" id="Summer_Palace">Summer Palace</p>
+			<p class="para" id="Lotus_Temple">Lotus Temple</p>
+			<p class="para" id="Forbidden_City">Forbidden City</p>
+			<p class="para" id="Great_Wall_of_China">Great Wall of China</p>
+			<p class="para" id="Ghibli_Museum">Ghibli Museum</p>
+			<p class="para" id="Mysore_Palace">Mysore Palace</p>
+			<p class="para" id="Railway_Museum">Railway Museum</p>
+			<p class="para" id="Karon_Beach">Karon Beach</p>
+			<p class="para" id="Dal_Lake">Dal Lake</p>
+		</div>
+	</div>
+
+</div>
+
+
+<div id="div2">
+
+	<div>
+		<img class="cou" id="sidewallpaper" src="sidewallpaper.png">
+	</div>
+
+	<!-- MountFuji -->
+	<div class="cou" id="MountFuji">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/MOUNTFUJI.png">
+  		<figcaption class="caption">
+	      		Mount Fuji<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (7,637)
+	      				<br>
+	      				Iconic peak with Fujisan Hongu Sengen
+
+	      				<p class="info">Mount Fuji, located on the island of Honshū, is the highest mountain in Japan, standing 3,776.24 m. It is the second-highest volcano located on an island in Asia, and seventh-highest peak of an island on Earth. Mount Fuji is an active stratovolcano that last erupted from 1707 to 1708. The mountain is located about 100 km southwest of Tokyo and is visible from there on clear days. Mount Fuji's exceptionally symmetrical cone, which is covered in snow for about five months of the year, is commonly used as a cultural icon of Japan and it is frequently depicted in art and photography, as well as visited by sightseers and climbers. Mount Fuji is one of Japan's "Three Holy Mountains" along with Mount Tate and Mount Haku. It is a Special Place of Scenic Beauty and one of Japan's Historic Sites. It was added to the World Heritage List as a Cultural Site on June 22, 2013. According to UNESCO, Mount Fuji has "inspired artists and poets and been the object of pilgrimage for centuries". UNESCO recognizes 25 sites of cultural interest within the Mount Fuji locality.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Dinesh kumara
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 9 reviews | 78 photos <span class="time"> (2 days ago)</span></p>
+									
+									<p class="quote">Its a big experience and unforgettable thing in my life.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">A A K A S H
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 63 reviews | 180 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Imma go one day.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">RARE VIDEOS
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Was 1 km away from top.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Game Clips TJ
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">pop sock.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry Daws
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">i havent been.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=mount+fuji&oq=mount+fuji&aqs=chrome..69i57.3613j0j1&sourceid=chrome&ie=UTF-8">Web Results</a></button>
+	      				</center>
+	      		</span>
+
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+	
+
+	<!-- Mori Art Museum -->
+	<div class="cou" id="MoriArtMuseum">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/MoriArtMuseum.png">
+  		<figcaption class="caption">
+	      		Mori Art Museum<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (3,539)
+	      				<br>
+	      				Museum in Tokyo, Japan
+
+	      				<p class="info">The Mori Art Museum is a contemporary art museum founded by the real estate developer Minoru Mori in the Roppongi Hills Mori Tower in the Roppongi Hills complex both of which he built in Tokyo, Japan. The exterior architect of the museum's galleries on the 35th floor of the 45 -story tower in which the museum is housed is Richard Gluckman of Gluckman Mayner Architects. The museum does not exhibit a permanent collection but rather temporary exhibitions of works by contemporary artists. Artists whose work has been exhibited at the museum include Ai Weiwei, Gohar Dashti, Tokujin Yoshioka and Bill Viola. The museum's founder Minoru Mori died in March 2012. The museum focuses on contemporary art and primarily exhibits works of Asian artists. It also features the MAM project which exhibits solo shows on a smaller scale in the museum space. In 2015 the museum exhibited Dinh Q. Le's solo exhibition.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=mori+art+museum&ei=P6mZYJ-oI4LC3LUP-NulgAg&oq=mori+art+museum&gs_lcp=Cgdnd3Mtd2l6EAMyCggpEMcBEK8BEEMyAggpMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIABBHELADOgsIKRDHARCvARCTAjoGCAAQFhAeUMwlWIorYKE0aAJwAngAgAHMAYgB7QeSAQUwLjUuMZgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=gws-wiz&ved=0ahUKEwjfw5n2isDwAhUCIbcAHfhtCYAQ4dUDCA4&uact=5">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Ta Prohm Temple -->
+	<div class="cou" id="TaProhmTemple">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/TaProhmTemple.png">
+  		<figcaption class="caption">
+	      		Ta Prohm Temple<br>
+	      		
+	      		<span class="ratings">
+	      			4.8 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (6,652)
+	      				<br>
+	      				Temple ruins overgrown with trees
+
+	      				<p class="info">Ta Prohm is the modern name of the temple in Siem Reap, Cambodia, built in the Bayon style largely in the late 12th and early 13th centuries and originally called Rajavihara. Located approximately one kilometre east of Angkor Thom and on the southern edge of the East Baray, it was founded by the Khmer King Jayavarman VII as a Mahayana Buddhist monastery and university. Unlike most Angkorian temples, Ta Prohm is in much the same condition in which it was found: the photogenic and atmospheric combination of trees growing out of the ruins and the jungle surroundings have made it one of Angkor's most popular temples with visitors. UNESCO inscribed Ta Prohm on the World Heritage List in 1992. Today, it is one of the most visited complexes in Cambodia’s Angkor region. The conservation and restoration of Ta Prohm is a partnership project of the Archaeological Survey of India and the APSARA.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Josh West
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 110 reviews | 123 photos <span class="time"> (18 days ago)</span>
+									</p>
+									
+									<p class="quote">exquisite, enjoyed every moment of these places will certainly be back !</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Phil Halson
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 238 reviews | 4961 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">This temple is recognised far and wide, and almost all descriptions will mention how many of the buildings are now supported by the trees that have grown up, down, around, and through them and thus can not be removed. I have not visited for a number of years (the pictures were taken in 2005), and last time I was there a team of researchers from a Japanese university (Kyoto, I think) were planning some kind of restoration project. I don't know what, if anything, came of that.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">The Naturalist View
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 83 reviews | 261 photos <span class="time"> (150 days ago)</span></p>
+								
+								<p class="quote">Beautiful to see how nature slowly conqueres</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Kimlang Chen
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 28 reviews | 67 photos <span class="time"> (60 days ago)</span></p>
+								
+								<p class="quote">Nice</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">भटकंती
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (300 days ago)</span></p>
+								
+								<p class="quote">All time great destination to visit... World best ancient temples are here only.. Must visited places.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=ta+prohm+temple&ei=BKmZYNS6OqXaz7sPpvqz6A8&gs_ssp=eJzj4tTP1TcwsqzIMzFgtFI1qDA2NDQwNE1JSzIyskwE0lYGFclpSZYmppapRmlmRgamhqle_CWJCgVF-Rm5CiWpuQU5qQBmGBOD&oq=Ta+Prohm+Temple&gs_lcp=Cgdnd3Mtd2l6EAEYATICCCkyFAguEMcBEK8BEIsDEKYDEKgDEJMCMgIIADICCAAyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeULiuAVi4rgFg-roBaABwAngAgAGWAYgBjgKSAQMwLjKYAQCgAQKgAQGqAQdnd3Mtd2l6uAEBwAEB&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- The Grand Palace -->
+	<div class="cou" id="TheGrandPalace">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/TheGrandPalace.png">
+  		<figcaption class="caption">
+	      		The Grand Palace<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (37,793)
+	      				<br>
+	      				Opulent former royal residence & museum
+
+	      				<p class="info">The Grand Palace is a complex of buildings at the heart of Bangkok, Thailand. The palace has been the official residence of the Kings of Siam since 1782. The king, his court, and his royal government were based on the grounds of the palace until 1925. King Bhumibol Adulyadej, resided at the Chitralada Royal Villa and his successor King Vajiralongkorn at the Amphorn Sathan Residential Hall, both in the Dusit Palace, but the Grand Palace is still used for official events. Several royal ceremonies and state functions are held within the walls of the palace every year. The palace is one of the most popular tourist attractions in Thailand. Construction of the palace began on 6 May 1782, at the order of King Phutthayotfa Chulalok, the founder of the Chakri Dynasty, when he moved the capital city from Thonburi to Bangkok. Throughout successive reigns, many new buildings and structures were added, especially during the reign of King Chulalongkorn. By 1925, the king, the Royal Family and the government were no longer permanently settled at the palace, and had moved to other residences.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">B S Kevin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 112 reviews | 790 photos <span class="time"> (80 days ago)</span>
+									</p>
+									
+									<p class="quote">One place you have to visit when you're travelling to Thailand.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">DREAM CHASER
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 35 reviews | 324 photos <span class="time"> (250 days ago)</span></p>
+								
+								<p class="quote">Another interesting place in Bangkok is the Grand Palace </p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Twain
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (70000 days ago)</span></p>
+								
+								<p class="quote">TOO GOOD</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Elon Musk
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (69 days ago)</span></p>
+								
+								<p class="quote">Never visited but looks cool in pics</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 100 reviews | 1 photos <span class="time"> (556 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=the+grand+palace+in+thailand&ei=_aiZYMuDFqO0mgfjqKzgAg&gs_ssp=eJzj4tTP1TcwysqwsDRgtFI1qDA2SDWytDRJNTY0SzY2M06zMqgwSjRLNjdPSbE0Tk0zSTYx9JIpyUhVSC9KzEtRKEjMSUxOVcjMUyjJSMzMAQoBAHLNF-w&oq=The+Grand+Palace&gs_lcp=Cgdnd3Mtd2l6EAEYADIKCCkQxwEQrwEQCjICCCkyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsANQAFgAYJMnaAFwAngAgAF0iAF0kgEDMC4xmAEAqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Hawa Mahal -->
+	<div class="cou" id="HawaMahal">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/HawaMahal.png">
+  		<figcaption class="caption">
+	      		Hawa Mahal<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (6,652)
+	      				<br>
+	      				Pink/red sandstone 'Palace of the Winds'
+
+	      				<p class="info">Hawa Mahal is a palace in Jaipur, India approximately 300 kilometers from the capital city of Delhi. Built from red and pink sandstone, the palace sits on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers. The structure was built in 1799 by Maharaja Sawai Pratap Singh, the grandson of Maharaja Sawai Jai Singh, who was the founder of Jaipur. He was so inspired by the unique structure of Khetri Mahal that he built this grand and historical palace. It was designed by Lal Chand Ustad. Its five floor exterior is akin to honeycomb with its 953 small windows called Jharokhas decorated with intricate latticework. The original intent of the lattice design was to allow royal ladies to observe everyday life and festivals celebrated in the street below without being seen, since they had to obey the strict rules of "purdah", which forbade them from appearing in public without face coverings. This architectural feature also allowed cool air from the Venturi effect to pass through, thus making the whole area more pleasant during the high temperatures in summer.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=hawa+mahal&ei=zaiZYPukGOfA3LUPq9SX2AY&gs_ssp=eJzj4tTP1TcwyzYvTDZgtFI1qDC2NEtJMjRJMkxKMTZISjS1MqiwMDNINU0xNTZMTU5OMjJI9uLKSCxPVMhNzEjMAQAYvRH1&oq=Hawa+Mahal&gs_lcp=Cgdnd3Mtd2l6EAEYADIRCC4QsQMQxwEQrwEQkQIQkwIyBwgAEEMQiwMyBwgAEMkDEEMyAggAMgIIADIECAAQQzICCAAyAggAMgIIADICCABQy5MBWMuTAWCcoQFoAHACeACAAbEEiAHNBZIBBzAuMS41LTGYAQCgAQKgAQGqAQdnd3Mtd2l6uAEBwAEB&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Potala Palace -->
+	<div class="cou" id="PotalaPalace">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/PotalaPalace.png">
+  		<figcaption class="caption">
+	      		Potala Palace<br>
+	      		
+	      		<span class="ratings">
+	      			4.8 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (1,106)
+	      				<br>
+	      				Famed royal retreat from 17th century
+
+	      				<p class="info">The Potala Palace is a dzong fortress in the city of Lhasa, Tibet Autonomous Region, China. It was the winter palace of the Dalai Lamas from 1649 to 1959, has been a museum since then, and has been a World Heritage Site since 1994. The palace is named after Mount Potalaka, the mythical abode of the bodhisattva Avalokiteśvara. The 5th Dalai Lama started its construction in 1645 after one of his spiritual advisers, Konchog Chophel, pointed out that the site was ideal as a seat of government, situated as it is between Drepung and Sera monasteries and the old city of Lhasa. It may overlay the remains of an earlier fortress called the White or Red Palace on the site, built by Songtsen Gampo in 637. The building measures 400 metres east-west and 350 metres north-south, with sloping stone walls averaging 3 metres thick, and 5 metres thick at the base, and with copper poured into the foundations to help proof it against earthquakes. Thirteen storeys of buildings, containing over 1,000 rooms, 10,000 shrines and about 200,000 statues, soar 117 metres on top of Marpo Ri, the "Red Hill", rising more than 300 metres in total above the valley floor.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=potala+palace&ei=qaiZYIi7FMKZmgeMqb3gCQ&gs_ssp=eJzj4tTP1TcwSkkqLzdgtFI1qDA2NzM0NjQ3MjGxMDFLTUyyMqgwSUy1MEixMDVPTTY0SDa09OItyC9JzElUKAASyakAP2MSnQ&oq=Potala+Palace&gs_lcp=Cgdnd3Mtd2l6EAEYADIUCC4QsQMQxwEQrwEQkQIQiwMQkwIyBwgAEEMQiwMyBQgAEIsDMgcIABBDEIsDMgUIABCLAzIFCAAQiwMyBQgAEIsDMgIIADICCAAyAggAUKD_AVig_wFg04sCaABwAngAgAHHAYgB7wKSAQMwLjKYAQCgAQKgAQGqAQdnd3Mtd2l6uAEBwAEB&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!--Summer Palace -->
+	<div class="cou" id="SummerPalace">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/SummerPalace.png">
+  		<figcaption class="caption">
+	      		Summer Palace<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (6,652)
+	      				<br>
+	      				Iconic lakeside retreat for royalty
+
+	      				<p class="info">The Summer Palace is a vast ensemble of lakes, gardens and palaces in Beijing. It was an imperial garden in the Qing dynasty. Mainly dominated by Longevity Hill and Kunming Lake, it covers an expanse of 2.9 square kilometres, three-quarters of which is water. Longevity Hill is about 60 metres high and has many buildings positioned in sequence. The front hill is rich with splendid halls and pavilions, while the back hill, in sharp contrast, is quiet with natural beauty. The central Kunming Lake, covering 2.2 square kilometres, was entirely man-made and the excavated soil was used to build Longevity Hill. Inspired by the gardens in South China, in the Summer Palace there are over 3,000 various Chinese ancient buildings that house a collocation of over 40,000 kinds of valuable historical relics from each dynasty. In December 1998, UNESCO included the Summer Palace on its World Heritage List. It declared the Summer Palace "a masterpiece of Chinese landscape garden design. The natural landscape of hills and open water is combined with artificial features such as pavilions, halls, palaces, temples and bridges to form a harmonious ensemble of outstanding aesthetic value".</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=summer+palace+china&ei=haiZYO_wL-O_3LUPy9Sy6AM&gs_ssp=eJzj4tTP1TcwzEnJMDNgtFI1qDA2MTBKs0g2T7JMNrZIM06zMqgwMU2xTDI0NzdJNjBJNDQ28hIuLs3NTS1SKEjMSUxOVUjOyMxLBAC4qRTJ&oq=Summer+Palace&gs_lcp=Cgdnd3Mtd2l6EAEYBDICCAAyAggAMgIIADICCC4yCAguEMcBEK8BMgIIADICCC4yAggAMgIIADICCABQ_-QBWP_kAWDrhwJoAHACeACAAf4BiAGwA5IBBTAuMS4xmAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+	<!-- Lotus Temple -->
+	<div class="cou" id="LotusTemple">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/LotusTemple.png">
+  		<figcaption class="caption">
+	      		Lotus Temple<br>
+	      		
+	      		<span class="ratings">
+	      			4.5 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (40,870)
+	      				<br>
+	      				Temple with a flower-like design
+
+	      				<p class="info">The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship that was dedicated in December 1986. Notable for its flowerlike shape, it has become a prominent attraction in the city. Like all Baháʼí Houses of Worship, the Lotus Temple is open to all, regardless of religion or any other qualification. According to Shoghi Effendi, a Bahá'í temple is a “silent teacher” of the Bahá'í faith. The building is composed of 27 free-standing marble-clad "petals" arranged in clusters of three to form nine sides, with nine doors opening onto a central hall with a height of slightly over 34 meters and a capacity of 2,500 people. The Lotus Temple has won numerous architectural awards and has been featured in many newspaper and magazine articles. A 2001 CNN report referred to it as the most visited building in the world.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=lotus+temple&ei=aqiZYJPbNvKC4t4P2KKwiAQ&gs_ssp=eJzj4tLP1TcwTqqwLDYwYLRSNagwtjRITjVONjRLNTCySE4xtDKoMDM1TkpNMkxNtTBNTTYzT_TiyckvKS1WKEnNLchJBQBRRBNk&oq=Lotus+Temple&gs_lcp=Cgdnd3Mtd2l6EAEYADIOCC4QsQMQxwEQrwEQkwIyAggAMgIIADICCAAyBQgAEMkDMgIIADICCAAyAggAMgIIADICCABQ8K0BWPCtAWCrxAFoAHACeACAAbMBiAHRApIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+		<!-- Forbidden City -->
+	<div class="cou" id="ForbiddenCity">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/ForbiddenCity.png">
+  		<figcaption class="caption">
+	      		Forbidden City<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (371)
+	      				<br>
+	      				Palace complex from 1420 with a museum
+
+	      				<p class="info">Forbidden City : an area of Beijing, China, that contains the former imperial palaces, to which entry was forbidden to all except the members of the imperial family and their servants</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=forbidden+city&ei=UKiZYN6sKMjbz7sP4f6C-Ak&gs_ssp=eJzj4tDP1TfIMkgyMmC0UjGoMDZNMzA1SrU0MTU0TTExTrEyqDAzN0k1SkoxSUkxNjC3TPPiS8svSspMSUnNU0jOLKkEACEOEmc&oq=Forbidden+City&gs_lcp=Cgdnd3Mtd2l6EAEYADIRCC4QsQMQxwEQrwEQkQIQkwIyBAgAEEMyBAgAEEMyBAgAEEMyAggAMgIIADICCAAyAggAMgIIADICCABQn7MBWJ-zAWCvvwFoAHACeACAAckBiAH7ApIBBTAuMS4xmAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+	<!-- Great Wall of China -->
+		<div class="cou" id="GreatWallofChina">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/GreatWallofChina.png">
+  		<figcaption class="caption">
+	      		Great Wall of China<br>
+	      		
+	      		<span class="ratings">
+	      			4.2 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (15,408)
+	      				<br>
+	      				Historical place in Beijing, China
+
+	      				<p class="info">The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=great+wall+of+china+history&ei=LqiZYMzbFOXTz7sPgpOB-Ao&gs_ssp=eJzj4tTP1TdIMUopNDBgtFI1qDA2TTM0MkwxN7MwTzNKTk6zMqhIMTAxMDK1TLI0NTA1MkpJ85JOL0pNLFEoT8zJUchPU0jOyMxLVMjILC7JL6oEAGKyF7c&oq=Great+Wall+of+China&gs_lcp=Cgdnd3Mtd2l6EAEYBDIOCC4QsQMQxwEQrwEQkwIyAggAMgIIADICCAAyCAguEMcBEK8BMgIIADICCAAyAggAMgIIADICCABQidMBWInTAWDcgQJoAHACeACAAdYBiAHfApIBBTAuMS4xmAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- Ghibli Museum -->
+	<div class="cou" id="GhibliMuseum">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/GhibliMuseum.png">
+  		<figcaption class="caption">
+	      		Ghibli Museum<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (10,035)
+	      				<br>
+	      				Famed animation studio's museum
+
+	      				<p class="info">The Ghibli Museum is a museum showcasing the work of the Japanese animation studio Studio Ghibli. It is located in Inokashira Park in Mitaka, a western city of Tokyo, Japan. The museum combines features of a children's museum, technology museum, and a fine arts museum, and is dedicated to the art and technique of animation. Features include a replica of the Catbus from My Neighbor Totoro, a café, bookstore, rooftop garden, and a theater for exclusive short films by Studio Ghibli.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=ghibli+museum&ei=EqiZYNHEAaG-3LUPt9aImAI&gs_ssp=eJzj4tTP1TcwszQwMzFgtFI1qDAzMLRITTU2STU1MLZINkqxMqgwSUk1NDW1NDBOszCxNDIw9eJNz8hMyslUyC0tTi3NBQAS6xG4&oq=Ghibli+Museum&gs_lcp=Cgdnd3Mtd2l6EAEYATICCCkyDQguEMcBEK8BEEMQkwIyAggAMgIIADICCAAyAggAMgIIADICCAAyCAguEMcBEK8BMgIIADICCABQucABWLnAAWDT0gFoAHACeACAAa8BiAHbApIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- Mysore Palace -->
+	<div class="cou" id="MysorePalace">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/MysorePalace.png">
+  		<figcaption class="caption">
+	      		Mysore Palace<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (178,110)
+	      				<br>
+	      				Indo-Saracenic architecture with lights
+
+	      				<p class="info">The Mysore Palace is a historical palace and the royal residence at Mysore in the Indian State of Karnataka. It is the official residence of the Yadav Wadiyar dynasty and the seat of the Kingdom of Mysore. The palace is in the centre of Mysore, and faces the Chamundi Hills eastward. Mysore is commonly described as the 'City of Palaces', and there are seven palaces including this one; however, 'Mysore Palace' refers specifically to this one within the Old fort. The land on which the palace now stands was originally known as puragiri, and is now known as the Old Fort. Yaduraya built the first palace inside the Old Fort in the 14th century, which was demolished and constructed multiple times. The current structure was constructed between 1897 and 1912, after the Old Palace was burnt ablaze. Mysore Palace is now one of the most famous tourist attractions in India, after the Taj Mahal, with more than 6 million annual visitors.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=mysore+palace&ei=66eZYJvAEJa_3LUPooqq4A8&gs_ssp=eJzj4tTP1TcwNUvOiTdgtFI1qDBOSkwzNzA0NDBOs0w0TLO0MqhINjZPS0pMNUo0NDJJSTRI8eLNrSzOL0pVKEjMSUxOBQBUZhN0&oq=mysore&gs_lcp=Cgdnd3Mtd2l6EAEYADIQCC4QsQMQxwEQrwEQQxCTAjIECAAQQzIHCC4QsQMQQzIKCC4QxwEQrwEQQzIKCC4QxwEQrwEQQzIECAAQQzINCC4QsQMQxwEQrwEQQzIFCAAQsQMyBQguELEDMgQIABBDOgIIKToFCCkQkQI6BQgAEJECOggIABCRAhCLAzoHCAAQQxCLAzoKCAAQsQMQQxCLAzoHCC4QQxCLAzoNCC4QxwEQrwEQQxCLAzoLCAAQsQMQgwEQiwM6CAgAELEDEIsDOgoILhCxAxBDEIsDOg0ILhBDEIsDEKQDEKgDOgQILhBDUN3zAVjV_gFg7Z8CaABwAngAgAGzAogBxQqSAQcwLjUuMS4xmAEAoAEBqgEHZ3dzLXdpergBAsABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+<!-- Railway Museum -->
+	<div class="cou" id="RailwayMuseum">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/RailwayMuseum.png">
+  		<figcaption class="caption">
+	      		Railway Museum<br>
+	      		
+	      		<span class="ratings">
+	      			4.4 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (11,098)
+	      				<br>
+	      				Educational exhibits on train history
+
+	      				<p class="info">The Railway Museum is a railway museum in Saitama, Saitama, Japan, which opened on 14 October 2007. It was built and is operated by the East Japan Railway Culture Foundation, a non-profit affiliate of the East Japan Railway Company. It consists of a 19,800 m² building on a site covering 42,500 m², with a display area 9,500 m² in size. The museum features about 30 railway cars, train cab simulators, railway model dioramas, mini trains, storage for artifacts and books, video booths, a multi-purpose hall, a gallery balcony, a cafeteria, a museum shop, and a research room.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=railway+museum+japan&ei=pKeZYPimGqG-3LUPt9aImAI&oq=Railway+Museum&gs_lcp=Cgdnd3Mtd2l6EAEYADICCCkyAggAMggILhDHARCvATICCAAyAggAMgIIADIFCAAQyQMyAggAMgIIADICCAAyAggAOgQIABAKOgoILhDHARCvARAKOgYIABAHEB5QivwDWOWVBGC4nwRoAHACeACAAf0BiAHQBpIBBTAuNC4xmAEAoAECoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+<!-- Karon Beach -->
+	<div class="cou" id="KaronBeach">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/KaronBeach.png">
+  		<figcaption class="caption">
+	      		Karon Beach<br>
+	      		
+	      		<span class="ratings">
+	      			4.6 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (5,693)
+	      				<br>
+	      				Vast sand beach with resort hotels
+
+	      				<p class="info">Karon Beach refers to a beach, and the town adjoining it, on the west coast of Phuket, Thailand. The beach is a popular destination for tourists. Generally quieter than neighbouring Patong, it is popular with families and couples. It is also especially popular with Scandinavian tourists, with many businesses catering especially to them. Karon Beach was heavily damaged by the tsunamis following the 2004 Indian Ocean earthquake, especially in its southern regions, but has since largely recovered and by 2008 showed little evidence of tsunami damage.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=karon+beach&ei=fKeZYJXeNujXz7sP1M6uYA&gs_ssp=eJzj4tTP1TcwqSgvMDdg9OLOTizKz1NISk1MzgAAWPQHjQ&oq=karon+beach&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QkwIyAggAMgIIADICCAAyCAguEMcBEK8BMgIIADICCAAyAggAMggILhDHARCvATICCAA6BwguEEMQkwI6BAguEEM6BAgAEEM6CgguEMcBEK8BEEM6BQguELEDOgcILhCxAxBDOgsILhDHARCvARCTAjoFCAAQsQM6AgguOgUIABDJAzoKCAAQsQMQgwEQClCi9gFYpooCYL6lAmgAcAJ4AIABywKIAfcQkgEHMC45LjIuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+<!-- Dal Lake -->
+	<div class="cou" id="DalLake">
+		<figure class="polaroidloc"><i class="las la-times cross"></i>
+  		<img class="GBR" src="./ASIAsights/DalLake.png">
+  		<figcaption class="caption">
+	      		Dal Lake<br>
+	      		
+	      		<span class="ratings">
+	      			4.7 <i class="las la-star stars"></i> <!-- fullstar -->
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i>
+	      				<i class="las la-star stars"></i> 
+	      				<!-- halfstar --><i class="las la-star-half-alt stars"></i> (2,300)
+	      				<br>
+	      				Aquatic retreat for boating & hiking
+
+	      				<p class="info">Dal is a lake in Srinagar, the summer capital of Jammu and Kashmir, India. It is an urban lake, which is the second largest in the union territory of Jammu and Kashmir. It is integral to tourism and recreation in Kashmir and is named the "Lake of Flowers", "Jewel in the crown of Kashmir" or "Srinagar's Jewel". The lake is also an important source for commercial operations in fishing and water plant harvesting. The shore line of the lake, about 15.5 kilometres, is encompassed by a boulevard lined with Mughal era gardens, parks, houseboats and hotels. Scenic views of the lake can be witnessed from the shore line Mughal gardens, such as Shalimar Bagh and Nishat Bagh built during the reign of Mughal Emperor Jahangir and from houseboats cruising along the lake in the colourful shikaras. During the winter season, the temperature sometimes reaches −11 °C, freezing the lake. The lake covers an area of 18 square kilometres and is part of a natural wetland which covers 21.1 square kilometres, including its floating gardens. The floating gardens, known as "Rad" in Kashmiri, blossom with lotus flowers during July and August.</p>
+
+	      				<p class="reviews">Reviews</p>
+	      				
+	      				<ul>
+	      					<li>
+			      				<div class="herethereviewscome">
+			      					<p class="name">Ebenezer Owusu Kanin
+			      					<span class="stars">
+			      						<i class="las la-star"></i> <!-- fullstar -->
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i>
+			      						<i class="las la-star"></i> 
+			      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+			      					</p>
+									<p class="bolo">Local Guide | 23 reviews | 21 photos <span class="time"> (2 days ago)</span>
+									</p>
+									
+									<p class="quote">It was a very nice experience. Lovely art an a great location. Will definitely recommend.</p>
+									<p><i class="las la-thumbs-up like"></i>1</p>
+			      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Courtney Hoy
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 0 reviews | 0 photos <span class="time"> (30 days ago)</span></p>
+								
+								<p class="quote">i love it its really cool tokyo is amazing i am in love with tokyo.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Mark Vasile
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 33 reviews | 140 photos <span class="time"> (7 days ago)</span></p>
+								
+								<p class="quote">Art. Cityscape. Comfy sofa, drinks and company.</p>
+								<p><i class="las la-thumbs-up like"></i>0</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Torsten Kliem
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i>
+		      						<i class="las la-star"></i> 
+		      						<!-- halfstar --><i class="las la-star-half-alt"></i></span>
+		      					</p>
+								<p class="bolo">Local Guide | 79 reviews | 68 photos <span class="time"> (6 days ago)</span></p>
+								
+								<p class="quote">Modern art by Japanese artists. Interesting but not everyone's cup of tea.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+
+		      				<li>
+		      				<div class="herethereviewscome">
+		      					<p class="name">Henry
+		      					<span class="stars">
+		      						<i class="las la-star"></i> <!-- fullstar -->
+		      					</span>
+		      					</p>
+								<p class="bolo">Local Guide | 1000 reviews | -10 photos <span class="time"> (5 days ago)</span></p>
+								
+								<p class="quote">Wish i'd been there.</p>
+								<p><i class="las la-thumbs-up like"></i>1</p>
+		      				</div>
+		      				</li>
+	      				</ul>
+
+	      				<center>
+	      					<button class="webresults"><a href="https://www.google.com/search?q=dal+lake&ei=9KaZYJ2iGqDH4-EP356piA4&gs_ssp=eJzj4tTP1TcwSzFLSjFg9OJIScxRyEnMTgUAPuMGFg&oq=DalLake&gs_lcp=Cgdnd3Mtd2l6EAEYADIKCC4QsQMQChCTAjIECC4QCjIKCC4QxwEQrwEQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQClCBkQhYgZEIYNKbCGgAcAJ4AIABpQKIAcIDkgEFMC4xLjGYAQCgAQKgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz">Web Results</a></button>
+	      				</center>
+	      		</span>
+	      		
+	  		</figcaption>
+	    </figure>
+	
+	</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+	$(".cou").hide();
+	$("#sidewallpaper").show();
+	//to show Dal_Lake
+	$("#Dal_Lake").click(function(){
+		 $(".cou").hide();
+		 $("#DalLake").show();
+		 
+	});
+
+	//to show Mount Fuji
+	$("#Mount_Fuji").click(function(){
+		 $(".cou").hide();
+		 $("#MountFuji").show();
+		 
+	});
+
+	//to show Mori Art Museum
+	$("#Mori_Art_Museum").click(function(){
+		 $(".cou").hide();
+		 $("#MoriArtMuseum").show();
+		 
+	});
+
+	//to show Ta Prohm Temple
+	$("#Ta_Prohm_Temple").click(function(){
+		 $(".cou").hide();
+		 $("#TaProhmTemple").show();
+		 
+	});
+
+	//to show The_Grand_Palace
+	$("#The_Grand_Palace").click(function(){
+		 $(".cou").hide();
+		 $("#TheGrandPalace").show();
+		 
+	});
+
+	//to show Hawa_Mahal
+	$("#Hawa_Mahal").click(function(){
+		 $(".cou").hide();
+		 $("#HawaMahal").show();
+		 
+	});
+
+	//to show Potala_Palace
+	$("#Potala_Palace").click(function(){
+		 $(".cou").hide();
+		 $("#PotalaPalace").show();
+		 
+	});
+
+	//to show Summer_Palace
+	$("#Summer_Palace").click(function(){
+		 $(".cou").hide();
+		 $("#SummerPalace").show();
+		 
+	});
+
+	//to show Lotus_Temple
+	$("#Lotus_Temple").click(function(){
+		 $(".cou").hide();
+		 $("#LotusTemple").show();
+		 
+	});
+
+	//to show Forbidden_City
+	$("#Forbidden_City").click(function(){
+		 $(".cou").hide();
+		 $("#ForbiddenCity").show();
+		 
+	});
+
+	//to show Great_Wall_of_China
+	$("#Great_Wall_of_China").click(function(){
+		 $(".cou").hide();
+		 $("#GreatWallofChina").show();
+		 
+	});
+
+	//to show Ghibli_Museum
+	$("#Ghibli_Museum").click(function(){
+		 $(".cou").hide();
+		 $("#GhibliMuseum").show();
+		 
+	});
+
+	//to show Mysore_Palace
+	$("#Mysore_Palace").click(function(){
+		 $(".cou").hide();
+		 $("#MysorePalace").show();
+		 
+	});
+
+
+	//to show Railway_Museum
+	$("#Railway_Museum").click(function(){
+		 $(".cou").hide();
+		 $("#RailwayMuseum").show();
+		 
+	});
+
+	//to show Karon_Beach
+	$("#Karon_Beach").click(function(){
+		 $(".cou").hide();
+		 $("#KaronBeach").show();
+		 
+	});
+
+	//to show cross
+	$(".cross").click(function(){
+		 $(".cou").hide();
+		 $("#sidewallpaper").show();
+	});
+
+
+});
+
+</script>
+
+
+<!-- aos -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
